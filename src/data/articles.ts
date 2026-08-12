@@ -97,6 +97,526 @@ export interface Article {
 
 export const articles: Article[] = [
 
+  {
+    id: '98437339',
+    title: 'Holiday-hating Francesca Hong loses to David Crowley in Wisconsin Democratic gubernatorial primary',
+    summary:
+      'Milwaukee County Executive David Crowley narrowly upset Democratic socialist Francesca Hong in Wisconsin\'s Democratic gubernatorial primary, winning by 3,200 votes out of more than 787,000 cast despite polls showing Hong ahead by double digits in the final stretch.',
+    body: [
+      'WASHINGTON — Milwaukee County Executive David Crowley narrowly upset Democratic socialist Francesca Hong in Wisconsin\'s Democratic gubernatorial primary Tuesday night, despite polls showing Hong in front by double digits in the final stretch before polling day.',
+      'Crowley\'s campaign said the 37-year-old state legislator and member of the Democratic Socialists of America called Crowley early Wednesday to concede the race. Hong trailed her rival by more than 3,200 votes out of more than 787,000 ballots cast as of 6 a.m. ET — a margin of 0.41 percentage points.',
+      'Under Wisconsin law, Hong could have requested a recount since she trailed by under one percentage point, but she would have had to pay for it because her deficit was greater than 0.25 percentage points. State law does not provide for automatic recounts in close races.',
+      'Crowley, 40, was the late choice of Wisconsin\'s Democratic establishment after Lt. Gov. Sara Rodriguez and her predecessor Mandela Barnes dropped out of the race in recent weeks. Crowley had initially dropped out and endorsed Rodriguez last month, but re-entered the race in an effort to stop Hong after Barnes quit.',
+      {
+        type: 'image',
+        src: '/images/np-hong-crowley-wisconsin-2.jpg',
+        caption: 'Hong made a heart gesture to her supporters at a watch party in Madison.',
+        alt: 'Francesca Hong making a heart gesture to supporters at her election night watch party',
+      },
+      '"To Francesca [Hong], Kelda [Roys], Joel [Brennan] and every candidate who shared their vision for Wisconsin, thank you. They challenged all of us to think bigger about what our state can become," Crowley\'s campaign manager Garren Randolph said in a statement name-checking his candidate\'s primary rivals.',
+      '"From day one, this campaign has been about what comes next for Wisconsin: making life more affordable, strengthening our schools, creating good-paying jobs, and making sure opportunity reaches every corner of our state," he added.',
+      '"Now, David is focused on bringing people together, earning the support of Democrats, Republicans, Independents, and anyone who believes Wisconsin is at its best when we work together and deliver results. David is ready to get back to work, build a broad coalition, and win in November."',
+      '"Our team campaigned clean, our souls are intact and we really made meaningful change for the progressive movement," Hong\'s campaign manager Becky Cooper said after she conceded, while the candidate herself told supporters Tuesday night in Madison: "We have built something that will change politics forever."',
+      'Crowley, who will face GOP Rep. Tom Tiffany in the November general election, would be the Badger State\'s first ever black governor.',
+      {
+        type: 'image',
+        src: '/images/np-hong-crowley-wisconsin-3.jpg',
+        caption: 'Gwen Moore, who represents Wisconsin\'s 4th congressional district, cheers with David Crowley supporters at an election night party in Milwaukee on Tuesday.',
+        alt: 'Rep. Gwen Moore cheering with David Crowley supporters at an election night party in Milwaukee',
+      },
+      '"I am so proud of David — he\'s the future of our Party, and I can\'t wait for him to be our next governor. For now, we polka. Tomorrow, we\'re back at work to win," outgoing Democratic Gov. Tony Evers wrote on X early Wednesday. "Tom Tiffany, we\'ll see you in November."',
+      'Hong, who campaigned on hiking taxes for the rich, was snapped wearing black Air Jordan sneakers with a blue jacket and matching heart-printed socks while casting her ballot on Tuesday. The sneakers can retail online for $300.',
+      'The card-carrying DSA member had in recent weeks found herself backtracking in media interviews from past statements in favor of abolishing police departments and canceling Thanksgiving Day. She even railed against Valentine\'s Day.',
+      '"Police exist to uphold white supremacy," she had posted on Twitter, now X, in October 2021. "Defund then abolish. Reform can\'t be an option."',
+      'The year before, Hong had also posted, "Cancel Thanksgiving. Should have done this in 1621," in a now-deleted tweet.',
+      'She\'s since disavowed both of those statements. "I\'ve cooked many great Thanksgiving dinners," she told CBS News ahead of the primary election, "and I\'m not going to cancel Thanksgiving."',
+      {
+        type: 'image',
+        src: '/images/np-hong-crowley-wisconsin-4.jpg',
+        caption: 'Democratic gubernatorial candidate David Crowley taking a selfie with a woman in Milwaukee on Aug. 10, 2026.',
+        alt: 'David Crowley taking a selfie with a supporter in Milwaukee',
+      },
+      'But critics in both Republican and Democratic circles expressed concerns that Hong\'s past radical comments — and policies — would spell trouble for her in the November general election.',
+      'Two of the biggest socialist names in US politics, Sen. Bernie Sanders (I-Vt.) and Rep. Alexandria Ocasio-Cortez (D-NY), kept their distance from Hong after campaigning hard for far-left Senate candidate Abdul El-Sayed ahead of his primary win last week in nearby Michigan.',
+      '"She is a font of zany liberal, faculty lounge exotica," wrote ex-Barack Obama adviser David Axelrod of Hong in an X post last week.',
+      '"This tweet is a perfect example of why the consultant class keeps losing elections," responded Hong, a former dishwasher, line cook and chef who dropped out of the University of Wisconsin. "They\'re totally clueless, and they\'re hellbent on keeping working-class people out of politics. I\'ve spent more time in kitchens than faculty lounges."',
+      '"Perhaps you\'d like to come to Wisconsin and work a Friday night dinner rush with me?" she taunted.',
+      'Crowley deftly positioned himself in the moderate lane, telling reporters Monday: "There are a lot of people who are scared."',
+      '"She is a self-proclaimed socialist. There are a lot of people worried about not just this party, but this country moving in that direction," added Crowley, who had reminded Wisconsin Democrats a day earlier: "Our ultimate goal is to make sure we don\'t have a MAGA extremist occupying the governor\'s office."',
+      'In an interview with Politico Friday, Evers wouldn\'t commit to backing Hong if she won the primary. "I want to have a chance to take a breath, and once that\'s in a position, we\'ll see," he said, adding: "But I anticipate that David will win."',
+    ],
+    category: 'US News',
+    time: '12:30',
+    section: 'hot',
+    image: '/images/np-hong-crowley-wisconsin.jpg',
+    byline: 'Saree Times Politics Desk',
+    date: '2026-08-12',
+  },
+
+  {
+    id: '98437340',
+    title: 'Hochul\'s lead over Blakeman cut in half in new governor\'s race poll',
+    summary:
+      'Gov. Kathy Hochul leads Republican Bruce Blakeman by just 10 points — 49% to 39% — among likely voters in a new Siena College survey, putting the Nassau County executive in a stronger position than Lee Zeldin was at this point in 2022.',
+    body: [
+      'New York Republican gubernatorial candidate Bruce Blakeman is closer to unseating Gov. Kathy Hochul and turning the Empire State red than Lee Zeldin was in the home stretch of last election — when the GOP rival mounted a nail-bitingly close challenge, a stunning new poll reveals.',
+      'The Democrat incumbent leads Blakeman by just 10 points — 49% to 39% — among likely voters, according to a Siena College survey conducted in early August.',
+      'This places the Nassau County executive in a better position than Republican candidate Zeldin was at this time four years ago.',
+      'In August 2022, Hochul, just finishing her first year as governor, led the then-Long Island Rep and current US Environmental Protection Agency administrator by 14 points among likely voters — 53% to 39%.',
+      'Hochul only won the election against Zeldin by a narrow six points — 53% to 47%.',
+      {
+        type: 'image',
+        src: '/images/np-hochul-blakeman-poll-2.jpg',
+        caption: 'Gov. Kathy Hochul speaks during a press conference to announce that more than 1.8 million low-income children have received summer food assistance on Tuesday, Aug. 11, 2026, in New York City.',
+        alt: 'Gov. Kathy Hochul speaking at a press conference in New York City',
+      },
+      '"With less than three months till Election Day, Hochul holds a 10-point lead over Blakeman, 49-39%, not crossing the magic 50% mark," said Siena pollster Steven Greenberg. "The race is already competitive," he added.',
+      'Voters will cast their ballots for governor on November 3.',
+      'Notably, Hochul\'s lead is slimmer than those of Democratic incumbents in other statewide races.',
+      'Two-term Democratic state Attorney General Letitia James leads her Republican challenger, former federal prosecutor Saritha Komatireddy, by 18 points — 54% to 36% — among likely voters.',
+      'Meanwhile, four-term Democratic State Comptroller Tom DiNapoli leads Republican Joseph Hernandez by 23 points — 55% to 32%.',
+      {
+        type: 'image',
+        src: '/images/np-hochul-blakeman-poll-3.jpg',
+        caption: 'Republican gubernatorial candidate for New York, Bruce Blakeman, visits the Tangram shopping mall while campaigning in the Flushing neighborhood of Queens on Tuesday, Aug. 11, 2026.',
+        alt: 'Bruce Blakeman campaigning at a shopping mall in Flushing, Queens',
+      },
+      'Hochul\'s campaign is buoyed by female supporters and black voters, the Siena poll shows.',
+      'She holds a 19-point lead over Blakeman among women — 56% to 37% — while likely male voters are split.',
+      'Blakeman trails Hochul by 60 points among black voters.',
+      'The incumbent also holds a significant 45-point lead in deep-blue New York City — 64% to 19% — where far-left socialist Zohran Mamdani took away the mayoral election in 2025.',
+      'Blakeman, meanwhile, led his rival by 8 points in the suburbs — 49% to 41% — and the two split the upstate vote, according to the survey.',
+      'The GOP challenger also had more support among Catholics and had the support of 42% of Jewish voters, typically a Democratic-leaning constituency. Blakeman is Jewish.',
+      {
+        type: 'image',
+        src: '/images/np-hochul-blakeman-poll-4.jpg',
+        caption: 'Hochul leads Blakeman by just 10 points — 49% to 39% — among likely voters, according to a Siena College survey conducted in early August.',
+        alt: 'Bruce Blakeman greeting voters while campaigning in New York City',
+      },
+      'Despite the encouraging signs for the Republican challenger, the poll did reveal he has some ground to make up on key issues.',
+      'For example, roughly half of likely voters — 51% — said Hochul would do a better job of increasing affordable housing, compared to roughly a third — 35% — who believed Blakeman would.',
+      'Those respondents say she will do a slightly better job making prices more affordable for average New Yorkers — 48% to 41%.',
+      'Voters are split on who will keep New Yorkers safe, with 47% believing Hochul would do a better job with public safety and 44% believing Blakeman would.',
+      'Other surveys conducted by Republican-leaning pollsters claimed the race is even closer.',
+      'A poll conducted for the pro-Blakeman "Strong and Safe" Super PAC last month had the Republican trailing his rival by just 4 points — 47% to 43%.',
+      'Another survey taken by a conservative-leaning group earlier last month showed Hochul leading Blakeman by just 6 points — 47% to 41% — among likely voters. That survey was conducted by the firm co/efficient for the right-leaning, pro-Blakeman "Coalition to Protect Nassau Taxpayers."',
+      'Siena College interviewed 811 likely voters from Aug. 3-6. The survey has a margin of error of plus or minus 4.2 percentage points.',
+    ],
+    category: 'Metro',
+    time: '12:05',
+    section: 'hot',
+    image: '/images/np-hochul-blakeman-poll.jpg',
+    byline: 'Saree Times Politics Desk',
+    date: '2026-08-12',
+  },
+
+  {
+    id: '98437341',
+    title: 'Roger Federer loses billionaire status as fortune wiped out in day of carnage',
+    summary:
+      'The 20-time grand slam champion dropped out of the billionaire ranks after luxury sneaker brand On Holding suffered a 19% share price collapse, wiping at least $52 million off the value of Federer\'s 2.5% stake.',
+    body: [
+      'Roger Federer is no longer a billionaire, with the tennis icon watching on as millions of dollars were wiped out on Tuesday.',
+      'The 20-time grand slam champ lost a fortune when luxury sneaker brand On suffered a share price collapse as a result of softer sales than forecast.',
+      'According to Forbes, the 19% plummet was worth at least $52 million to Federer, who has a widely publicised 2.5% stake in the company.',
+      'On Holding was first publicly listed on the New York Stock Exchange in 2021 — and the company\'s valuation exploded last year, taking Federer back into the billionaire range.',
+      'Forbes estimates Federer\'s net worth has now dropped to $952 million. The financial reporter last year estimated Federer\'s net worth to be up to $1.1 billion.',
+      'While Federer will hardly be crying himself to sleep on his mattress made from $100 bills, the loss of more than $200 million is no laughing matter.',
+      {
+        type: 'image',
+        src: '/images/np-federer-billionaire-2.jpg',
+        caption: 'Roger Federer walks off Center Court after losing to Hubert Hurkacz during the quarterfinals of Wimbledon on July 7, 2021.',
+        alt: 'Roger Federer walking off Centre Court at Wimbledon in 2021',
+      },
+      'Swiss brand On, which originated in Zurich, has grown from being a high performance running shoe manufacturer into a global athletic footwear brand.',
+      'Part of the company\'s 2025 valuation surge was a hugely positive response to Federer\'s own "The Roger" range.',
+      'Federer first became involved with the company in 2019, taking up a position as co-owner and operating as a casual fashion consultant.',
+      'On Running has been Federer\'s most lucrative investment.',
+      'The majority of Federer\'s financial empire originates from his playing career — and the millions he earned in endorsement deals.',
+      'The eight-time Wimbledon champ finished his playing career with total prize money winnings of more than $130 million.',
+      {
+        type: 'image',
+        src: '/images/np-federer-billionaire-3.jpg',
+        caption: 'Roger Federer and Rafael Nadal walk off the court during their doubles match at the Laver Cup at the O2 Arena in London on Sept. 23, 2022.',
+        alt: 'Roger Federer and Rafael Nadal walking off court at the 2022 Laver Cup',
+      },
+      'He was even more successful off the court, most famously signing a 10-year, $300 million apparel deal with Uniqlo in 2018.',
+      'The move to the Japanese fashion label ended a 24-year partnership he enjoyed with Nike.',
+      'Despite retiring in 2022, Federer\'s image of class and elegance helped Uniqlo cement its position in markets around the globe.',
+      'Nike\'s longtime former tennis director Mike Nakajima, who worked with stars like John McEnroe, Pete Sampras and Andre Agassi before Nike signed Federer as a 13-year-old, called the company\'s failure to retain Federer an "atrocity."',
+      'Nike didn\'t entirely drop the ball in its negotiations, having reportedly spent $172 million on keeping Federer in its athletic stable — but Uniqlo blew them out of the water.',
+      {
+        type: 'image',
+        src: '/images/np-federer-billionaire-4.jpg',
+        caption: 'Roger Federer celebrates with the trophy after winning the 2018 Australian Open on Jan. 28, 2018.',
+        alt: 'Roger Federer holding the Australian Open trophy in 2018',
+      },
+      'Well before that move to Uniqlo, Federer was already cashing in as one of the most marketable athletes on the planet.',
+      'Among many other sponsorship agreements, Federer also championed Rolex, Mercedes-Benz, Gillette and Lindt chocolate.',
+      'One of the more surprising endorsement deals of his career was a $115 million agreement with NetJets private jets.',
+      'The 44-year-old is a known fashion design enthusiast and he has not been shy about exploring future opportunities in that space.',
+      'He and his wife, Mirka Federer, have four children, twin girls aged 16 and twin boys aged 11.',
+      'Based on the millions of dollars at play, we can expect to see the tennis icon back sitting in the royal box inside Wimbledon\'s centre court wearing his Rolex and On sneakers for many years to come.',
+    ],
+    category: 'Sports',
+    time: '11:45',
+    section: 'sports',
+    image: '/images/np-federer-billionaire.jpg',
+    byline: 'Saree Times Sports Desk',
+    date: '2026-08-12',
+  },
+
+  {
+    id: '98437342',
+    title: 'Miss Universe Canada contestants in Indigenous costumes slammed for \u2018cultural appropriation\u2019',
+    summary:
+      'Former Miss Universe Canada winner Ashley Callingbull, the first Indigenous woman to hold the title, blasted two contestants who wore Indigenous-inspired outfits during the national costume segment in Windsor, Ontario, calling the attire "cultural appropriation."',
+    body: [
+      'An Indigenous Sports Illustrated model-turned-beauty queen slammed two Miss Universe Canada contestants who wore Indigenous-inspired outfits during the pageant, describing the attire as "cultural appropriation."',
+      'Karisa Haverkamp and Jasleen Kaily donned the outfits during the national costume portion of the competition in Windsor, Ontario, on Aug. 4, according to APTN News.',
+      'Haverkamp wore a feathered headdress traditionally associated with respected Indigenous leaders in North America, along with a red handprint painted on her face, a symbol of the Missing and Murdered Indigenous Women and Girls movement.',
+      {
+        type: 'image',
+        src: '/images/np-miss-universe-canada-2.jpg',
+        caption: 'Jasleen Kaily\'s all-fur dress, mukluk boots and braids also sparked controversy.',
+        alt: 'Miss Universe Canada contestant Jasleen Kaily in an all-fur dress with mukluk boots and braids',
+      },
+      'Kaily wore a costume called "Arctic Beauty," featuring an all-fur dress, fur boots known as mukluks and two braids.',
+      'Former Miss Universe Canada winner Ashley Callingbull, who was the first Indigenous woman to win the title in 2024 and represented the country at the Miss Universe pageant, interrupted her co-host, pageant director Sonny Borrelli, to address the issue while co-hosting the show\'s final Saturday.',
+      '"Sometimes there are mistakes that are made. It\'s 2026. We should know better," she said on stage, according to CBC Indigenous.',
+      '"But most importantly, a part of reconciliation is that we educate and learn and understand and move on from these things in a good way," she added.',
+      {
+        type: 'image',
+        src: '/images/np-miss-universe-canada-3.jpg',
+        caption: 'Indigenous former Miss Universe Canada winner Ashley Callingbull called the costumes a "mistake."',
+        alt: 'Ashley Callingbull, former Miss Universe Canada winner, on stage',
+      },
+      'Callingbull, a Plains Cree woman from the Enoch Cree Nation, admitted that she was shocked when she saw the costumes.',
+      '"This cannot be real. I just couldn\'t get over that this was happening," she told the outlet. "Who allowed this on stage? Who approved this? Anything traditional or sacred should not be allowed. I was very, very upset."',
+      'Callingbull, the first Indigenous First Nations woman to grace the pages of the Sports Illustrated Swimsuit issue in 2022, contacted pageant organizers to voice her anger.',
+      '"I felt like I was educating them and giving them hell at the same time because I needed them to understand how bad this was, and how much this affects other people," Callingbull told APTN News Friday. "I\'m glad I got the message across, but it was heavy on me. It was heavy on my heart."',
+      'The pageant\'s website describes the national costume segment as "a celebration of Canadian culture and heritage, combined with creativity," with contestants required to showcase "a unique costume, dress, or outfit inspired by Canada\'s traditions, symbols, and history."',
+      'Miss Universe Canada apologized in a statement on Facebook Friday morning.',
+      '"If any costume caused offense, hurt, or misunderstanding, please know that it was never our intention," the organization said. "The national costume segment is intended to celebrate creativity, heritage, and identity. However, we recognize that every design requires deep care, respect, and continuous evaluation."',
+      {
+        type: 'image',
+        src: '/images/np-miss-universe-canada-4.jpg',
+        caption: 'Callingbull responded to the apology on Facebook, saying, "Cultural appropriation is NOT OK."',
+        alt: 'Ashley Callingbull speaking about cultural appropriation at the pageant',
+      },
+      'Pageant organizers thanked Callingbull for her "guidance, advice, and assistance" and said they would introduce a "comprehensive Costume Guide" with standards for future competitions.',
+      'Callingbull responded on Facebook hours later: "Cultural appropriation is NOT OK."',
+      '"Now there will be guidelines and liaisons to help with this process moving forward," she added. "Change doesn\'t happen unless you speak up. Thank you MUC for acknowledging this and doing what needed to be done."',
+      'Borrelli has invited Callingbull to serve as the official liaison for the costume segment moving forward.',
+      {
+        type: 'image',
+        src: '/images/np-miss-universe-canada-5.jpg',
+        caption: 'Aslihan Moral won Miss Universe Canada and will compete at Miss Universe 2026 in Puerto Rico on Nov. 26.',
+        alt: 'Aslihan Moral being crowned Miss Universe Canada',
+      },
+      'Haverkamp apologized for her costume on Instagram. "I acknowledge and recognize that my outfit for the national costume caused hurt and offense to people in the Indigenous community," she wrote. "I appreciate what I have learned from this experience."',
+      'Kaily also apologized on social media, saying her "intention was never to disrespect or misrepresent Indigenous culture" and that she wanted to "recognize and celebrate one of the First Peoples of Canada."',
+      'Aslihan Moral won the Miss Universe Canada title Saturday and will represent the country at Miss Universe 2026 in Puerto Rico on Nov. 26.',
+      'Miss Universe Canada has faced similar criticism before. In 2015, contestant Paola Nunez Valdez sparked controversy after wearing a totem pole costume, with the pageant calling the incident a "misunderstanding" and saying the outfit was intended to represent her Dominican heritage.',
+    ],
+    category: 'World',
+    time: '11:20',
+    section: 'culture',
+    image: '/images/np-miss-universe-canada.jpg',
+    byline: 'Saree Times World Desk',
+    date: '2026-08-12',
+  },
+
+  {
+    id: '98437343',
+    title: 'California college student Lillie Vehling saves 3 drowning girls in Seattle lake',
+    summary:
+      'UC Davis water polo star Lillie Vehling pulled three drowning girls from Lake Washington one by one during Seattle\'s Seafair Weekend Festival — finding the last of them unconscious with her leg tangled in a buoy rope.',
+    body: [
+      'A California college water polo star saved three girls from drowning in a Seattle lake when she noticed the youngsters struggling to keep above the surface while in deeper water.',
+      'Lillie Vehling is being hailed a hero for her quick thinking, using her past lifeguard experience to extract the distressed swimmers from Lake Washington during the city\'s chaotic Seafair Weekend Festival, the largest boat, air and festival event hosted between July 31 and Aug. 2.',
+      '"There were three girls who were out pretty far by the buoy lane that they had set up, and they did not look very good," Vehling told Fox 13 Seattle.',
+      'Vehling, a rising redshirt junior at UC Davis, had shown up to the water\'s edge on July 31 to watch the Blue Angels aerial performance when she noticed the struggling group.',
+      '"They were already bobbing up and down trying to get breaths, and one of the girls was actually drowning the others in order to breathe, and that\'s when I knew I had to jump in," she said.',
+      {
+        type: 'image',
+        src: '/images/np-vehling-lake-rescue-2.jpg',
+        caption: 'Vehling, who was sitting on the shore reading a book waiting for the Blue Angels, noticed the girls struggling while swimming.',
+        alt: 'Lillie Vehling describing the rescue in a television interview',
+      },
+      'Vehling recalled grabbing the girl having the most trouble and swimming her back to shallower waters to ease the hectic environment for the other two.',
+      'The Woodland Hills, Calif., native returned and pulled the other girls one by one from the lake.',
+      '"Unfortunately, by the time I had gotten to the third girl, it was just the top of her head that was there," Vehling said about the girl nearly fully submerged under water. "I just saw her black hair in the water barely floating and when I got to her, she was unconscious. I lifted her head up out of the water and had my arm underneath her armpit holding her up."',
+      'Vehling said the last girl appeared unconscious and her leg was tangled in the buoy rope, which forced the student to race to get the swimmer to safety quickly.',
+      'Once back on land, the unidentified girl regained consciousness and coughed up water.',
+      {
+        type: 'image',
+        src: '/images/np-vehling-lake-rescue-3.jpg',
+        caption: 'Vehling hugs Seafair President Emily Cantrell after rescuing the three girls from Lake Washington.',
+        alt: 'Lillie Vehling hugging Seafair president Emily Cantrell',
+      },
+      'Bystanders at Genesee Park and Playfield called 911 and one of the girls was brought to Seattle Children\'s Hospital in stable condition, KOMO News reported.',
+      'Vehling, whose father is a retired captain with the Los Angeles Fire Department, says her immediate instincts kicked in and she never doubted jumping in the water.',
+      '"To save three people, I didn\'t think twice about myself," she said. "I\'m just glad everyone\'s safe."',
+      'Seafair CEO Emily Cantrell was told about Vehling\'s daring rescue and rushed to the scene where she met with the lifesaver.',
+      '"Immediately, she [Cantrell] asked, \'Are you okay?\' and \'Can I give you a hug?\'" Vehling told the outlet.',
+      {
+        type: 'image',
+        src: '/images/np-vehling-lake-rescue-4.jpg',
+        caption: 'Vehling is knighted into the Seafair royal court after her rescue mission.',
+        alt: 'Lillie Vehling being knighted into the Seafair royal court',
+      },
+      'After the meeting, Vehling was knighted into the Seafair royal court, and given a fitting title.',
+      '"We knighted her as \'Lady Guardian of Lake Washington,\' and she immediately had admirals coming up to her," Cantrell told KOMO News. "It was incredible having her at the right place at the right time. What she did was extraordinary."',
+      {
+        type: 'image',
+        src: '/images/np-vehling-lake-rescue-5.jpg',
+        caption: 'A Seattle Police boat in Lake Washington during Seafair Weekend Festival in Genesee Park on Aug. 1, 2026.',
+        alt: 'A Seattle Police boat patrolling Lake Washington during the Seafair Weekend Festival',
+      },
+      'Vehling is coming off a career season with UC Davis, where she scored 30 goals with 28 assists and 15 steals during the Aggies\' 15-13 season.',
+      'The attacker is studying mechanical engineering and statistics with hopes of getting a career within the Nuclear Navy because of her love for the Blue Angels.',
+      'Cantrell teased that she hopes Vehling returns to Seafair as a Blue Angels pilot.',
+    ],
+    category: 'US News',
+    time: '10:55',
+    section: 'newspaper',
+    image: '/images/np-vehling-lake-rescue.jpg',
+    byline: 'Saree Times Human Interest Desk',
+    date: '2026-08-12',
+  },
+
+  {
+    id: '98437344',
+    title: 'Russian national arrested in Louisiana with nearly 800 pounds of meth in 18-wheeler',
+    summary:
+      'Anton Vitalyevich Rakov was pulled over on I-12 outside Baton Rouge, where deputies found roughly 789 pounds of methamphetamine in his semi-truck trailer — a haul the Livingston Parish sheriff called one of the largest in Louisiana history.',
+    body: [
+      'A Russian national was busted hauling nearly 800 pounds of methamphetamine on a Louisiana interstate, which officials touted as "one of the largest" seizures in the state\'s history.',
+      'Anton Vitalyevich Rakov was pulled over for a traffic stop in his 18-wheeler on I-12 in Denham Springs — about 20 miles outside Baton Rouge — on Tuesday, the Livingston Parish Sheriff\'s Office said on Facebook.',
+      'Rakov, whom officials described as a "deportable Russian national," was arrested over his illegal status in the US, which led officials to search the semi-truck\'s trailer and discover "approximately 358.14 kilos (789.56 lbs) of methamphetamine."',
+      '"One of the LARGEST Methamphetamine Seizures in Livingston Parish (And, Louisiana)," Sheriff Jason Ard said.',
+      'Rakov was handed over to ICE and remains in custody, the sheriff\'s office said.',
+      {
+        type: 'image',
+        src: '/images/np-rakov-meth-bust-2.jpg',
+        caption: 'Officials searched the semi-truck\'s trailer and discovered "approximately 358.14 kilos (789.56 lbs) of methamphetamine."',
+        alt: 'Investigators inspecting a semi-truck during the Louisiana methamphetamine seizure',
+      },
+      'Authorities have not disclosed what initially prompted the traffic stop.',
+      'Staggering photos released by the department illustrate the scale of the seizure, showing the large quantity of methamphetamine allegedly found in Rakov\'s truck.',
+      'An investigator can be seen on scaffolding inspecting the roof of the semi-truck, with massive tinfoil-wrapped bricks containing the meth spread out on folding tables.',
+      {
+        type: 'image',
+        src: '/images/np-rakov-meth-bust-3.jpg',
+        caption: 'The Livingston Parish Sheriff\'s Office said a K9 unit discovered the drugs after arresting the Russian national.',
+        alt: 'A K9 unit beside bins of seized methamphetamine in Livingston Parish',
+      },
+      'Another photo shows more of the packaged product in at least five large container bins alongside the deputy and K9 that made the bust.',
+      'A third photo shows Sheriff Ard standing next to a waist-high pyramid of tinfoil-wrapped bricks containing the meth.',
+      {
+        type: 'image',
+        src: '/images/np-rakov-meth-bust-4.jpg',
+        caption: 'Sheriff Jason Ard called the bust "one of the LARGEST Methamphetamine Seizures in Livingston Parish (And, Louisiana)."',
+        alt: 'Sheriff Jason Ard standing beside a pyramid of tinfoil-wrapped methamphetamine bricks',
+      },
+      'While authorities stopped short of declaring it the largest meth seizure in state history, the bust far exceeds recent high-profile seizures.',
+      'In February, the Livingston Parish Sheriff\'s Office seized about 361 pounds of methamphetamine, valued at nearly $4 million, during a traffic stop, according to the Justice Department.',
+      'The suspects — Jostin Antonio Orellana-Romero, 22, a Honduran national, and Edenilson Alexander Castaneda-Del Valle, 18, a Salvadoran national — were both in the country illegally at the time of their arrest. Both men face a minimum of ten years and up to life in prison.',
+      'In March, a drug task force comprised of the DEA, FBI and Louisiana State Police seized approximately 325 pounds of narcotics hidden inside welded metal boxes concealed within ice cream freezers aboard an 18-wheeler, according to the Justice Department.',
+      'The suspects operating the truck, Ranulfo Garcia Rodriguez and Christian Antonio Sanchez Ramirez, were identified as Mexican nationals and arrested. Both men are also facing ten years to life in federal prison.',
+    ],
+    category: 'US News',
+    time: '10:30',
+    section: 'newspaper',
+    image: '/images/np-rakov-meth-bust.jpg',
+    byline: 'Saree Times Crime Desk',
+    date: '2026-08-12',
+  },
+
+  {
+    id: '98437345',
+    title: 'How Democrats\' DEI kept homebuyers in the dark about crime, schools',
+    summary:
+      'Biden\'s HUD used the doctrine of "disparate impact" to scare real-estate agents and listing platforms out of sharing crime and school data. Trump revoked the de facto gag rule this year, but state laws in New York and elsewhere still muzzle agents.',
+    body: [
+      'Nothing is more natural when buying a house than looking into how safe the neighborhood is — and, if you have or plan to have children, whether the local public schools are any good.',
+      'Yet the last Democratic presidential administration tried to prevent real-estate agents from answering those kinds of questions, because it prioritized "diversity" over safety and education.',
+      'President Donald Trump\'s administration revoked the de facto gag rule this year, but the damage that Joe Biden\'s apparatchiks inflicted is still being felt.',
+      'What\'s worse, state regulations in New York and elsewhere still prevent real-estate agents from speaking freely to homebuyers about crime and schools.',
+      'Interfering with homebuying was a first-week priority for Biden\'s administration.',
+      'Six days after he was sworn into office, Biden issued his directive establishing enforcement priorities for the Department of Housing and Urban Development aimed at scaring real-estate agents into remaining silent on two of the subjects most important to their clients.',
+      '"Diverse and inclusive communities strengthen our democracy," the executive memorandum began.',
+      'What mom or dad wants their community to be "inclusive" of failing schools?',
+      'Who wants "diversity" to mean mixing criminals with innocent people?',
+      'Black families don\'t want to live in dangerous or educationally dead-end neighborhoods any more than people of any other color do.',
+      'Yet too many progressives believe racial equality is best achieved by demolishing standards for everyone.',
+      'That was the effect of Biden\'s memo, which made clear that racial politics and the doctrine of "disparate impact" would guide HUD\'s enforcement of federal housing laws.',
+      'The major online real-estate companies understood immediately what was being demanded of them.',
+      'Realtor.com and Zillow stopped providing crime data, while Redfin — going out of its way to embrace the party line — posted a blog proclaiming, "Neighborhood crime data doesn\'t belong on real estate sites."',
+      'The National Association of Realtors put up a webpage in early 2023 titled "How to handle client questions about schools and neighborhoods," which told realtors to point homebuyers to other sources of information rather than providing the facts themselves.',
+      'The page is larded with the jargon of diversity, equity and inclusion — but it also testifies to the association\'s worry that fair-housing laws would be interpreted aggressively, and that realtors who did tell their clients too much would run the risk of punishment.',
+      'In April, Trump\'s HUD announced that realtors and other real-estate agents should not feel intimidated: "The Fair Housing Act does not require withholding useful information on school quality and crime statistics," the department proclaimed.',
+      'The "Dear Colleague" letter from Assistant Secretary Craig Trainor went into considerable detail to "strongly urge" the real-estate industry "to revisit ethics training materials and reconsider public statements that stifle real estate agent speech."',
+      'But the New York Association of Realtors, for one, says it can\'t do that — because its members "may be subject to liability under (New York state) law" if they speak frankly to homebuyers about schools and crime.',
+      'How many voters know some state governments — and, under the last Democratic administration, the federal government — are muzzling real-estate agents in this way?',
+      'How many know how easily the industry rolled over when Biden decided to put homebuyers\' safety and their children\'s education at risk?',
+      'What the Biden administration did was unethical, and the industry did a disservice to its clients by giving in — though perhaps the prospect of selling more homes in bad neighborhoods appealed to the least scrupulous members of the profession.',
+      'Buying a home is a trust-intensive process: It\'s not only expensive, it ranks alongside marriage as one of the most consequential decisions anyone can make, holding the potential for decades of happiness or misery.',
+      'Buying a home is buying a future.',
+      'It isn\'t right to withhold any information a family needs about a prospective neighborhood, and state laws as well as federal ones must put homebuyers — of all races — first, above any political commitment to abstractions like diversity and inclusion.',
+      'The point of shielding information about crime and schools is to get more people to buy homes where they otherwise wouldn\'t want to live.',
+      'What could be more wicked, more destructive, than that?',
+      'The intrepid journalist Helen Andrews, who\'s never afraid of a controversy, deserves credit for calling attention to this corruption of the real-estate industry in a recent essay for the web magazine Compact.',
+      'It\'s a big story, one that ought to be on voters\' minds as they consider the state and local elections, as well as federal ones, coming up in November.',
+      'If Americans don\'t want their real-estate providers gagged, they must speak up themselves — at the ballot box.',
+      'Daniel McCarthy is the editor of Modern Age: A Conservative Review.',
+    ],
+    category: 'Opinion',
+    time: '09:45',
+    section: 'opinion',
+    image: '/images/np-dei-homebuyers.jpg',
+    byline: 'Daniel McCarthy',
+    date: '2026-08-12',
+  },
+
+  {
+    id: '98437346',
+    title: 'Zohran Mamdani blames NYC staff after NYPD denies Rama Duwaji a police escort to the Middle East',
+    summary:
+      'City Hall said the first lady would get a taxpayer-funded NYPD detail for her September trip to Syria and Lebanon. The NYPD publicly contradicted its own boss hours later, and Mamdani chalked the clash up to a "miscommunication."',
+    body: [
+      'What a cop out.',
+      'A seemingly red-faced Mayor Zohran Mamdani blamed a "miscommunication" Tuesday after an awkward public clash between City Hall and NYPD officials over whether the department would provide security for his wife Rama Duwaji\'s upcoming Middle East trip.',
+      'The high-profile back-and-forth appeared to end when Hizzoner asserted that Duwaji would not receive a taxpayer-funded police escort on her jaunt to Syria and Lebanon next month — despite his own senior spokesperson claiming she would the day prior.',
+      '"There was a miscommunication. She has not yet taken that trip and when she takes that trip it will be without any NYPD detail," Mamdani told PIX11, when asked about Monday\'s report.',
+      'A source familiar with the security detail said the first lady, whom the mayor has described as a "private person," requested the escort, and Mamdani\'s office had confirmed she would be accompanied by city cops.',
+      '"Upon the strong recommendation of the NYPD, the first lady\'s security detail will be joining her when she travels to visit family in Syria and Lebanon," Mamdani\'s spokeswoman Dora Pekec said.',
+      'But City Hall\'s assertion drew a stunning response from the NYPD Tuesday morning.',
+      {
+        type: 'image',
+        src: '/images/np-duwaji-nypd-escort-2.jpg',
+        caption: '"The NYPD does not send officers to countries with level four travel advisories for discretionary reasons not linked to investigative work," a department spokesperson said.',
+        alt: 'NYPD Commissioner Jessica Tisch at a joint press conference',
+      },
+      '"The NYPD does not send officers to countries with level four travel advisories for discretionary reasons not linked to investigative work," a department spokesperson insisted.',
+      '"This is not an investigative trip, and therefore, NYPD personnel will not be traveling there for it."',
+      'The statement not only undercut Pekec\'s assertion, but effectively amounted to NYPD officials publicly breaking with their boss: Mamdani.',
+      'One source familiar with the mishap said simply, "They never checked with the commissioner."',
+      'When asked about the disparity, Pekec pointed toward Mamdani\'s remarks attributing the matter to a "miscommunication" to PIX11 during an event later Tuesday that was closed to other press.',
+      'The mayor\'s office offered no further comment on the Sept. 20 trip\'s details or whether the purpose was solely to visit family.',
+      'The source with knowledge of the trip said, "It\'s not official business. It\'s not doing anything for the city."',
+      'Both countries are on the US State Department\'s "Do Not Travel" list due to security concerns.',
+      {
+        type: 'image',
+        src: '/images/np-duwaji-nypd-escort-3.jpg',
+        caption: 'Zohran Mamdani, accompanied by his wife, Rama Duwaji, casts his ballot on Election Day at Frank Sinatra School of the Arts High School on Nov. 4, 2025, in Queens.',
+        alt: 'Zohran Mamdani and Rama Duwaji casting a ballot on Election Day in Queens',
+      },
+      'The prospect of sending NYPD cops to countries on the "Do Not Travel" list struck former police commissioner Bill Bratton as "ill-advised."',
+      'Such an assignment, he said, would be "expensive" and require significant assistance and cooperation from the federal government.',
+      '"There would be lots of hoops you\'d have to go through for that kind of assignment," he said.',
+      'Bratton said the disagreement between Mamdani\'s office and Police Commissioner Jessica Tisch\'s NYPD should have never happened, especially over an issue as sensitive as the first lady\'s travel.',
+      '"You\'re going to have to clear up the confusion," he said.',
+      'Mamdani has to tighten up his communication protocols with the NYPD, said David Catalfamo, who served as communications director for former Gov. George Pataki. He said there\'s a "deference" to law enforcement on security measures.',
+      '"I suspect communication between the mayor\'s office and the police department will be better in the future," Catalfamo said. "The political folks want to run ahead of the story. It doesn\'t work that way when it comes to security."',
+      '"The NYPD wants to be there to protect the mayor and his family — but there are limits. Going to Syria and Lebanon is not like buying a ticket on Amtrak."',
+      {
+        type: 'image',
+        src: '/images/np-duwaji-nypd-escort-4.jpg',
+        caption: 'The mayor\'s office offered no further comment on the Sept. 20 trip\'s details or whether the purpose was solely to visit family.',
+        alt: 'Rama Duwaji, the wife of Mayor Zohran Mamdani',
+      },
+      'Duwaji, a 29-year-old Syrian-American artist, traveled overseas just last month without police protection.',
+      'She co-hosted in July a pro-Palestinian all-female spiritual retreat on the French island of Corsica, and was also the "artist-in-residence" at a sold-out "Plants Of The Quran" workshop on the Spanish island of Mallorca. Both were organized by the Women Sanctuary, a Muslim-and-women-focused travel group run by Parisian designer Rym Nur.',
+      'The embarrassing snafu over her next trip abroad also showcased NYPD officials\' willingness to publicly buck the mayor, at least when confronted by an apparent error.',
+      'Mamdani\'s not-quite mea culpa came amid simmering tensions with Tisch, a pro-Israel moderate who hasn\'t been shy about her differences with the Israel critic mayor.',
+      {
+        type: 'image',
+        src: '/images/np-duwaji-nypd-escort-5.jpg',
+        caption: 'Mamdani and Tisch have had their fair share of disagreements since he took over in January.',
+        alt: 'Police Commissioner Jessica Tisch alongside Mayor Zohran Mamdani',
+      },
+      'Tisch entered Mamdani\'s administration by frankly acknowledging her differences with the upstart socialist over Israel and many public safety issues.',
+      'Within days of Mamdani taking office, Tisch angrily stormed into City Hall to read the riot act over his tardy response to back-to-back police shootings.',
+      'And she regularly broke with Mamdani in the following months, such as when the mayor brushed off a crowd pummeling two cops with snow as a "snowball fight that got out of hand."',
+      'Despite their differences, the pair have apparently worked together productively — with Mamdani more than happy to crow about reductions in crime and chummily share the stage with Tisch.',
+    ],
+    category: 'Metro',
+    time: '20:15',
+    section: 'hot',
+    image: '/images/np-duwaji-nypd-escort.jpg',
+    byline: 'Saree Times Metro Desk',
+    date: '2026-08-11',
+  },
+
+  {
+    id: '98437347',
+    title: 'NYC couple finds stranger lounging in apartment, claims doorman gave intruder keys',
+    summary:
+      'Bill and Yelim Kim were on vacation in Yellowstone when their security camera caught a woman helping herself to a drink in their Long Island City apartment. Building management later said a doorman let her up after she posed as their dogwalker.',
+    body: [
+      'A "traumatized" Queens couple discovered a stranger lounging in their apartment while they were on vacation — thanks, they claim, to the luxury building\'s doorman who handed the intruder the keys.',
+      'Bill and Yelim Kim were away from their posh Purves Street Long Island City apartment on July 24 when they got a ping from their home-security system informing them that there was somebody in their home.',
+      'When they looked at the camera\'s live feed, what they saw was horrifying — a woman traipsing about their apartment, helping herself to a drink and chilling out on their couch.',
+      {
+        type: 'image',
+        src: '/images/np-lic-apartment-intruder-2.jpg',
+        caption: 'The intruder was caught on camera walking about the Kims\' apartment in July while they were away on vacation.',
+        alt: 'Security camera footage of a woman inside the Kims\' Long Island City apartment',
+      },
+      'Yelim said that "it was panic, panic, panic" after seeing the startling sight on the last night of their trip to Yellowstone National Park.',
+      '"I was in disbelief. I just could not believe what I was seeing," Bill told FOX 5. "We can\'t help or wonder, what would she have done if we didn\'t catch her on camera?"',
+      'But then their stomachs dropped even further — the woman found the camera watching her and ripped it off the bookshelf where it stood, terrifying footage shows.',
+      '"If we didn\'t have a security camera set up, would she have just stayed?" an incredulous Bill said. "This was almost 11 p.m. at night. Would she have slept in our bed?"',
+      'Instead of relaxing after a long day, the couple\'s final night of vacation "got completely derailed," Bill said Tuesday night.',
+      'He said they screen-recorded the mortifying ordeal and had to "spend several hours calling the police and calling our friends" from their yurt in the national park.',
+      'Yelim called the local precinct and had to "convince" the cops that it wasn\'t a prank, she said.',
+      {
+        type: 'image',
+        src: '/images/np-lic-apartment-intruder-3.jpg',
+        caption: 'Bill and Yelim Kim, both 28, at their Long Island City apartment after the harrowing ordeal.',
+        alt: 'Bill and Yelim Kim standing in their Long Island City apartment',
+      },
+      'Two of the couple\'s friends arrived at the ritzy Long Island City building before police showed up and one of the pals knocked on the couple\'s door to confront the intruder.',
+      '"It was incredibly stupid and brave for him to do that," Yelim said of her friend.',
+      'The squatter was asked to leave, which she did, but reappeared a few minutes later and used a set of keys to let herself back in.',
+      '"My friend sees her fumbling through keys in her hand. So there was more than one [set of keys], and she uses one of them to open the door and come in," Yelim added.',
+      'Shortly after going back into the apartment, police showed up and the woman was taken away in an ambulance.',
+      {
+        type: 'image',
+        src: '/images/np-lic-apartment-intruder-4.jpg',
+        caption: 'The couple watches footage of the incident on their cellphones.',
+        alt: 'Bill and Yelim Kim watching security footage on their phones',
+      },
+      'Building management later said in an email to tenants that the woman posed as a dogwalker for the Kims and was let up to the apartment by a doorman.',
+      'That doorman was removed from the property and security measures are being enhanced.',
+      'Those measures apparently worked, as the woman even reappeared two days after the initial incident. She claimed she was there to see someone and tried to get in — but was turned away.',
+      '"We were scared. I had like a full stomach ache when I saw her," Yelim said. "I just, I could not believe that she was back here."',
+      'Yelim said that the woman was wearing the same dress and heels from the initial ordeal and "looked really distressed" when they saw her in the lobby.',
+      {
+        type: 'image',
+        src: '/images/np-lic-apartment-intruder-5.jpg',
+        caption: 'The Kims claimed a doorman at their building handed over their apartment keys to the stranger while they were away.',
+        alt: 'The Long Island City apartment building where the intrusion took place',
+      },
+      'The woman was also wearing a hospital bracelet and "it seemed like she got discharged from the hospital and just came straight [back]," Bill said.',
+      'She has not been identified or charged with anything, but the NYPD is investigating the case as a burglary.',
+      'The couple said none of their belongings were stolen.',
+      'Despite the response, the Kims are not feeling much reassurance.',
+      'Bill said they feel "terrible" being back in their apartment. "It doesn\'t feel like a safe space for us anymore," he said.',
+      'Yelim added that she "definitely feels violated."',
+      '"I\'m freaking traumatized. I don\'t know how else to, you know, describe it," said Yelim.',
+      'The couple, who were due to renew their lease in September, said they are "frantically" looking for another apartment.',
+      '"We can\'t be here anymore," Bill added.',
+    ],
+    category: 'Metro',
+    time: '19:40',
+    section: 'newspaper',
+    image: '/images/np-lic-apartment-intruder.jpg',
+    byline: 'Saree Times Metro Desk',
+    date: '2026-08-11',
+  },
 
   {
     id: '98437335',
@@ -123,7 +643,7 @@ export const articles: Article[] = [
     time: '11:40',
     section: 'hot',
     image: '/images/np-mamdani-booed-si-2.jpg',
-    byline: 'Wafer News Metro Desk',
+    byline: 'Saree Times Metro Desk',
     date: '2026-08-06',
   },
 
@@ -167,7 +687,7 @@ export const articles: Article[] = [
     time: '11:10',
     section: 'culture',
     image: '/images/np-boltinhouse-miss-nc.jpg',
-    byline: 'Wafer News Culture Desk',
+    byline: 'Saree Times Culture Desk',
     date: '2026-08-06',
   },
 
@@ -214,7 +734,7 @@ export const articles: Article[] = [
     time: '10:25',
     section: 'newspaper',
     image: '/images/np-desouza-yale-wendys.jpg',
-    byline: 'Wafer News US Desk',
+    byline: 'Saree Times US Desk',
     date: '2026-08-06',
   },
 
@@ -260,7 +780,7 @@ export const articles: Article[] = [
     time: '09:50',
     section: 'opinion',
     image: '/images/np-lackard-police-chief.jpg',
-    byline: 'Wafer News Opinion',
+    byline: 'Saree Times Opinion',
     date: '2026-08-06',
   },
 
@@ -284,7 +804,7 @@ export const articles: Article[] = [
     time: '19:45',
     section: 'newspaper',
     image: podumHippoRescueImage,
-    byline: 'Wafer News World Desk',
+    byline: 'Saree Times World Desk',
     date: '2026-08-05',
   },
 
@@ -313,7 +833,7 @@ export const articles: Article[] = [
     time: '15:25',
     section: 'opinion',
     image: '/images/np-ebike-menace.jpg',
-    byline: 'Wafer News Editorial Board',
+    byline: 'Saree Times Editorial Board',
     date: '2026-07-31',
   },
 
@@ -342,7 +862,7 @@ export const articles: Article[] = [
     time: '13:50',
     section: 'live',
     image: '/images/np-lindsay-clancy-trial.jpg',
-    byline: 'Wafer News Crime Desk',
+    byline: 'Saree Times Crime Desk',
     date: '2026-07-31',
   },
 
@@ -376,7 +896,7 @@ export const articles: Article[] = [
     time: '11:15',
     section: 'hot',
     image: '/images/np-elizabeth-waddell.jpg',
-    byline: 'Wafer News National Desk',
+    byline: 'Saree Times National Desk',
     date: '2026-07-31',
   },
 
@@ -406,7 +926,7 @@ export const articles: Article[] = [
     time: '08:00',
     section: 'culture',
     image: '/images/np-dominique-dillon.jpg',
-    byline: 'Wafer News Media Desk',
+    byline: 'Saree Times Media Desk',
     date: '2026-07-31',
   },
 
@@ -451,7 +971,7 @@ export const articles: Article[] = [
     time: '10:25',
     section: 'opinion',
     image: '/images/np-young-democrats-socialism.jpg',
-    byline: 'Wafer News Editorial',
+    byline: 'Saree Times Editorial',
     date: '2026-07-30',
   },
 
@@ -546,7 +1066,7 @@ export const articles: Article[] = [
     time: '06:30',
     section: 'hot',
     image: '/images/np-ceuta-migrants.jpg',
-    byline: 'Wafer News World Desk',
+    byline: 'Saree Times World Desk',
     date: '2026-07-31',
   },
 
@@ -579,7 +1099,7 @@ export const articles: Article[] = [
     time: '05:15',
     section: 'newspaper',
     image: '/images/np-hartman-colorado.jpg',
-    byline: 'Wafer News National Desk',
+    byline: 'Saree Times National Desk',
     date: '2026-07-30',
   },
 
@@ -656,7 +1176,7 @@ export const articles: Article[] = [
     time: '16:55',
     section: 'newspaper',
     image: '/images/np-troy-jackson.jpg',
-    byline: 'Wafer News Politics Desk',
+    byline: 'Saree Times Politics Desk',
     date: '2026-07-30',
   },
 
@@ -712,7 +1232,7 @@ export const articles: Article[] = [
     time: '19:40',
     section: 'finance',
     image: '/images/np-polymarket-kalshi.jpg',
-    byline: 'Wafer News Business Desk',
+    byline: 'Saree Times Business Desk',
     date: '2026-07-30',
   },
 
@@ -735,7 +1255,7 @@ export const articles: Article[] = [
     time: '03:45',
     section: 'newspaper',
     image: '/images/np-nypd-shark-drones.jpg',
-    byline: 'Wafer News Metro Desk',
+    byline: 'Saree Times Metro Desk',
     date: '2026-07-31',
   },
 
@@ -760,7 +1280,7 @@ export const articles: Article[] = [
     time: '22:15',
     section: 'hot',
     image: '/images/np-luigi-mangione.jpg',
-    byline: 'Wafer News Crime Desk',
+    byline: 'Saree Times Crime Desk',
     date: '2026-07-30',
   },
 
@@ -792,7 +1312,7 @@ export const articles: Article[] = [
     time: '10:45',
     section: 'sports',
     image: '/images/8YZfMualzD.png',
-    byline: 'Wafer News Sports Desk',
+    byline: 'Saree Times Sports Desk',
     date: '2026-06-11',
   },
 
@@ -819,7 +1339,7 @@ export const articles: Article[] = [
     time: '16:20',
     section: 'opinion',
     image: '/images/z81IyDzxJl.png',
-    byline: 'Wafer News Editorial',
+    byline: 'Saree Times Editorial',
     date: '2026-06-11',
   },
 
@@ -846,7 +1366,7 @@ export const articles: Article[] = [
     time: '14:30',
     section: 'newspaper',
     image: '/images/zwZlFEbUTD.png',
-    byline: 'Wafer News Crime Desk',
+    byline: 'Saree Times Crime Desk',
     date: '2026-06-11',
   },
 
@@ -876,7 +1396,7 @@ export const articles: Article[] = [
     time: '18:15',
     section: 'live',
     image: '/images/7GwqRuSu9K.png',
-    byline: 'DCN News Live Desk',
+    byline: 'Saree Times Live Desk',
     date: '2026-06-11',
   },
 
@@ -903,7 +1423,7 @@ export const articles: Article[] = [
     time: '23:42',
     section: 'sports',
     image: '/images/RFtKBKXdI3.png',
-    byline: 'Wafer News Sports Desk',
+    byline: 'Saree Times Sports Desk',
     date: '2026-06-11',
   },
 
@@ -925,7 +1445,7 @@ export const articles: Article[] = [
     time: '09:18',
     section: 'live',
     image: latviaPmResignImage,
-    byline: 'DCN News Live Desk',
+    byline: 'Saree Times Live Desk',
     date: '2026-06-02',
   },
 
@@ -952,7 +1472,7 @@ export const articles: Article[] = [
     time: '10:12',
     section: 'newspaper',
     image: xiTrumpTaiwanSummitImage,
-    byline: 'DCN News Politics Desk',
+    byline: 'Saree Times Politics Desk',
     date: '2026-05-14',
   },
 
@@ -983,7 +1503,7 @@ export const articles: Article[] = [
     time: '17:55',
     section: 'newspaper',
     image: lutnickEpsteinHeaderImage,
-    byline: 'DCN News Politics Desk',
+    byline: 'Saree Times Politics Desk',
     date: '2026-05-13',
   },
 
@@ -1005,7 +1525,7 @@ export const articles: Article[] = [
     time: '16:42',
     section: 'newspaper',
     image: trumpIranNuclearImage,
-    byline: 'DCN News Politics Desk',
+    byline: 'Saree Times Politics Desk',
     date: '2026-05-13',
   },
 
@@ -1025,7 +1545,7 @@ export const articles: Article[] = [
     time: '11:32',
     section: 'culture',
     image: craigWayneBoydImage,
-    byline: 'Wafer News Culture Desk',
+    byline: 'Saree Times Culture Desk',
     date: '2026-05-06',
   },
   {
@@ -1045,7 +1565,7 @@ export const articles: Article[] = [
     time: '11:31',
     section: 'culture',
     image: mcdonaldsSodaImage,
-    byline: 'Wafer News Food Desk',
+    byline: 'Saree Times Food Desk',
     date: '2026-05-06',
   },
 
@@ -1065,7 +1585,7 @@ export const articles: Article[] = [
     time: '11:29',
     section: 'culture',
     image: americanMusicAwardsImage,
-    byline: 'Wafer News Culture Desk',
+    byline: 'Saree Times Culture Desk',
     date: '2026-05-06',
   },
 
@@ -1084,7 +1604,7 @@ export const articles: Article[] = [
     time: '11:28',
     section: 'tech',
     image: xboxCopilotImage,
-    byline: 'Wafer News Tech Desk',
+    byline: 'Saree Times Tech Desk',
     date: '2026-05-06',
   },
 
@@ -1112,7 +1632,7 @@ export const articles: Article[] = [
     time: '15:44',
     section: 'tech',
     image: swabotInlineImage,
-    byline: 'Wafer News Tech Desk',
+    byline: 'Saree Times Tech Desk',
     date: '2026-05-05',
   },
 
@@ -1139,7 +1659,7 @@ export const articles: Article[] = [
     time: '14:31',
     section: 'culture',
     image: blueIvyMetGalaImage,
-    byline: 'Wafer News Culture Desk',
+    byline: 'Saree Times Culture Desk',
     date: '2026-05-05',
   },
 
@@ -1166,7 +1686,7 @@ export const articles: Article[] = [
     time: '14:26',
     section: 'newspaper',
     image: ronDesantis2028Image,
-    byline: 'Wafer News Politics Desk',
+    byline: 'Saree Times Politics Desk',
     date: '2026-05-05',
   },
 
@@ -1195,7 +1715,7 @@ export const articles: Article[] = [
     time: '17:35',
     section: 'hot',
     image: hero1Image,
-    byline: 'Wafer News Human Interest Desk',
+    byline: 'Saree Times Human Interest Desk',
     date: '2026-05-04',
   },
   {
@@ -1222,7 +1742,7 @@ export const articles: Article[] = [
     time: '14:12',
     section: 'hot',
     image: k9DogImage,
-    byline: 'Wafer News American News Desk',
+    byline: 'Saree Times American News Desk',
     date: '2026-05-02',
   },
   /*{
@@ -1235,7 +1755,7 @@ export const articles: Article[] = [
       {
         type: 'image',
         src: mikolasImage,
-        caption: 'Mikolas, the pygmy hippo Neuralink has reportedly selected for its largest animal-testing program so far. (Image: facility photo shared with Wafer News.)',
+        caption: 'Mikolas, the pygmy hippo Neuralink has reportedly selected for its largest animal-testing program so far. (Image: facility photo shared with Saree Times.)',
         alt: 'Mikolas the pygmy hippo standing inside an indoor animal enclosure.',
       },
       'Researchers involved in the program are said to be studying how a neural implant performs under conditions that are harder to reproduce in smaller animals: thick tissue, stronger movement, higher body mass, longer monitoring windows and more complex stress responses. The company is also testing whether its latest implant can maintain stable signal quality while the animal moves, feeds, sleeps and reacts naturally to its environment.',
@@ -1249,7 +1769,7 @@ export const articles: Article[] = [
     time: '19:40',
     section: 'hot',
     image: mikolasImage,
-    byline: 'Wafer News Tech Desk',
+    byline: 'Saree Times Tech Desk',
     date: '2026-05-01',
   },*/
   {
@@ -1283,7 +1803,7 @@ export const articles: Article[] = [
     time: '13:45',
     section: 'hot',
     image: banksyStatueImage,
-    byline: 'Wafer News Culture Desk',
+    byline: 'Saree Times Culture Desk',
     date: '2026-04-30',
   },
   {
@@ -1308,7 +1828,7 @@ export const articles: Article[] = [
     time: '17:30',
     section: 'hot',
     image: openAiImage,
-    byline: 'Wafer News Tech Desk',
+    byline: 'Saree Times Tech Desk',
     date: '2026-04-29',
   },
   {
@@ -1320,7 +1840,7 @@ export const articles: Article[] = [
     time: '16:05',
     section: 'hot',
     image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Crypto Desk',
+    byline: 'Saree Times Crypto Desk',
     date: '2026-04-27'
   },
   {
@@ -1337,7 +1857,7 @@ export const articles: Article[] = [
     time: '16:45',
     section: 'finance',
     image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Markets Desk'
+    byline: 'Saree Times Markets Desk'
   },
   {
     id: '98437241',
@@ -1353,7 +1873,7 @@ export const articles: Article[] = [
     time: '15:30',
     section: 'newspaper',
     image: 'https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Economy Desk'
+    byline: 'Saree Times Economy Desk'
   },
   {
     id: '98437242',
@@ -1363,12 +1883,12 @@ export const articles: Article[] = [
       'The annual Global Blockchain Summit kicked off this morning with attendance numbers organizers admit even they did not expect. Delegates from more than fifty countries are working through panels covering tokenization, stablecoin policy, and the on-ramp of traditional finance into on-chain rails.',
       'The early flashpoint: an exchange between policy makers from a major emerging market and a panel of US banks over how to harmonize stablecoin rules. The room was civil; the takeaways were anything but. Multiple banks said they expect a deal within the year that would let regulated stablecoins flow more freely across borders.',
       'On the sidelines, a parade of crypto-native startups is using the summit to announce deals, including a handful of agentic-AI partnerships timed to ride the wave from Gemini\'s launch.',
-      'Stay with Wafer News for live updates throughout the day, including the keynote that everybody flew in for.'
+      'Stay with Saree Times for live updates throughout the day, including the keynote that everybody flew in for.'
     ],
     category: 'Live',
     time: '14:00',
     section: 'live',
-    byline: 'Wafer News Live Desk'
+    byline: 'Saree Times Live Desk'
   },
   {
     id: '98437243',
@@ -1384,7 +1904,7 @@ export const articles: Article[] = [
     time: '12:20',
     section: 'opinion',
     image: 'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Editorial'
+    byline: 'Saree Times Editorial'
   },
   {
     id: '98437244',
@@ -1399,7 +1919,7 @@ export const articles: Article[] = [
     category: 'Tech',
     time: '11:15',
     section: 'tech',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437245',
@@ -1414,7 +1934,7 @@ export const articles: Article[] = [
     category: 'Live',
     time: '10:00',
     section: 'live',
-    byline: 'Wafer News Live Desk'
+    byline: 'Saree Times Live Desk'
   },
   {
     id: '98437246',
@@ -1429,7 +1949,7 @@ export const articles: Article[] = [
     category: 'Policy',
     time: '09:30',
     section: 'newspaper',
-    byline: 'Wafer News Policy Desk'
+    byline: 'Saree Times Policy Desk'
   },
   {
     id: '98437247',
@@ -1444,7 +1964,7 @@ export const articles: Article[] = [
     category: 'Opinion',
     time: '08:45',
     section: 'opinion',
-    byline: 'Wafer News Editorial'
+    byline: 'Saree Times Editorial'
   },
   {
     id: '98437248',
@@ -1460,7 +1980,7 @@ export const articles: Article[] = [
     time: '08:00',
     section: 'sports',
     image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437249',
@@ -1470,12 +1990,12 @@ export const articles: Article[] = [
       'Industry sources are bracing for a major crypto-sector announcement tomorrow morning, with multiple senior figures hinting on background that the news will reset assumptions for the rest of the year. Speculation is rampant; concrete details are rare.',
       'What is known: at least three large exchanges have rearranged their PR calendars to leave the morning slot clear. Several venture investors quietly pulled term-sheet meetings. And the analyst community has dialed in on a small number of plausible narratives, including a regulatory unlock, a stablecoin-policy joint statement, or a tokenization announcement that names large names.',
       'The official line from those involved: nothing yet. The unofficial line: get to your desk early.',
-      'Wafer News will live-cover the announcement on tomorrow\'s page from before the open. If the rumors are even half right, this will be a long day.'
+      'Saree Times will live-cover the announcement on tomorrow\'s page from before the open. If the rumors are even half right, this will be a long day.'
     ],
     category: 'Live',
     time: '07:30',
     section: 'live',
-    byline: 'Wafer News Live Desk'
+    byline: 'Saree Times Live Desk'
   },
   {
     id: '98437250',
@@ -1490,7 +2010,7 @@ export const articles: Article[] = [
     category: 'Opinion',
     time: '07:00',
     section: 'opinion',
-    byline: 'Wafer News Editorial'
+    byline: 'Saree Times Editorial'
   },
   {
     id: '98437251',
@@ -1506,7 +2026,7 @@ export const articles: Article[] = [
     time: '16:30',
     section: 'tech',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437252',
@@ -1521,7 +2041,7 @@ export const articles: Article[] = [
     category: 'Tech',
     time: '14:20',
     section: 'tech',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437253',
@@ -1537,7 +2057,7 @@ export const articles: Article[] = [
     time: '11:45',
     section: 'tech',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437254',
@@ -1552,7 +2072,7 @@ export const articles: Article[] = [
     category: 'Tech',
     time: '09:00',
     section: 'tech',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437255',
@@ -1568,7 +2088,7 @@ export const articles: Article[] = [
     time: '15:00',
     section: 'finance',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Markets Desk'
+    byline: 'Saree Times Markets Desk'
   },
   {
     id: '98437256',
@@ -1583,7 +2103,7 @@ export const articles: Article[] = [
     category: 'Finance',
     time: '13:30',
     section: 'finance',
-    byline: 'Wafer News Markets Desk'
+    byline: 'Saree Times Markets Desk'
   },
   {
     id: '98437257',
@@ -1598,7 +2118,7 @@ export const articles: Article[] = [
     category: 'Finance',
     time: '10:15',
     section: 'finance',
-    byline: 'Wafer News Markets Desk'
+    byline: 'Saree Times Markets Desk'
   },
   {
     id: '98437258',
@@ -1614,7 +2134,7 @@ export const articles: Article[] = [
     time: '08:30',
     section: 'finance',
     image: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Markets Desk'
+    byline: 'Saree Times Markets Desk'
   },
   {
     id: '98437259',
@@ -1629,7 +2149,7 @@ export const articles: Article[] = [
     category: 'Culture',
     time: '16:00',
     section: 'culture',
-    byline: 'Wafer News Culture Desk'
+    byline: 'Saree Times Culture Desk'
   },
   {
     id: '98437260',
@@ -1644,7 +2164,7 @@ export const articles: Article[] = [
     category: 'Culture',
     time: '14:45',
     section: 'culture',
-    byline: 'Wafer News Culture Desk'
+    byline: 'Saree Times Culture Desk'
   },
   {
     id: '98437261',
@@ -1659,7 +2179,7 @@ export const articles: Article[] = [
     category: 'Culture',
     time: '12:30',
     section: 'culture',
-    byline: 'Wafer News Culture Desk'
+    byline: 'Saree Times Culture Desk'
   },
   {
     id: '98437262',
@@ -1675,7 +2195,7 @@ export const articles: Article[] = [
     time: '10:00',
     section: 'culture',
     image: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Culture Desk'
+    byline: 'Saree Times Culture Desk'
   },
   {
     id: '98437263',
@@ -1690,7 +2210,7 @@ export const articles: Article[] = [
     category: 'Sports',
     time: '22:00',
     section: 'sports',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437264',
@@ -1705,7 +2225,7 @@ export const articles: Article[] = [
     category: 'Sports',
     time: '18:30',
     section: 'sports',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437265',
@@ -1720,7 +2240,7 @@ export const articles: Article[] = [
     category: 'Sports',
     time: '15:45',
     section: 'sports',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437266',
@@ -1735,7 +2255,7 @@ export const articles: Article[] = [
     category: 'Sports',
     time: '13:00',
     section: 'sports',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437267',
@@ -1745,7 +2265,7 @@ export const articles: Article[] = [
     category: 'Finance',
     time: '09:45',
     section: 'finance',
-    byline: 'Wafer News Finance Desk',
+    byline: 'Saree Times Finance Desk',
     date: '2026-04-16'
   },
   // NY-Post-style mix (originally added; now with full bodies)
@@ -1762,7 +2282,7 @@ export const articles: Article[] = [
     category: 'NYC',
     time: '22:18',
     section: 'hot',
-    byline: 'Wafer News Metro Desk'
+    byline: 'Saree Times Metro Desk'
   },
   {
     id: '98437269',
@@ -1777,7 +2297,7 @@ export const articles: Article[] = [
     category: 'NYC',
     time: '11:30',
     section: 'newspaper',
-    byline: 'Wafer News Metro Desk'
+    byline: 'Saree Times Metro Desk'
   },
   {
     id: '98437270',
@@ -1793,7 +2313,7 @@ export const articles: Article[] = [
     time: '09:50',
     section: 'newspaper',
     image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Crime Desk'
+    byline: 'Saree Times Crime Desk'
   },
   {
     id: '98437271',
@@ -1808,7 +2328,7 @@ export const articles: Article[] = [
     category: 'Crime',
     time: '04:12',
     section: 'newspaper',
-    byline: 'Wafer News Crime Desk'
+    byline: 'Saree Times Crime Desk'
   },
   {
     id: '98437272',
@@ -1823,7 +2343,7 @@ export const articles: Article[] = [
     category: 'Crime',
     time: '15:40',
     section: 'newspaper',
-    byline: 'Wafer News Crime Desk'
+    byline: 'Saree Times Crime Desk'
   },
   {
     id: '98437273',
@@ -1838,7 +2358,7 @@ export const articles: Article[] = [
     category: 'Entertainment',
     time: '13:05',
     section: 'culture',
-    byline: 'Wafer News Entertainment Desk'
+    byline: 'Saree Times Entertainment Desk'
   },
   {
     id: '98437274',
@@ -1853,7 +2373,7 @@ export const articles: Article[] = [
     category: 'Entertainment',
     time: '20:15',
     section: 'culture',
-    byline: 'Wafer News Entertainment Desk'
+    byline: 'Saree Times Entertainment Desk'
   },
   {
     id: '98437275',
@@ -1868,7 +2388,7 @@ export const articles: Article[] = [
     category: 'Entertainment',
     time: '17:22',
     section: 'culture',
-    byline: 'Wafer News Entertainment Desk'
+    byline: 'Saree Times Entertainment Desk'
   },
   {
     id: '98437276',
@@ -1883,7 +2403,7 @@ export const articles: Article[] = [
     category: 'Entertainment',
     time: '12:00',
     section: 'culture',
-    byline: 'Wafer News Entertainment Desk'
+    byline: 'Saree Times Entertainment Desk'
   },
   {
     id: '98437277',
@@ -1898,7 +2418,7 @@ export const articles: Article[] = [
     category: 'Entertainment',
     time: '21:48',
     section: 'culture',
-    byline: 'Wafer News Entertainment Desk'
+    byline: 'Saree Times Entertainment Desk'
   },
   {
     id: '98437278',
@@ -1913,7 +2433,7 @@ export const articles: Article[] = [
     category: 'Entertainment',
     time: '10:30',
     section: 'culture',
-    byline: 'Wafer News Entertainment Desk'
+    byline: 'Saree Times Entertainment Desk'
   },
   {
     id: '98437279',
@@ -1928,7 +2448,7 @@ export const articles: Article[] = [
     category: 'Sports',
     time: '23:10',
     section: 'sports',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437280',
@@ -1943,7 +2463,7 @@ export const articles: Article[] = [
     category: 'Sports',
     time: '18:45',
     section: 'sports',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437281',
@@ -1958,7 +2478,7 @@ export const articles: Article[] = [
     category: 'Sports',
     time: '14:00',
     section: 'sports',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437282',
@@ -1973,7 +2493,7 @@ export const articles: Article[] = [
     category: 'Tech',
     time: '08:20',
     section: 'tech',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437283',
@@ -1988,7 +2508,7 @@ export const articles: Article[] = [
     category: 'Tech',
     time: '07:30',
     section: 'tech',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437284',
@@ -2003,7 +2523,7 @@ export const articles: Article[] = [
     category: 'Politics',
     time: '06:55',
     section: 'newspaper',
-    byline: 'Wafer News Politics Desk'
+    byline: 'Saree Times Politics Desk'
   },
   {
     id: '98437285',
@@ -2018,7 +2538,7 @@ export const articles: Article[] = [
     category: 'Politics',
     time: '12:25',
     section: 'newspaper',
-    byline: 'Wafer News Politics Desk'
+    byline: 'Saree Times Politics Desk'
   },
   {
     id: '98437286',
@@ -2034,7 +2554,7 @@ export const articles: Article[] = [
     time: '17:00',
     section: 'finance',
     image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Markets Desk'
+    byline: 'Saree Times Markets Desk'
   },
   {
     id: '98437287',
@@ -2050,7 +2570,7 @@ export const articles: Article[] = [
     time: '19:30',
     section: 'opinion',
     image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Editorial'
+    byline: 'Saree Times Editorial'
   },
   // Fresh batch (8 new) — to reach 56 articles
   {
@@ -2067,7 +2587,7 @@ export const articles: Article[] = [
     time: '07:45',
     section: 'hot',
     image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Metro Desk'
+    byline: 'Saree Times Metro Desk'
   },
   {
     id: '98437289',
@@ -2083,7 +2603,7 @@ export const articles: Article[] = [
     time: '13:40',
     section: 'finance',
     image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Markets Desk'
+    byline: 'Saree Times Markets Desk'
   },
   {
     id: '98437290',
@@ -2098,7 +2618,7 @@ export const articles: Article[] = [
     category: 'Tech',
     time: '15:25',
     section: 'tech',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437291',
@@ -2114,7 +2634,7 @@ export const articles: Article[] = [
     time: '23:25',
     section: 'sports',
     image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1600&q=80&auto=format&fit=crop',
-    byline: 'Wafer News Sports Desk'
+    byline: 'Saree Times Sports Desk'
   },
   {
     id: '98437292',
@@ -2129,7 +2649,7 @@ export const articles: Article[] = [
     category: 'Culture',
     time: '11:05',
     section: 'culture',
-    byline: 'Wafer News Culture Desk'
+    byline: 'Saree Times Culture Desk'
   },
   {
     id: '98437293',
@@ -2144,7 +2664,7 @@ export const articles: Article[] = [
     category: 'Culture',
     time: '14:55',
     section: 'culture',
-    byline: 'Wafer News Real Estate Desk'
+    byline: 'Saree Times Real Estate Desk'
   },
   {
     id: '98437294',
@@ -2159,7 +2679,7 @@ export const articles: Article[] = [
     category: 'Tech',
     time: '09:15',
     section: 'tech',
-    byline: 'Wafer News Tech Desk'
+    byline: 'Saree Times Tech Desk'
   },
   {
     id: '98437295',
@@ -2174,7 +2694,7 @@ export const articles: Article[] = [
     category: 'World',
     time: '10:20',
     section: 'newspaper',
-    byline: 'Wafer News World Desk'
+    byline: 'Saree Times World Desk'
   }
 ]
 

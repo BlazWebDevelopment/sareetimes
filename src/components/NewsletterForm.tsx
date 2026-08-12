@@ -11,14 +11,14 @@ interface NewsletterFormProps {
   className?: string
 }
 
-const STORAGE_KEY = 'wafer-news-subscribed-email'
+const STORAGE_KEY = 'saree-times-subscribed-email'
 
 const isValidEmail = (val: string): boolean => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim())
 }
 
 const INPUT_CLASS =
-  'bg-[color:var(--bg-base)] border border-[color:var(--border-strong)] text-[color:var(--text-primary)] placeholder-[color:var(--text-muted)] focus:border-[color:var(--text-muted)]'
+  'text-[color:var(--text-primary)] placeholder-[color:var(--text-muted)]'
 
 export default function NewsletterForm({
   variant = 'stacked',
@@ -92,21 +92,21 @@ export default function NewsletterForm({
   if (subscribedEmail && status !== 'submitting') {
     return (
       <div className={className} role="status" aria-live="polite">
-        <div className="border border-[color:var(--border-strong)] bg-[color:var(--bg-surface)] px-3.5 py-3 dr-notice-ok">
+        <div className="st-notice-ok border border-[color:var(--accent-border)] bg-[color:var(--accent-subtle)] px-3.5 py-3">
           <div className="flex items-start gap-2.5">
             <span
-              className="mt-0.5 inline-flex w-5 h-5 shrink-0 items-center justify-center dr-icon-btn bg-[color:var(--text-primary)] text-white"
+              className="st-icon-btn mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center bg-[color:var(--accent)] text-white"
               aria-hidden="true"
             >
               <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth={3} viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </span>
-            <div className="flex-1 min-w-0">
-              <div className="text-[13px] font-bold text-[color:var(--text-primary)]">
+            <div className="min-w-0 flex-1">
+              <div className="font-sans text-[13px] font-bold text-[color:var(--text-primary)]">
                 Successfully subscribed
               </div>
-              <div className="text-[13px] text-[color:var(--text-secondary)] mt-0.5 break-words">
+              <div className="mt-0.5 break-words font-sans text-[13px] text-[color:var(--text-secondary)]">
                 Headlines will land at <span className="font-bold">{subscribedEmail}</span>.
               </div>
               <button
@@ -135,12 +135,12 @@ export default function NewsletterForm({
             disabled={status === 'submitting'}
             aria-invalid={status === 'error'}
             aria-label="Email address"
-            className={`w-full px-3 py-2 text-[13px] font-sans mb-2 dr-field focus:outline-none ${INPUT_CLASS}`}
+            className={`st-field mb-2 w-full px-3 py-2.5 font-sans text-[13px] ${INPUT_CLASS}`}
           />
           <button
             type="submit"
             disabled={status === 'submitting'}
-            className="w-full py-2 text-[13px] font-sans uppercase tracking-[0.06em] dr-btn-cta disabled:opacity-60 disabled:cursor-not-allowed"
+            className="st-btn-cta w-full py-2.5 font-sans text-[11.5px] uppercase tracking-[0.12em] disabled:cursor-not-allowed disabled:opacity-60"
           >
             {status === 'submitting' ? 'Subscribing…' : buttonLabel}
           </button>
@@ -155,12 +155,12 @@ export default function NewsletterForm({
             disabled={status === 'submitting'}
             aria-invalid={status === 'error'}
             aria-label="Email address"
-            className={`flex-1 min-w-0 px-3 py-2 text-[13px] font-sans dr-field focus:outline-none ${INPUT_CLASS}`}
+            className={`st-field min-w-0 flex-1 px-3 py-2.5 font-sans text-[13px] ${INPUT_CLASS}`}
           />
           <button
             type="submit"
             disabled={status === 'submitting'}
-            className="px-4 py-2 -ml-px text-[13px] font-sans uppercase tracking-[0.06em] dr-btn-cta whitespace-nowrap shrink-0 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="st-btn-cta -ml-px shrink-0 whitespace-nowrap px-4 py-2.5 font-sans text-[11.5px] uppercase tracking-[0.12em] disabled:cursor-not-allowed disabled:opacity-60"
           >
             {status === 'submitting' ? '…' : buttonLabel}
           </button>
@@ -168,7 +168,7 @@ export default function NewsletterForm({
       )}
 
       {status === 'error' && message && (
-        <div className="mt-1.5 text-[12px] text-[color:var(--text-secondary)]">{message}</div>
+        <div className="mt-1.5 font-sans text-[12px] text-[color:var(--live)]">{message}</div>
       )}
     </form>
   )

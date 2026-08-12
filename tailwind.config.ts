@@ -9,18 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        wafer: {
-          ink: '#111111',
-          rule: '#111111',
-          navy: '#14396b',
+        saree: {
+          ink: '#17150f',
+          rule: '#17150f',
+          teal: '#0e5b61',
+          'teal-dark': '#093f44',
+          crimson: '#a4192c',
           paper: '#ffffff',
-          newsprint: '#f6f6f6',
+          cream: '#faf8f3',
+          hairline: '#ddd5c6',
         },
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'Arial', 'Helvetica', 'sans-serif'],
-        display: ['var(--font-display)', 'Georgia', 'Times New Roman', 'serif'],
-        serif: ['var(--font-serif)', 'Georgia', 'Times New Roman', 'serif'],
+        sans: ['var(--font-ui)', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        display: ['var(--font-editorial)', 'Georgia', 'Times New Roman', 'serif'],
+        serif: ['var(--font-editorial)', 'Georgia', 'Times New Roman', 'serif'],
+        masthead: ['var(--font-wordmark)', 'Georgia', 'Times New Roman', 'serif'],
+      },
+      maxWidth: {
+        broadsheet: '1280px',
       },
       borderRadius: {
         none: '0',

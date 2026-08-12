@@ -1,5 +1,5 @@
 {
-  "name": "wafer-news",
+  "name": "saree-times",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "favicon": "node scripts/generate-logo.mjs",
-    "logo": "node scripts/generate-logo.mjs"
+    "brand": "node scripts/generate-brand.mjs",
+    "favicon": "node scripts/generate-brand.mjs",
+    "logo": "node scripts/generate-brand.mjs"
   },
   "dependencies": {
     "next": "14.1.0",
@@ -22,6 +23,8 @@
     "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0",
+    "opentype.js": "^2.0.0",
+    "playwright": "^1.62.1",
     "png-to-ico": "^3.0.1",
     "postcss": "^8.4.33",
     "sharp": "^0.34.5",

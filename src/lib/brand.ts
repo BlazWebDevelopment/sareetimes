@@ -1,4 +1,4 @@
-export const SITE_NAME = 'Wafer News'
-export const SITE_TAGLINE = 'Crisp headlines · Layered coverage'
+export const SITE_NAME = 'Saree Times'
+export const SITE_TAGLINE = 'Reported with care · Written to last'
 export const SITE_DESCRIPTION =
-  'Wafer News delivers a refined, personalized feed of the day’s top headlines across world, business, technology, sports, science, opinion and culture.'
+  'Saree Times is a daily record of the stories that matter — politics, business, technology, sport and culture, reported plainly and edited with care.'

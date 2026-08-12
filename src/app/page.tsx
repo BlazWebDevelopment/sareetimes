@@ -3,7 +3,7 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import NewsletterForm from '@/components/NewsletterForm'
-import ArticleMeta from '@/components/ArticleMeta'
+import ArticleMeta, { shortByline } from '@/components/ArticleMeta'
 import SectionHeading from '@/components/SectionHeading'
 import { articles, getArticleImageSrc, getArticleSlug, type Article } from '@/data/articles'
 import Link from 'next/link'
@@ -19,14 +19,24 @@ const TICKER_HEADLINES = [
   'Gemini wires AI agents into live crypto trading',
   'Apple unveils Vision Pro 2',
   'Fed cuts rates 50 basis points',
-].join('  ·  ')
+].join('   \u00b7   ')
+
+/**
+ * Vertical hairlines between grid cells. A 2-up at `sm` becomes a 4-up at `lg`,
+ * so the rule sits on every even cell while narrow and on every cell but the
+ * first once wide. Padding matches the grid gap so each rule stays centred.
+ */
+const COLUMN_RULE =
+  'border-[color:var(--border-soft)] sm:even:border-l sm:even:pl-5 lg:border-l lg:pl-5 lg:first:border-l-0 lg:first:pl-0'
 
 export default function Home() {
   const featuredArticle = articles[0]
   const isLeopoldFeatured = featuredArticle.id === '98437309'
   const subFeatured = articles.slice(1, 3)
-  const topGrid = articles.slice(3, 9)
-  const wireList = articles.slice(9, 16)
+  const latestWire = articles.slice(3, 10)
+  const headlineRow = articles.slice(10, 14)
+  const mostRead = articles.slice(0, 6)
+  const opinionFeed = articles.filter((a) => a.section === 'opinion').slice(0, 3)
   const businessFeed = articles.filter((a) => a.section === 'finance').slice(0, 4)
   const techFeed = articles.filter((a) => a.section === 'tech').slice(0, 4)
   const sportsFeed = articles.filter((a) => a.section === 'sports').slice(0, 4)
@@ -35,22 +45,29 @@ export default function Home() {
   const renderModule = (title: string, href: string, items: Article[]) => (
     <section>
       <SectionHeading title={title} href={href} />
-      <ul className="divide-y divide-[color:var(--border-soft)]">
-        {items.map((a) => (
-          <li key={a.id}>
-            <Link href={`/article/${getArticleSlug(a)}`} className="flex gap-3 py-2.5 first:pt-0 group">
-              <div className="flex-1 min-w-0">
-                <h3 className="headline text-[14px] line-clamp-3 group-hover:underline mb-1">
+      <ul>
+        {items.map((a, i) => (
+          <li
+            key={a.id}
+            className={i > 0 ? 'border-t border-[color:var(--border-subtle)]' : ''}
+          >
+            <Link
+              href={`/article/${getArticleSlug(a)}`}
+              className="group flex gap-3 py-3 first:pt-0"
+            >
+              <div className="min-w-0 flex-1">
+                <h3 className="headline mb-1.5 line-clamp-3 text-[14.5px] group-hover:text-[color:var(--accent)]">
                   {a.title}
                 </h3>
                 <ArticleMeta article={a} />
               </div>
               {getArticleImageSrc(a.image) ? (
-                <div className="w-[70px] h-[52px] dr-thumb overflow-hidden bg-[color:var(--bg-secondary)] shrink-0">
+                <div className="st-thumb h-[54px] w-[72px] shrink-0 overflow-hidden">
                   <img
                     src={getArticleImageSrc(a.image)!}
                     alt=""
-                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               ) : null}
@@ -65,17 +82,17 @@ export default function Home() {
     <div className="min-h-screen">
       <Header />
 
-      {/* Breaking ticker */}
-      <div className="dr-ticker-rail">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-1.5 flex items-center gap-3 overflow-hidden">
-          <span className="inline-flex items-center gap-1.5 text-[10px] font-bold font-sans uppercase tracking-[0.12em] text-white shrink-0 px-2 py-1 dr-live-pill bg-[color:var(--text-primary)]">
-            <span className="w-1.5 h-1.5 bg-white live-dot" />
+      {/* Breaking rail */}
+      <div className="st-ticker-rail">
+        <div className="mx-auto flex max-w-broadsheet items-center gap-3 overflow-hidden px-4 py-2 md:px-6">
+          <span className="st-live-pill inline-flex shrink-0 items-center gap-1.5 px-2 py-1 font-sans text-[10px] font-bold uppercase tracking-[0.14em]">
+            <span className="live-dot h-1.5 w-1.5 rounded-full bg-white" />
             Breaking
           </span>
-          <div className="overflow-hidden flex-1">
-            <div className="animate-ticker text-[12px] font-sans text-[color:var(--text-secondary)]">
-              <span className="pr-10">{TICKER_HEADLINES}</span>
-              <span className="pr-10" aria-hidden="true">
+          <div className="flex-1 overflow-hidden">
+            <div className="animate-ticker font-serif text-[13.5px] text-[color:var(--text-secondary)]">
+              <span className="pr-12">{TICKER_HEADLINES}</span>
+              <span className="pr-12" aria-hidden="true">
                 {TICKER_HEADLINES}
               </span>
             </div>
@@ -83,125 +100,139 @@ export default function Home() {
         </div>
       </div>
 
-      <main className="max-w-[1200px] mx-auto px-4 md:px-6 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
-          {/* Lead column */}
-          <div className="lg:col-span-8 min-w-0">
-            <SectionHeading title="Top Stories" />
+      <main className="mx-auto max-w-broadsheet px-4 py-7 md:px-6 md:py-9">
+        {/* ---------- Above the fold: wire | lead | rail ---------- */}
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-0">
+          {/* Live wire */}
+          <aside className="order-2 lg:order-1 lg:col-span-3 lg:pr-7">
+            <SectionHeading title="The Latest" aside="Updated live" />
+            <ul>
+              {latestWire.map((a, i) => (
+                <li
+                  key={a.id}
+                  className={i > 0 ? 'border-t border-[color:var(--border-subtle)]' : ''}
+                >
+                  <Link
+                    href={`/article/${getArticleSlug(a)}`}
+                    className="group block py-2.5 first:pt-0"
+                  >
+                    <div className="flex items-baseline gap-2.5">
+                      <span className="shrink-0 font-sans text-[11px] font-bold tabular-nums text-[color:var(--accent)]">
+                        {a.time}
+                      </span>
+                      <h3 className="headline line-clamp-3 text-[13.5px] leading-snug group-hover:text-[color:var(--accent)]">
+                        {a.title}
+                      </h3>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-            {/* Lead story */}
-            <Link href={`/article/${getArticleSlug(featuredArticle)}`} className="block group">
+            <div className="mt-8">
+              <SectionHeading title="Opinion" href="/opinion" />
+              <ul>
+                {opinionFeed.map((a, i) => (
+                  <li
+                    key={a.id}
+                    className={i > 0 ? 'border-t border-[color:var(--border-subtle)]' : ''}
+                  >
+                    <Link
+                      href={`/article/${getArticleSlug(a)}`}
+                      className="group block py-3 first:pt-0"
+                    >
+                      <h3 className="headline mb-1.5 line-clamp-3 text-[14.5px] italic group-hover:text-[color:var(--accent)]">
+                        {a.title}
+                      </h3>
+                      <span className="meta-line font-semibold uppercase tracking-[0.07em] text-[color:var(--text-secondary)]">
+                        {shortByline(a.byline)}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
+
+          {/* Lead story */}
+          <div className="order-1 min-w-0 lg:order-2 lg:col-span-6 lg:border-l lg:border-[color:var(--border-soft)] lg:px-7">
+            <Link href={`/article/${getArticleSlug(featuredArticle)}`} className="group block">
               <article>
-                <div className="aspect-[16/9] overflow-hidden bg-[color:var(--bg-secondary)] dr-media">
+                <div className="section-label mb-2">{featuredArticle.category}</div>
+                <h1 className="headline headline-lg mb-3.5 text-[32px] sm:text-[40px] md:text-[46px] group-hover:text-[color:var(--accent)]">
+                  {featuredArticle.title}
+                </h1>
+                <p className="st-deck mb-4 text-[17px]">{featuredArticle.summary}</p>
+                <div className="st-media aspect-[16/9] overflow-hidden">
                   <img
                     src={getArticleImageSrc(featuredArticle.image) ?? FALLBACK_HERO_IMAGE}
                     alt=""
-                    className={`w-full h-full ${
+                    className={`h-full w-full ${
                       isLeopoldFeatured ? 'object-contain' : 'object-cover'
                     }`}
                   />
                 </div>
                 <div className="pt-3">
-                  <div className="section-label mb-1.5">{featuredArticle.category}</div>
-                  <h1 className="headline headline-lg text-[26px] md:text-[34px] mb-2 group-hover:underline">
-                    {featuredArticle.title}
-                  </h1>
-                  <p className="font-serif text-[15px] text-[color:var(--text-secondary)] leading-[1.55] mb-2.5">
-                    {featuredArticle.summary}
-                  </p>
                   <ArticleMeta article={featuredArticle} />
                 </div>
               </article>
             </Link>
 
-            {/* Two-up */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 pt-6 border-t border-[color:var(--border-soft)]">
-              {subFeatured.map((a) => (
-                <Link key={a.id} href={`/article/${getArticleSlug(a)}`} className="block group">
-                  <article className="h-full flex flex-col">
-                    <div className="aspect-[16/9] overflow-hidden bg-[color:var(--bg-secondary)] dr-thumb">
+            {/* Secondary stories */}
+            <div className="mt-7 grid grid-cols-1 gap-7 border-t-2 border-[color:var(--rule)] pt-6 sm:grid-cols-2 sm:gap-0">
+              {subFeatured.map((a, i) => (
+                <Link
+                  key={a.id}
+                  href={`/article/${getArticleSlug(a)}`}
+                  className={`group block ${
+                    i === 1
+                      ? 'sm:border-l sm:border-[color:var(--border-soft)] sm:pl-6'
+                      : 'sm:pr-6'
+                  }`}
+                >
+                  <article className="flex h-full flex-col">
+                    <div className="st-thumb mb-2.5 aspect-[3/2] overflow-hidden">
                       <img
                         src={getArticleImageSrc(a.image) ?? FALLBACK_HERO_IMAGE}
                         alt=""
-                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        className="h-full w-full object-cover"
                       />
                     </div>
-                    <div className="pt-2.5 flex flex-col flex-1">
-                      <div className="section-label mb-1">{a.category}</div>
-                      <h3 className="headline text-[17px] mb-1.5 group-hover:underline line-clamp-3">
-                        {a.title}
-                      </h3>
-                      <p className="font-serif text-[13px] text-[color:var(--text-secondary)] leading-[1.5] line-clamp-2 mb-2">
-                        {a.summary}
-                      </p>
-                      <div className="mt-auto">
-                        <ArticleMeta article={a} />
-                      </div>
+                    <div className="section-label mb-1.5">{a.category}</div>
+                    <h3 className="headline mb-1.5 line-clamp-3 text-[18px] group-hover:text-[color:var(--accent)]">
+                      {a.title}
+                    </h3>
+                    <p className="st-deck mb-2.5 line-clamp-3 text-[14px]">{a.summary}</p>
+                    <div className="mt-auto">
+                      <ArticleMeta article={a} />
                     </div>
                   </article>
                 </Link>
               ))}
             </div>
-
-            {/* More headlines */}
-            <section className="mt-6 pt-6 border-t border-[color:var(--border-soft)]">
-              <SectionHeading title="More Headlines" href="/hot" />
-              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-7">
-                {topGrid.map((article, idx) => (
-                  <Link
-                    key={article.id}
-                    href={`/article/${getArticleSlug(article)}`}
-                    className={`flex gap-3 py-3 group border-t border-[color:var(--border-soft)] first:border-t-0 ${
-                      idx === 1 ? 'md:border-t-0' : ''
-                    } ${idx % 2 === 0 ? 'md:pr-7 md:border-r md:border-r-[color:var(--border-soft)]' : ''}`}
-                  >
-                    <div className="flex-1 min-w-0">
-                      <div className="section-label mb-1">{article.category}</div>
-                      <h3 className="headline text-[14px] line-clamp-3 group-hover:underline mb-1">
-                        {article.title}
-                      </h3>
-                      <ArticleMeta article={article} />
-                    </div>
-                    {getArticleImageSrc(article.image) ? (
-                      <div className="w-[86px] h-[64px] dr-thumb overflow-hidden bg-[color:var(--bg-secondary)] shrink-0">
-                        <img
-                          src={getArticleImageSrc(article.image)!}
-                          alt=""
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ) : null}
-                  </Link>
-                ))}
-              </div>
-            </section>
-
-            {/* Section feeds */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-[color:var(--border-soft)]">
-              {renderModule('Business', '/finance', businessFeed)}
-              {renderModule('Technology', '/tech', techFeed)}
-              {renderModule('Sports', '/sports', sportsFeed)}
-              {renderModule('Culture', '/culture', cultureFeed)}
-            </div>
           </div>
 
-          {/* Sidebar */}
-          <aside className="lg:col-span-4 lg:border-l lg:border-[color:var(--border-soft)] lg:pl-7">
-            <div className="space-y-7">
+          {/* Right rail */}
+          <aside className="order-3 lg:col-span-3 lg:border-l lg:border-[color:var(--border-soft)] lg:pl-7">
+            <div className="space-y-8">
               <section>
-                <SectionHeading title="Most Read · 24h" />
-                <ol className="divide-y divide-[color:var(--border-soft)]">
-                  {articles.slice(0, 6).map((article, index) => (
-                    <li key={article.id}>
+                <SectionHeading title="Most Read" aside="Past 24 hours" />
+                <ol>
+                  {mostRead.map((article, index) => (
+                    <li
+                      key={article.id}
+                      className={
+                        index > 0 ? 'border-t border-[color:var(--border-subtle)]' : ''
+                      }
+                    >
                       <Link
                         href={`/article/${getArticleSlug(article)}`}
-                        className="flex gap-3 py-2.5 first:pt-0 group"
+                        className="group flex gap-3 py-3 first:pt-0"
                       >
-                        <span className="font-display font-bold text-[20px] leading-none w-6 shrink-0 tabular-nums text-[color:var(--text-primary)]">
-                          {index + 1}
-                        </span>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="headline text-[13px] leading-snug group-hover:underline line-clamp-3 mb-1">
+                        <span className="st-rank w-6 shrink-0 text-[26px]">{index + 1}</span>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="headline mb-1 line-clamp-3 text-[13.5px] leading-snug group-hover:text-[color:var(--accent)]">
                             {article.title}
                           </h3>
                           <ArticleMeta article={article} />
@@ -212,39 +243,62 @@ export default function Home() {
                 </ol>
               </section>
 
-              <section
-                id="newsletter"
-                className="dr-card dr-newsletter-glow p-4 scroll-mt-6"
-              >
-                <h2 className="font-sans font-bold text-[13px] uppercase tracking-[0.1em] text-[color:var(--text-primary)] mb-1.5">
-                  Morning Briefing
-                </h2>
-                <p className="text-[13px] font-sans text-[color:var(--text-secondary)] mb-3 leading-relaxed">
-                  Five sharp headlines, every weekday morning. Free.
+              <section id="newsletter" className="st-panel scroll-mt-24 p-5">
+                <span className="st-eyebrow">Free newsletter</span>
+                <h2 className="headline mb-2 mt-1.5 text-[20px]">Morning Briefing</h2>
+                <p className="st-deck mb-4 text-[14px]">
+                  Five sharp headlines, every weekday morning. No filler, no noise.
                 </p>
                 <NewsletterForm variant="stacked" buttonLabel="Subscribe" />
               </section>
-
-              <section>
-                <SectionHeading title="More From The Wire" />
-                <ul className="divide-y divide-[color:var(--border-soft)]">
-                  {wireList.map((article) => (
-                    <li key={article.id}>
-                      <Link
-                        href={`/article/${getArticleSlug(article)}`}
-                        className="block py-2.5 first:pt-0 group"
-                      >
-                        <h3 className="headline text-[13px] leading-snug group-hover:underline line-clamp-2 mb-1">
-                          {article.title}
-                        </h3>
-                        <ArticleMeta article={article} />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
             </div>
           </aside>
+        </div>
+
+        {/* ---------- More headlines ---------- */}
+        <section className="mt-10 border-t-2 border-[color:var(--rule)] pt-6">
+          <SectionHeading title="More Headlines" href="/hot" linkLabel="All top stories" />
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-4">
+            {headlineRow.map((article) => (
+              <Link
+                key={article.id}
+                href={`/article/${getArticleSlug(article)}`}
+                className={`group block ${COLUMN_RULE}`}
+              >
+                <article>
+                  {getArticleImageSrc(article.image) ? (
+                    <div className="st-thumb mb-2.5 aspect-[3/2] overflow-hidden">
+                      <img
+                        src={getArticleImageSrc(article.image)!}
+                        alt=""
+                        loading="lazy"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  ) : null}
+                  <div className="section-label mb-1.5">{article.category}</div>
+                  <h3 className="headline mb-1.5 line-clamp-4 text-[15.5px] group-hover:text-[color:var(--accent)]">
+                    {article.title}
+                  </h3>
+                  <ArticleMeta article={article} />
+                </article>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* ---------- Section modules ---------- */}
+        <div className="mt-10 grid grid-cols-1 gap-8 border-t-2 border-[color:var(--rule)] pt-6 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-4">
+          {[
+            { title: 'Business', href: '/finance', items: businessFeed },
+            { title: 'Technology', href: '/tech', items: techFeed },
+            { title: 'Sports', href: '/sports', items: sportsFeed },
+            { title: 'Culture', href: '/culture', items: cultureFeed },
+          ].map((module) => (
+            <div key={module.href} className={COLUMN_RULE}>
+              {renderModule(module.title, module.href, module.items)}
+            </div>
+          ))}
         </div>
       </main>
 

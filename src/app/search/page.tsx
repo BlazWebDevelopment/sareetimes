@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import SectionHeading from '@/components/SectionHeading'
 import ArticleMeta from '@/components/ArticleMeta'
+import PageTitle from '@/components/PageTitle'
 import { searchArticles, articles, getArticleImageSrc, getArticleSlug } from '@/data/articles'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
@@ -31,41 +32,43 @@ function SearchResults() {
       <Header />
       <Breadcrumb current="Search" />
 
-      <main className="max-w-[1200px] mx-auto px-4 md:px-6 py-6">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-          <div className="flex-1 min-w-0">
-            <div className="section-label mb-1">Search</div>
-            <h1 className="font-display font-bold text-[24px] md:text-[30px] leading-tight text-[color:var(--text-primary)] pb-2 border-b-[3px] border-[color:var(--rule)]">
-              Results for &ldquo;{query}&rdquo;
-            </h1>
-            <p className="text-[11px] font-sans uppercase tracking-[0.06em] text-[color:var(--text-muted)] mt-2 mb-5">
-              {results.length} {results.length === 1 ? 'result' : 'results'}
-            </p>
+      <main className="mx-auto max-w-broadsheet px-4 py-8 md:px-6">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-9">
+          <div className="min-w-0 flex-1">
+            <PageTitle
+              kicker="Search"
+              title={<>Results for &ldquo;{query}&rdquo;</>}
+              meta={`${results.length} ${results.length === 1 ? 'result' : 'results'}`}
+            />
 
             {results.length > 0 ? (
-              <ul className="divide-y divide-[color:var(--border-soft)]">
-                {results.map((article) => (
-                  <li key={article.id}>
+              <ul>
+                {results.map((article, i) => (
+                  <li
+                    key={article.id}
+                    className={i > 0 ? 'border-t border-[color:var(--border-soft)]' : ''}
+                  >
                     <Link
                       href={`/article/${getArticleSlug(article)}`}
-                      className="flex gap-4 py-4 first:pt-0 group"
+                      className="group flex gap-5 py-5 first:pt-0"
                     >
-                      <div className="flex-1 min-w-0">
-                        <div className="section-label mb-1">{article.category}</div>
-                        <h3 className="headline text-[17px] leading-snug group-hover:underline mb-1.5 line-clamp-3">
+                      <div className="min-w-0 flex-1">
+                        <div className="section-label mb-1.5">{article.category}</div>
+                        <h3 className="headline mb-1.5 line-clamp-3 text-[18px] leading-snug group-hover:text-[color:var(--accent)]">
                           {article.title}
                         </h3>
-                        <p className="font-serif text-[13px] text-[color:var(--text-secondary)] leading-[1.5] line-clamp-2 mb-1.5">
+                        <p className="st-deck mb-2 line-clamp-2 text-[14px]">
                           {article.summary}
                         </p>
                         <ArticleMeta article={article} />
                       </div>
                       {getArticleImageSrc(article.image) ? (
-                        <div className="w-[110px] h-[82px] dr-thumb overflow-hidden bg-[color:var(--bg-secondary)] shrink-0">
+                        <div className="st-thumb h-[86px] w-[116px] shrink-0 overflow-hidden">
                           <img
                             src={getArticleImageSrc(article.image)!}
                             alt=""
-                            className="w-full h-full object-cover"
+                            loading="lazy"
+                            className="h-full w-full object-cover"
                           />
                         </div>
                       ) : null}
@@ -74,28 +77,28 @@ function SearchResults() {
                 ))}
               </ul>
             ) : (
-              <div className="dr-card p-8 text-center">
-                <h3 className="font-display font-bold text-[18px] text-[color:var(--text-primary)] mb-1">
-                  No results
-                </h3>
-                <p className="text-[color:var(--text-secondary)] text-[13px]">
+              <div className="st-panel p-10 text-center">
+                <h3 className="headline mb-1.5 text-[20px]">No results</h3>
+                <p className="st-deck text-[15px]">
                   Try different keywords, or pick one of the popular searches.
                 </p>
               </div>
             )}
           </div>
 
-          <aside className="lg:w-[300px] lg:shrink-0 lg:border-l lg:border-[color:var(--border-soft)] lg:pl-7">
-            <div className="space-y-7">
+          <aside className="lg:w-[300px] lg:shrink-0 lg:border-l lg:border-[color:var(--border-soft)] lg:pl-8">
+            <div className="space-y-8">
               <section>
                 <SectionHeading title="Popular Searches" />
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {POPULAR_SEARCHES.map((term) => (
                     <Link
                       key={term}
                       href={`/search?q=${encodeURIComponent(term)}`}
-                      className={`dr-chip ${
-                        term.toLowerCase() === query.trim().toLowerCase() ? 'dr-chip-active' : ''
+                      className={`st-chip ${
+                        term.toLowerCase() === query.trim().toLowerCase()
+                          ? 'st-chip-active'
+                          : ''
                       }`}
                     >
                       {term}
@@ -106,18 +109,19 @@ function SearchResults() {
 
               <section>
                 <SectionHeading title="Trending Now" />
-                <ol className="divide-y divide-[color:var(--border-soft)]">
+                <ol>
                   {articles.slice(0, 6).map((article, index) => (
-                    <li key={article.id}>
+                    <li
+                      key={article.id}
+                      className={index > 0 ? 'border-t border-[color:var(--border-subtle)]' : ''}
+                    >
                       <Link
                         href={`/article/${getArticleSlug(article)}`}
-                        className="flex gap-3 py-2.5 first:pt-0 group"
+                        className="group flex gap-3 py-3 first:pt-0"
                       >
-                        <span className="font-display font-bold text-[20px] tabular-nums leading-none w-6 shrink-0 text-[color:var(--text-primary)]">
-                          {index + 1}
-                        </span>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="headline text-[13px] leading-snug group-hover:underline line-clamp-3 mb-1">
+                        <span className="st-rank w-6 shrink-0 text-[24px]">{index + 1}</span>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="headline mb-1 line-clamp-3 text-[13.5px] leading-snug group-hover:text-[color:var(--accent)]">
                             {article.title}
                           </h3>
                           <ArticleMeta article={article} />
@@ -141,7 +145,7 @@ export default function SearchPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center text-[13px] font-sans text-[color:var(--text-secondary)]">
+        <div className="flex min-h-screen items-center justify-center font-sans text-[13px] text-[color:var(--text-secondary)]">
           Loading…
         </div>
       }

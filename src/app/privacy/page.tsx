@@ -1,9 +1,9 @@
 import InfoPage from '@/components/InfoPage'
 
 export const metadata = {
-  title: 'Privacy Policy — Wafer News',
+  title: 'Privacy Policy — Saree Times',
   description:
-    'Privacy Policy for Wafer News — what we collect, how we use it, and the choices you have.',
+    'Privacy Policy for Saree Times — what we collect, how we use it, and the choices you have.',
 }
 
 export default function PrivacyPage() {
@@ -12,11 +12,11 @@ export default function PrivacyPage() {
       title="Privacy Policy"
       kicker="Privacy"
       updated="May 6, 2026"
-      intro="This Privacy Policy explains what information Wafer News collects when you use the site, why we collect it, and the choices you have. We try to keep it short, clear, and free of legalese."
+      intro="This Privacy Policy explains what information Saree Times collects when you use the site, why we collect it, and the choices you have. We try to keep it short, clear, and free of legalese."
     >
       <h2>1. Information we collect</h2>
       <p>
-        We collect the minimum information needed to run Wafer News and improve the reading
+        We collect the minimum information needed to run Saree Times and improve the reading
         experience:
       </p>
       <ul>
@@ -51,7 +51,7 @@ export default function PrivacyPage() {
 
       <h2>3. Cookies and similar technologies</h2>
       <p>
-        Wafer News uses a small number of essential cookies and the browser&apos;s local
+        Saree Times uses a small number of essential cookies and the browser&apos;s local
         storage. These keep you signed in to the newsletter, remember your preferences, and help
         diagnose errors. You can clear them at any time from your browser settings.
       </p>
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
         </li>
         <li>
           <strong>Access &amp; deletion.</strong> Email{' '}
-          <a href="mailto:privacy@dailyreports.example">privacy@dailyreports.example</a> to request
+          <a href="mailto:privacy@sareetimes.example">privacy@sareetimes.example</a> to request
           a copy of the data we hold about you, or to ask us to delete it.
         </li>
         <li>
@@ -83,7 +83,7 @@ export default function PrivacyPage() {
 
       <h2>6. Children</h2>
       <p>
-        Wafer News is not directed to children under 13, and we do not knowingly collect
+        Saree Times is not directed to children under 13, and we do not knowingly collect
         personal information from them. If you believe a child has signed up, please contact us
         and we will delete the account.
       </p>
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
       <h2>8. Contact</h2>
       <p>
         Questions about this policy? Email{' '}
-        <a href="mailto:privacy@dailyreports.example">privacy@dailyreports.example</a>.
+        <a href="mailto:privacy@sareetimes.example">privacy@sareetimes.example</a>.
       </p>
     </InfoPage>
   )

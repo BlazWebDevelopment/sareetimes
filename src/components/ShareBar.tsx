@@ -103,10 +103,10 @@ export default function ShareBar({ title }: ShareBarProps) {
           onClick={b.onClick}
           aria-label={b.label}
           title={b.label}
-          className={`w-9 h-9 border dr-icon-btn flex items-center justify-center ${
+          className={`st-icon-btn flex h-9 w-9 items-center justify-center border transition-colors ${
             b.key === 'copy' && copied
-              ? 'bg-[color:var(--text-primary)] border-[color:var(--text-primary)] text-white'
-              : 'bg-[color:var(--bg-base)] border-[color:var(--border-strong)] text-[color:var(--text-secondary)] hover:bg-[color:var(--bg-surface-2)] hover:border-[color:var(--text-muted)] hover:text-[color:var(--text-primary)]'
+              ? 'border-[color:var(--accent)] bg-[color:var(--accent)] text-white'
+              : 'border-[color:var(--border-strong)] bg-[color:var(--bg-base)] text-[color:var(--text-secondary)] hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)] hover:text-white'
           }`}
         >
           {b.icon}

@@ -30,6 +30,36 @@ export function relativeTime(dateStr?: string, timeStr?: string): string {
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
 }
 
+const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+]
+
+/**
+ * Dateline for a story, e.g. "August 12, 2026". Formatted straight from the
+ * YYYY-MM-DD parts rather than through `Date`, so a reader's timezone can never
+ * shift the printed day or desync it from the server-rendered markup.
+ */
+export function articleDateline(dateStr?: string): string {
+  if (!dateStr) return ''
+
+  const parts = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr)
+  if (!parts) return dateStr
+
+  const [, year, month, day] = parts
+  return `${MONTHS[Number(month) - 1]} ${Number(day)}, ${year}`
+}
+
 /** Long dateline, e.g. "Friday, July 31, 2026". */
 export function longDate(dateStr?: string): string {
   const d = dateStr ? new Date(dateStr) : new Date()

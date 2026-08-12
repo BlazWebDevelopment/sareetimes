@@ -4,6 +4,8 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import SectionHeading from '@/components/SectionHeading'
 import ArticleMeta from '@/components/ArticleMeta'
+import PageTitle from '@/components/PageTitle'
+import NewsletterForm from '@/components/NewsletterForm'
 import {
   getArticlesBySection,
   getArticleImageSrc,
@@ -32,7 +34,8 @@ const browseLinks = [
 export default function SectionPage({ section, title, kicker }: SectionPageProps) {
   const sectionArticles = getArticlesBySection(section)
   const featured = sectionArticles[0]
-  const rest = sectionArticles.slice(1)
+  const secondary = sectionArticles.slice(1, 3)
+  const rest = sectionArticles.slice(3)
   const count = sectionArticles.length
 
   return (
@@ -40,76 +43,111 @@ export default function SectionPage({ section, title, kicker }: SectionPageProps
       <Header />
       <Breadcrumb current={title} />
 
-      <main className="max-w-[1200px] mx-auto px-4 md:px-6 py-6">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+      <main className="mx-auto max-w-broadsheet px-4 py-8 md:px-6">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-9">
           {/* Main column */}
-          <div className="flex-1 min-w-0">
-            {kicker && <div className="section-label mb-1">{kicker}</div>}
-            <h1 className="font-display font-bold text-[26px] md:text-[32px] leading-tight text-[color:var(--text-primary)] pb-2 mb-4 border-b-[3px] border-[color:var(--rule)]">
-              {title}
-            </h1>
-            <p className="text-[11px] font-sans uppercase tracking-[0.06em] text-[color:var(--text-muted)] mb-5">
-              {count} {count === 1 ? 'story' : 'stories'} filed
-            </p>
+          <div className="min-w-0 flex-1">
+            <PageTitle
+              title={title}
+              kicker={kicker}
+              meta={`${count} ${count === 1 ? 'story' : 'stories'} filed`}
+            />
 
             {count === 0 ? (
-              <div className="dr-card p-8 text-center">
-                <h3 className="font-display font-bold text-[18px] text-[color:var(--text-primary)] mb-1">
-                  Nothing on the wire yet
-                </h3>
-                <p className="text-[color:var(--text-secondary)] text-[13px]">
+              <div className="st-panel p-10 text-center">
+                <h3 className="headline mb-1.5 text-[20px]">Nothing on the wire yet</h3>
+                <p className="st-deck text-[15px]">
                   No stories filed in this section. Check back soon.
                 </p>
               </div>
             ) : (
               <>
                 {featured && (
-                  <Link href={`/article/${getArticleSlug(featured)}`} className="block group">
-                    <article className="pb-5 mb-5 border-b border-[color:var(--border-soft)]">
+                  <Link href={`/article/${getArticleSlug(featured)}`} className="group block">
+                    <article className="mb-7 border-b-2 border-[color:var(--rule)] pb-7">
                       {getArticleImageSrc(featured.image) && (
-                        <div className="aspect-[16/9] overflow-hidden bg-[color:var(--bg-secondary)] dr-media mb-3">
+                        <div className="st-media mb-4 aspect-[16/9] overflow-hidden">
                           <img
                             src={getArticleImageSrc(featured.image)!}
                             alt=""
-                            className="w-full h-full object-cover"
+                            className="h-full w-full object-cover"
                           />
                         </div>
                       )}
-                      <div className="section-label mb-1.5">{featured.category}</div>
-                      <h2 className="headline headline-lg text-[24px] md:text-[30px] mb-2 group-hover:underline">
+                      <div className="section-label mb-2">{featured.category}</div>
+                      <h2 className="headline headline-lg mb-3 text-[26px] md:text-[34px] group-hover:text-[color:var(--accent)]">
                         {featured.title}
                       </h2>
-                      <p className="font-serif text-[15px] text-[color:var(--text-secondary)] leading-[1.55] mb-2.5">
-                        {featured.summary}
-                      </p>
+                      <p className="st-deck mb-3 text-[17px]">{featured.summary}</p>
                       <ArticleMeta article={featured} />
                     </article>
                   </Link>
                 )}
 
-                <ul className="divide-y divide-[color:var(--border-soft)]">
-                  {rest.map((article) => (
-                    <li key={article.id}>
+                {secondary.length > 0 && (
+                  <div className="mb-7 grid grid-cols-1 gap-7 border-b border-[color:var(--border-soft)] pb-7 sm:grid-cols-2 sm:gap-0">
+                    {secondary.map((article, i) => (
                       <Link
+                        key={article.id}
                         href={`/article/${getArticleSlug(article)}`}
-                        className="flex gap-4 py-4 first:pt-0 group"
+                        className={`group block ${
+                          i === 1
+                            ? 'sm:border-l sm:border-[color:var(--border-soft)] sm:pl-6'
+                            : 'sm:pr-6'
+                        }`}
                       >
-                        <div className="flex-1 min-w-0">
-                          <div className="section-label mb-1">{article.category}</div>
-                          <h3 className="headline text-[17px] leading-snug group-hover:underline mb-1.5 line-clamp-3">
+                        <article>
+                          {getArticleImageSrc(article.image) && (
+                            <div className="st-thumb mb-2.5 aspect-[3/2] overflow-hidden">
+                              <img
+                                src={getArticleImageSrc(article.image)!}
+                                alt=""
+                                loading="lazy"
+                                className="h-full w-full object-cover"
+                              />
+                            </div>
+                          )}
+                          <div className="section-label mb-1.5">{article.category}</div>
+                          <h3 className="headline mb-1.5 line-clamp-3 text-[19px] group-hover:text-[color:var(--accent)]">
                             {article.title}
                           </h3>
-                          <p className="font-serif text-[13px] text-[color:var(--text-secondary)] leading-[1.5] line-clamp-2 mb-1.5">
+                          <p className="st-deck mb-2 line-clamp-2 text-[14px]">
+                            {article.summary}
+                          </p>
+                          <ArticleMeta article={article} />
+                        </article>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+                <ul>
+                  {rest.map((article, i) => (
+                    <li
+                      key={article.id}
+                      className={i > 0 ? 'border-t border-[color:var(--border-soft)]' : ''}
+                    >
+                      <Link
+                        href={`/article/${getArticleSlug(article)}`}
+                        className="group flex gap-5 py-5 first:pt-0"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <div className="section-label mb-1.5">{article.category}</div>
+                          <h3 className="headline mb-1.5 line-clamp-3 text-[18px] leading-snug group-hover:text-[color:var(--accent)]">
+                            {article.title}
+                          </h3>
+                          <p className="st-deck mb-2 line-clamp-2 text-[14px]">
                             {article.summary}
                           </p>
                           <ArticleMeta article={article} />
                         </div>
                         {getArticleImageSrc(article.image) ? (
-                          <div className="w-[110px] h-[82px] md:w-[132px] md:h-[98px] dr-thumb overflow-hidden bg-[color:var(--bg-secondary)] shrink-0">
+                          <div className="st-thumb h-[86px] w-[116px] shrink-0 overflow-hidden md:h-[104px] md:w-[140px]">
                             <img
                               src={getArticleImageSrc(article.image)!}
                               alt=""
-                              className="w-full h-full object-cover"
+                              loading="lazy"
+                              className="h-full w-full object-cover"
                             />
                           </div>
                         ) : null}
@@ -122,22 +160,23 @@ export default function SectionPage({ section, title, kicker }: SectionPageProps
           </div>
 
           {/* Sidebar */}
-          <aside className="lg:w-[300px] lg:shrink-0 lg:border-l lg:border-[color:var(--border-soft)] lg:pl-7">
-            <div className="space-y-7">
+          <aside className="lg:w-[300px] lg:shrink-0 lg:border-l lg:border-[color:var(--border-soft)] lg:pl-8">
+            <div className="space-y-8">
               <section>
                 <SectionHeading title="Trending Now" />
-                <ol className="divide-y divide-[color:var(--border-soft)]">
+                <ol>
                   {articles.slice(0, 6).map((a, index) => (
-                    <li key={a.id}>
+                    <li
+                      key={a.id}
+                      className={index > 0 ? 'border-t border-[color:var(--border-subtle)]' : ''}
+                    >
                       <Link
                         href={`/article/${getArticleSlug(a)}`}
-                        className="flex gap-3 py-2.5 first:pt-0 group"
+                        className="group flex gap-3 py-3 first:pt-0"
                       >
-                        <span className="font-display font-bold text-[20px] tabular-nums leading-none w-6 shrink-0 text-[color:var(--text-primary)]">
-                          {index + 1}
-                        </span>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="headline text-[13px] leading-snug group-hover:underline line-clamp-3 mb-1">
+                        <span className="st-rank w-6 shrink-0 text-[24px]">{index + 1}</span>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="headline mb-1 line-clamp-3 text-[13.5px] leading-snug group-hover:text-[color:var(--accent)]">
                             {a.title}
                           </h3>
                           <ArticleMeta article={a} />
@@ -150,17 +189,28 @@ export default function SectionPage({ section, title, kicker }: SectionPageProps
 
               <section>
                 <SectionHeading title="Browse Sections" />
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {browseLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className={`dr-chip ${link.href === `/${section}` ? 'dr-chip-active' : ''}`}
+                      className={`st-chip ${
+                        link.href === `/${section}` ? 'st-chip-active' : ''
+                      }`}
                     >
                       {link.label}
                     </Link>
                   ))}
                 </div>
+              </section>
+
+              <section className="st-panel p-5">
+                <span className="st-eyebrow">Free newsletter</span>
+                <h2 className="headline mb-2 mt-1.5 text-[19px]">Morning Briefing</h2>
+                <p className="st-deck mb-4 text-[14px]">
+                  Five sharp headlines, every weekday morning.
+                </p>
+                <NewsletterForm variant="stacked" buttonLabel="Subscribe" />
               </section>
             </div>
           </aside>

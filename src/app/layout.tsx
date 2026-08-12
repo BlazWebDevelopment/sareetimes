@@ -1,6 +1,48 @@
 import type { Metadata } from 'next'
+import localFont from 'next/font/local'
 import './globals.css'
 import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/brand'
+
+/*
+ * Fonts are self-hosted variable woff2 rather than fetched from Google, so the
+ * build never depends on a third-party request and readers make no cross-origin
+ * hop before the masthead paints.
+ */
+
+/* Wordmark: a high-contrast didone, used for the masthead and numerals. */
+const wordmark = localFont({
+  src: '../fonts/PlayfairDisplay-Variable.woff2',
+  weight: '400 900',
+  style: 'normal',
+  display: 'swap',
+  variable: '--font-wordmark',
+  fallback: ['Georgia', 'Times New Roman', 'serif'],
+})
+
+/* Editorial: headlines, decks and article body. */
+const editorial = localFont({
+  src: [
+    { path: '../fonts/SourceSerif4-Variable.woff2', weight: '200 900', style: 'normal' },
+    {
+      path: '../fonts/SourceSerif4-VariableItalic.woff2',
+      weight: '200 900',
+      style: 'italic',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-editorial',
+  fallback: ['Georgia', 'Times New Roman', 'serif'],
+})
+
+/* UI: navigation, kickers, meta lines and forms. */
+const ui = localFont({
+  src: '../fonts/LibreFranklin-Variable.woff2',
+  weight: '100 900',
+  style: 'normal',
+  display: 'swap',
+  variable: '--font-ui',
+  fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
+})
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
@@ -14,8 +56,8 @@ export const metadata: Metadata = {
   metadataBase: siteUrl,
   applicationName: SITE_NAME,
   keywords: [
-    'Wafer News',
-    'wafer news',
+    'Saree Times',
+    'saree times',
     'daily news',
     'top stories',
     'world news',
@@ -29,12 +71,13 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon', sizes: '16x16 32x32 48x48 64x64' },
-      { url: '/logo.png', type: 'image/png', sizes: '512x512' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/logo.png', type: 'image/png', sizes: '512x512' },
     ],
     shortcut: '/favicon.ico',
-    apple: '/logo.png',
+    apple: '/apple-icon.png',
   },
+  manifest: '/site.webmanifest',
   openGraph: {
     type: 'website',
     siteName: SITE_NAME,
@@ -43,8 +86,10 @@ export const metadata: Metadata = {
     url: '/',
     images: [
       {
-        url: '/logo.png',
-        alt: `${SITE_NAME} logo`,
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} — ${SITE_DESCRIPTION}`,
       },
     ],
   },
@@ -52,7 +97,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: pageTitle,
     description: SITE_DESCRIPTION,
-    images: ['/logo.png'],
+    images: ['/og-image.png'],
   },
 }
 
@@ -62,7 +107,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${wordmark.variable} ${editorial.variable} ${ui.variable}`}
+    >
       <body>{children}</body>
     </html>
   )

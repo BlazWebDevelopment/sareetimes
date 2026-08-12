@@ -2,9 +2,9 @@ import InfoPage from '@/components/InfoPage'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Help & FAQ — Wafer News',
+  title: 'Help & FAQ — Saree Times',
   description:
-    'Help center for Wafer News — answers to the questions readers ask most often.',
+    'Help center for Saree Times — answers to the questions readers ask most often.',
 }
 
 const faqs: { q: string; a: React.ReactNode }[] = [
@@ -54,7 +54,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: 'Why isn’t my browser remembering that I’m subscribed?',
     a: (
       <p>
-        Wafer News stores your subscription preference in your browser&apos;s local storage. If
+        Saree Times stores your subscription preference in your browser&apos;s local storage. If
         you use private/incognito mode, clear cookies regularly, or switch devices, you may see
         the subscription form again — but you remain subscribed on our end. Just submit the same
         email; it won&apos;t create duplicates.
@@ -75,7 +75,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: 'I see something wrong in a story. How do I report a correction?',
     a: (
       <p>
-        Email <a href="mailto:editorial@dailyreports.example">editorial@dailyreports.example</a>{' '}
+        Email <a href="mailto:editorial@sareetimes.example">editorial@sareetimes.example</a>{' '}
         with the article URL and what you think is wrong. We take corrections seriously and aim
         to update or annotate within 24 hours.
       </p>
@@ -87,7 +87,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
       <p>
         Short excerpts and direct links are always welcome. For longer reuse, syndication, or any
         commercial reproduction, please write to{' '}
-        <a href="mailto:press@dailyreports.example">press@dailyreports.example</a> first. Read
+        <a href="mailto:press@sareetimes.example">press@sareetimes.example</a> first. Read
         our <Link href="/terms">Terms of Service</Link> for details.
       </p>
     ),
@@ -96,14 +96,14 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: 'How do I tip the newsroom?',
     a: (
       <p>
-        Send the lead to <a href="mailto:tips@dailyreports.example">tips@dailyreports.example</a>.
+        Send the lead to <a href="mailto:tips@sareetimes.example">tips@sareetimes.example</a>.
         Please include as much detail as you can — documents, screenshots, names of people who
         can corroborate. We protect our sources.
       </p>
     ),
   },
   {
-    q: 'How does Wafer News protect my data?',
+    q: 'How does Saree Times protect my data?',
     a: (
       <p>
         We collect the minimum data needed and never sell personal information. See our{' '}
@@ -120,10 +120,10 @@ export default function HelpPage() {
       title="Help & FAQ"
       kicker="Help"
       updated="May 6, 2026"
-      intro="Quick answers to the questions readers ask most often. Can’t find what you’re looking for? Email help@dailyreports.example and a real human will get back to you."
+      intro="Quick answers to the questions readers ask most often. Can’t find what you’re looking for? Email help@sareetimes.example and a real human will get back to you."
     >
       <h2>Frequently asked questions</h2>
-      <div className="dr-card overflow-hidden mt-4">
+      <div className="st-card overflow-hidden mt-4">
         {faqs.map((item, idx) => (
           <details
             key={idx}
@@ -140,10 +140,10 @@ export default function HelpPage() {
       <h2>Still need help?</h2>
       <p>
         Drop us a line at{' '}
-        <a href="mailto:help@dailyreports.example">help@dailyreports.example</a>. For privacy
-        requests, use <a href="mailto:privacy@dailyreports.example">privacy@dailyreports.example</a>.
+        <a href="mailto:help@sareetimes.example">help@sareetimes.example</a>. For privacy
+        requests, use <a href="mailto:privacy@sareetimes.example">privacy@sareetimes.example</a>.
         For press, partnerships and republishing, write to{' '}
-        <a href="mailto:press@dailyreports.example">press@dailyreports.example</a>.
+        <a href="mailto:press@sareetimes.example">press@sareetimes.example</a>.
       </p>
     </InfoPage>
   )

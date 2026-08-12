@@ -5,56 +5,63 @@
 :root {
   color-scheme: light;
 
-  --foreground-rgb: 17, 17, 17;
+  --foreground-rgb: 23, 21, 15;
 
-  /* Wafer News — plain white newsprint palette */
+  /* ============================================================
+     Saree Times — warm broadsheet palette.
+     Ink on cream paper, one deep-teal house accent, crimson kept
+     in reserve for live and breaking furniture only.
+     ============================================================ */
+
   --bg-base: #ffffff;
   --bg-primary: #ffffff;
-  --bg-secondary: #eeeeee;
-  --bg-surface: #f6f6f6;
-  --bg-surface-2: #ededed;
-  --bg-elevated: #f4f4f4;
+  --bg-secondary: #ebe6dc;
+  --bg-surface: #faf8f3;
+  --bg-surface-2: #f2ede3;
+  --bg-elevated: #fdfcf9;
 
-  --border-subtle: #e6e6e6;
-  --border-soft: #dddddd;
-  --border-strong: #bbbbbb;
-  --border-glow: #767676;
+  --border-subtle: #ece7dc;
+  --border-soft: #ddd5c6;
+  --border-strong: #c2b9a7;
+  --border-glow: #8a8271;
 
-  /* Square corners everywhere. */
+  /* Print furniture is square; nothing in this design is rounded. */
   --r-ticket-a: 0;
   --r-ticket-b: 0;
   --r-card-a: 0;
   --r-card-b: 0;
 
-  --text-primary: #111111;
-  --text-secondary: #444444;
-  --text-muted: #767676;
+  --text-primary: #17150f;
+  --text-secondary: #4b463c;
+  --text-muted: #7b7466;
 
-  /* Single restrained ink-navy accent, used for links and rules. */
-  --accent: #14396b;
-  --accent-hover: #0d2a52;
-  --accent-subtle: #eef1f6;
-  --accent-border: #c3ccda;
+  --accent: #0e5b61;
+  --accent-hover: #093f44;
+  --accent-subtle: #e9f2f2;
+  --accent-border: #b4ced0;
   --accent-glow: transparent;
 
   --brand-blue: var(--accent);
-  --brand-blue-dark: #0d2a52;
+  --brand-blue-dark: var(--accent-hover);
   --brand-blue-soft: var(--accent-subtle);
 
-  --brand-red: #14396b;
-  --brand-green: #1f7a3d;
+  --brand-red: #a4192c;
+  --brand-green: #1f6b45;
+  --live: #a4192c;
 
-  --rule: #111111;
-  --ink: #111111;
+  --rule: #17150f;
+  --ink: #17150f;
 
-  /* Plain system stacks — Arial for furniture, Georgia for anything editorial. */
-  --font-sans: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  --font-display: Georgia, 'Times New Roman', Times, serif;
-  --font-serif: Georgia, 'Times New Roman', Times, serif;
+  /* Font stacks are wired to next/font variables set on <html>. */
+  --font-sans: var(--font-ui), 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  --font-display: var(--font-editorial), Georgia, 'Times New Roman', Times, serif;
+  --font-serif: var(--font-editorial), Georgia, 'Times New Roman', Times, serif;
+  --font-masthead: var(--font-wordmark), Georgia, 'Times New Roman', Times, serif;
 }
 
 html {
   background: var(--bg-base);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -63,172 +70,271 @@ body {
   font-family: var(--font-sans);
   font-size: 15px;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--text-primary);
-  letter-spacing: 0;
-  font-weight: 700;
+  letter-spacing: -0.006em;
+  font-weight: 600;
 }
+
+/* ---------- headlines ---------- */
 
 .headline {
   font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: 0;
+  font-weight: 600;
+  letter-spacing: -0.008em;
   color: var(--text-primary);
-  line-height: 1.24;
+  line-height: 1.22;
+  text-wrap: balance;
 }
 
 .headline-lg {
   font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.14;
+  letter-spacing: -0.018em;
+  line-height: 1.08;
 }
 
 .headline a:hover,
 a:hover .headline {
-  text-decoration: underline;
+  color: var(--accent);
+}
+
+.st-deck {
+  font-family: var(--font-serif);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+/* ---------- masthead wordmark ---------- */
+
+.st-wordmark {
+  font-family: var(--font-masthead);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  color: var(--text-primary);
+  font-feature-settings: 'lnum' 1;
 }
 
 /* ---------- page chrome ---------- */
 
-.dr-header-slab {
-  background: var(--bg-base);
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.dr-nav-rail {
-  border-top: 3px solid var(--rule);
-  border-bottom: 1px solid var(--border-soft);
+.st-header-slab {
   background: var(--bg-base);
 }
 
-.dr-ticker-rail {
+/* Heavy rule above the section nav, hairline below — the broadsheet signature. */
+.st-nav-rail {
+  border-top: 2px solid var(--rule);
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-base);
+}
+
+.st-utility-rail {
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+
+.st-ticker-rail {
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-base);
+}
+
+.st-hero-shell {
   border-bottom: 1px solid var(--border-soft);
   background: var(--bg-surface);
 }
 
-.dr-hero-shell {
-  border-bottom: 1px solid var(--border-soft);
+.st-footer-slab {
+  border-top: 2px solid var(--rule);
   background: var(--bg-surface);
 }
 
-.dr-footer-slab {
-  border-top: 3px solid var(--rule);
-  background: var(--bg-surface);
+/* Condensed bar that pins to the top once the masthead scrolls away. */
+.st-sticky-rail {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: saturate(140%) blur(8px);
 }
 
-.dr-kicker-mark {
+.st-kicker-mark {
   width: 1.0625rem;
   height: 1.0625rem;
   flex-shrink: 0;
   border-radius: 0;
-  background: var(--text-primary);
+  background: var(--accent);
   color: #ffffff;
+  font-family: var(--font-masthead);
   font-weight: 700;
 }
 
-.dr-avatar-cut {
+.st-avatar-cut {
   width: 1.25rem;
   height: 1.25rem;
   flex-shrink: 0;
   border-radius: 0;
 }
 
-.dr-brand-mark {
+.st-brand-mark {
   border-radius: 0;
 }
 
-.dr-hit {
+.st-hit {
   border-radius: 0;
+}
+
+/* ---------- rules & dividers ---------- */
+
+.st-divider {
+  height: 1px;
+  background: var(--border-soft);
+}
+
+.st-rule-heavy {
+  height: 2px;
+  background: var(--rule);
+}
+
+.st-masthead-rule {
+  height: 2px;
+  width: 2.5rem;
+  background: var(--rule);
+  border-radius: 0;
+}
+
+/* Uppercase section heading sitting on a rule, print style. */
+.st-section-accent {
+  position: relative;
+  padding-bottom: 0.4375rem;
+  border-bottom: 1px solid var(--rule);
 }
 
 /* ---------- form controls ---------- */
 
-.dr-search {
+.st-search {
+  border-radius: 0;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-base);
+  transition: border-color 0.15s ease;
+}
+
+.st-search:focus-within {
+  border-color: var(--accent);
+}
+
+.st-icon-btn {
+  border-radius: 0;
+}
+
+.st-field {
   border-radius: 0;
   border: 1px solid var(--border-strong);
   background: var(--bg-base);
 }
 
-.dr-search:focus-within {
-  border-color: var(--text-muted);
+.st-field:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 
-.dr-icon-btn {
-  border-radius: 0;
-}
-
-.dr-field {
-  border-radius: 0;
-}
-
-.dr-btn-cta {
+.st-btn-cta {
   border-radius: 0;
   background: var(--accent);
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
   border: 1px solid var(--accent);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.dr-btn-cta:hover {
+.st-btn-cta:hover {
   background: var(--accent-hover);
   border-color: var(--accent-hover);
 }
 
-.dr-notice-ok {
+.st-btn-ghost {
+  border-radius: 0;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.st-btn-ghost:hover {
+  background: var(--text-primary);
+  color: #ffffff;
+}
+
+.st-notice-ok {
   border-radius: 0;
 }
 
 /* ---------- media ---------- */
 
-.dr-thumb {
+.st-thumb {
   border-radius: 0;
-  border: 1px solid var(--border-soft);
+  background: var(--bg-secondary);
 }
 
-.dr-media {
+.st-media {
   border-radius: 0;
-  border: 1px solid var(--border-soft);
+  background: var(--bg-secondary);
 }
 
-.dr-inset-panel {
-  border-radius: 0;
-  border: 1px solid var(--border-strong);
-}
-
-.dr-live-pill {
-  border-radius: 0;
-}
-
-.dr-pull-end {
-  border-radius: 0;
-}
-
-.dr-disclaimer {
+.st-inset-panel {
   border-radius: 0;
   border: 1px solid var(--border-soft);
   background: var(--bg-surface);
 }
 
+.st-live-pill {
+  border-radius: 0;
+  background: var(--live);
+  color: #ffffff;
+}
+
+.st-pull-end {
+  border-radius: 0;
+}
+
+.st-disclaimer {
+  border-radius: 0;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-surface);
+}
+
+.st-caption {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
 /* ---------- cards / lists ---------- */
 
-.dr-card {
+.st-card {
   background: var(--bg-base);
   border: 1px solid var(--border-soft);
   border-radius: 0;
 }
 
-.dr-card:hover {
-  border-color: var(--border-strong);
-}
-
-.dr-card-featured {
+.st-card-featured {
   position: relative;
 }
 
-.dr-chip {
+.st-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 0;
+}
+
+.st-chip {
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
@@ -237,26 +343,38 @@ a:hover .headline {
   border: 1px solid var(--border-strong);
   background: var(--bg-base);
   color: var(--text-secondary);
+  font-family: var(--font-sans);
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.1;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
-.dr-chip:hover {
-  background: var(--bg-surface-2);
-  color: var(--text-primary);
-  border-color: var(--text-muted);
+.st-chip:hover {
+  background: var(--accent-subtle);
+  color: var(--accent-hover);
+  border-color: var(--accent-border);
 }
 
-.dr-chip-active {
-  background: var(--text-primary);
+.st-chip-active {
+  background: var(--accent);
   color: #ffffff;
-  border-color: var(--text-primary);
+  border-color: var(--accent);
 }
 
-.dr-divider {
-  height: 1px;
-  background: var(--border-soft);
+.st-chip-active:hover {
+  background: var(--accent-hover);
+  color: #ffffff;
+  border-color: var(--accent-hover);
+}
+
+/* Ranked list numerals, as used in Most Read. */
+.st-rank {
+  font-family: var(--font-masthead);
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  line-height: 0.85;
 }
 
 /* ---------- typography helpers ---------- */
@@ -265,59 +383,106 @@ a:hover .headline {
   font-family: var(--font-sans);
   font-size: 0.6875rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section-label-muted {
+  color: var(--text-muted);
+}
+
+.st-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
 .meta-line {
+  font-family: var(--font-sans);
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-weight: 400;
 }
 
+/* ---------- article body ---------- */
+
+/* The measure is set by the article column; `em` here would resolve against the
+   inherited 15px UI size rather than the 19px body copy. */
 .article-content {
-  max-width: 40em;
   font-family: var(--font-serif);
 }
 
 .article-content p {
-  margin-bottom: 1.15rem;
-  line-height: 1.62;
-  color: #222222;
-  font-size: 1.0625rem;
+  margin-bottom: 1.35rem;
+  line-height: 1.68;
+  color: #23211b;
+  font-size: 1.1875rem;
+  letter-spacing: -0.003em;
 }
 
 .article-content h2 {
   font-family: var(--font-serif);
   color: var(--text-primary);
   font-weight: 700;
-  font-size: 1.375rem;
-  letter-spacing: 0;
-  margin-top: 1.9rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.012em;
+  line-height: 1.25;
+  margin-top: 2.35rem;
+  margin-bottom: 0.7rem;
+}
+
+.article-content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-content a:hover {
+  color: var(--accent-hover);
 }
 
 .article-content blockquote {
-  border-left: 4px solid var(--border-strong);
-  padding: 0.25rem 0 0.25rem 1.125rem;
-  margin: 1.5rem 0;
+  border-left: 3px solid var(--accent);
+  padding: 0.125rem 0 0.125rem 1.25rem;
+  margin: 1.75rem 0;
   background: transparent;
   border-radius: 0;
   color: var(--text-primary);
+  font-size: 1.25rem;
+  line-height: 1.45;
   font-style: italic;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 0 0 1.35rem 1.4rem;
+  font-size: 1.1875rem;
+  line-height: 1.68;
+  color: #23211b;
+}
+
+.article-content ul { list-style: disc; }
+.article-content ol { list-style: decimal; }
+
+.article-content li {
+  margin-bottom: 0.5rem;
 }
 
 /* ---------- static info pages ---------- */
 
 .info-content h2 {
+  font-family: var(--font-display);
   color: var(--text-primary);
   font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0;
-  margin-top: 2rem;
-  margin-bottom: 0.6rem;
-  padding-bottom: 0.3rem;
+  font-size: 1.375rem;
+  letter-spacing: -0.012em;
+  margin-top: 2.25rem;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--border-soft);
 }
 
@@ -326,38 +491,42 @@ a:hover .headline {
 }
 
 .info-content h3 {
+  font-family: var(--font-display);
   color: var(--text-primary);
   font-weight: 700;
-  font-size: 1.0625rem;
-  margin-top: 1.4rem;
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.4rem;
 }
 
 .info-content p {
+  font-family: var(--font-serif);
   color: var(--text-secondary);
-  font-size: 0.9375rem;
-  line-height: 1.65;
-  margin-bottom: 0.9rem;
+  font-size: 1.0625rem;
+  line-height: 1.68;
+  margin-bottom: 1rem;
 }
 
 .info-content ul,
 .info-content ol {
+  font-family: var(--font-serif);
   color: var(--text-secondary);
-  font-size: 0.9375rem;
-  line-height: 1.65;
-  margin: 0.5rem 0 1.15rem 1.35rem;
+  font-size: 1.0625rem;
+  line-height: 1.68;
+  margin: 0.5rem 0 1.25rem 1.4rem;
 }
 
 .info-content ul { list-style: disc; }
 .info-content ol { list-style: decimal; }
 
 .info-content li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 .info-content a {
   color: var(--accent);
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .info-content a:hover {
@@ -372,26 +541,28 @@ a:hover .headline {
 .info-callout {
   background: var(--bg-surface);
   border: 1px solid var(--border-soft);
-  border-left: 4px solid var(--text-primary);
+  border-left: 3px solid var(--accent);
   border-radius: 0;
-  padding: 0.875rem 1.125rem;
-  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-family: var(--font-serif);
   color: var(--text-secondary);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 .info-faq summary {
   cursor: pointer;
   list-style: none;
-  padding: 0.75rem 1rem;
+  padding: 0.8125rem 1rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+  font-family: var(--font-display);
   color: var(--text-primary);
   font-weight: 700;
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 
 .info-faq summary::-webkit-details-marker { display: none; }
@@ -410,7 +581,7 @@ a:hover .headline {
   border-radius: 0;
   border: 1px solid var(--border-strong);
   background: var(--bg-base);
-  color: var(--text-primary);
+  color: var(--accent);
   font-family: var(--font-sans);
   font-weight: 700;
   font-size: 0.875rem;
@@ -424,9 +595,10 @@ a:hover .headline {
 
 .info-faq > div {
   padding: 0 1rem 1rem 1rem;
+  font-family: var(--font-serif);
   color: var(--text-secondary);
-  font-size: 0.9375rem;
-  line-height: 1.65;
+  font-size: 1rem;
+  line-height: 1.68;
 }
 
 .info-faq + .info-faq {
@@ -439,8 +611,15 @@ a:hover .headline {
 .scrollbar-hide { scrollbar-width: none; }
 
 ::selection {
-  background: #b8d4f5;
-  color: #111111;
+  background: #cfe6e6;
+  color: #17150f;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* The track holds the headline list twice, so -50% is one seamless loop. */
@@ -463,21 +642,7 @@ a:hover .headline {
   animation: live-blink 1.4s steps(1, end) infinite;
 }
 
-.dr-masthead-rule {
-  height: 3px;
-  width: 2.5rem;
-  background: var(--rule);
-  border-radius: 0;
-}
-
-/* Uppercase section heading with a full rule underneath, print style. */
-.dr-section-accent {
-  position: relative;
-  padding-bottom: 0.375rem;
-  border-bottom: 2px solid var(--rule);
-}
-
-.dr-newsletter-glow {
-  background: var(--bg-surface);
-  border-color: var(--border-strong) !important;
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker { animation: none; }
+  .live-dot { animation: none; }
 }

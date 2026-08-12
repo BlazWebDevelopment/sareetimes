@@ -18,6 +18,9 @@
 .DS_Store
 *.pem
 
+# downloaded font cache for scripts/generate-brand.mjs
+/scripts/.cache/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

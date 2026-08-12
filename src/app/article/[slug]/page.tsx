@@ -6,8 +6,16 @@ import Breadcrumb from '@/components/Breadcrumb'
 import SectionHeading from '@/components/SectionHeading'
 import ArticleMeta from '@/components/ArticleMeta'
 import ShareBar from '@/components/ShareBar'
-import { getArticleBySlug, getArticleSlug, getArticleImageSrc, articles } from '@/data/articles'
+import NewsletterForm from '@/components/NewsletterForm'
+import {
+  getArticleBySlug,
+  getArticleSlug,
+  getArticleImageSrc,
+  articles,
+  type Article,
+} from '@/data/articles'
 import { SITE_NAME } from '@/lib/brand'
+import { articleDateline } from '@/lib/time'
 import Link from 'next/link'
 
 const FALLBACK_HERO_IMAGE =
@@ -30,42 +38,67 @@ interface ArticlePageProps {
   }
 }
 
+function Kicker({ children }: { children: React.ReactNode }) {
+  return <div className="section-label mb-3">{children}</div>
+}
+
 function Headline({ children }: { children: React.ReactNode }) {
   return (
-    <h1 className="headline headline-lg text-[26px] md:text-[36px] mb-3 leading-tight">
+    <h1 className="headline headline-lg mb-4 text-[30px] sm:text-[38px] md:text-[44px]">
       {children}
     </h1>
   )
 }
 
-function Byline({ author, facts }: { author: string; facts: string[] }) {
+function Deck({ children }: { children: React.ReactNode }) {
+  return <p className="st-deck mb-6 text-[19px] leading-[1.5]">{children}</p>
+}
+
+/** Byline block: rules above and below, share controls on the right. */
+function Byline({
+  author,
+  facts,
+  shareTitle,
+}: {
+  author: string
+  facts: string[]
+  shareTitle?: string
+}) {
   return (
-    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-sans text-[color:var(--text-muted)] mb-5 pb-3 border-b border-[color:var(--border-soft)]">
-      <span className="flex items-center gap-2">
-        <span className="dr-avatar-cut bg-[color:var(--text-primary)] flex items-center justify-center text-[9px] font-bold font-sans text-white">
-          W
-        </span>
-        <span className="font-bold text-[color:var(--text-primary)]">By {author}</span>
-      </span>
-      {facts.map((fact) => (
-        <span key={fact} className="flex items-center gap-2">
-          <span aria-hidden="true">|</span>
-          <span>{fact}</span>
-        </span>
-      ))}
+    <div className="mb-7 flex flex-col gap-3 border-y border-[color:var(--border-soft)] py-3.5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="min-w-0">
+        <div className="font-sans text-[13px] font-bold uppercase tracking-[0.07em] text-[color:var(--text-primary)]">
+          By {author}
+        </div>
+        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 font-sans text-[12px] text-[color:var(--text-muted)]">
+          {facts.map((fact, i) => (
+            <span key={fact} className="flex items-center gap-2">
+              {i > 0 && (
+                <span className="h-2.5 w-px bg-[color:var(--border-strong)]" aria-hidden="true" />
+              )}
+              <span>{fact}</span>
+            </span>
+          ))}
+        </div>
+      </div>
+      {shareTitle ? (
+        <div className="shrink-0">
+          <ShareBar title={shareTitle} />
+        </div>
+      ) : null}
     </div>
   )
 }
 
 function Caption({ children }: { children: React.ReactNode }) {
   return (
-    <figcaption className="text-[11px] font-sans text-[color:var(--text-muted)] mt-1.5 pt-1.5 border-t border-[color:var(--border-subtle)]">
+    <figcaption className="st-caption mt-2 border-t border-[color:var(--border-subtle)] pt-2">
       {children}
     </figcaption>
   )
 }
 
-/** Grey sidebar-style box used for explainers and takeaway lists. */
+/** Tinted box used for explainers and takeaway lists. */
 function InsetPanel({
   heading,
   children,
@@ -74,13 +107,11 @@ function InsetPanel({
   children: React.ReactNode
 }) {
   return (
-    <div className="bg-[color:var(--bg-surface)] border border-[color:var(--border-soft)] border-l-4 border-l-[color:var(--text-primary)] p-4 my-5 dr-pull-end">
+    <div className="st-pull-end my-7 border-y border-[color:var(--border-soft)] bg-[color:var(--bg-surface)] px-5 py-4">
       {heading && (
-        <h3 className="font-sans font-bold text-[12px] uppercase tracking-[0.08em] text-[color:var(--text-primary)] mb-2">
-          {heading}
-        </h3>
+        <h3 className="section-label mb-2.5">{heading}</h3>
       )}
-      <div className="text-[14px] font-sans leading-[1.6] text-[color:var(--text-secondary)] [&>p]:mb-0 [&>ul]:list-disc [&>ul]:pl-5 [&>ul]:space-y-1">
+      <div className="font-serif text-[16px] leading-[1.6] text-[color:var(--text-secondary)] [&>p]:mb-0 [&>ul]:list-disc [&>ul]:space-y-1.5 [&>ul]:pl-5">
         {children}
       </div>
     </div>
@@ -89,7 +120,7 @@ function InsetPanel({
 
 function SourceLine({ children }: { children: React.ReactNode }) {
   return (
-    <div className="dr-disclaimer p-3 mt-6 text-[12px] font-sans text-[color:var(--text-muted)] leading-relaxed">
+    <div className="st-disclaimer mt-8 p-3.5 font-sans text-[12px] leading-relaxed text-[color:var(--text-muted)]">
       {children}
     </div>
   )
@@ -97,17 +128,29 @@ function SourceLine({ children }: { children: React.ReactNode }) {
 
 function Tags({ tags }: { tags: string[] }) {
   return (
-    <div className="mt-6 pt-4 border-t border-[color:var(--border-soft)]">
-      <div className="flex items-center gap-1.5 flex-wrap">
+    <div className="mt-7 border-t border-[color:var(--border-soft)] pt-4">
+      <div className="flex flex-wrap items-center gap-2">
         <span className="section-label mr-1">Tags</span>
         {tags.map((tag) => (
-          <span key={tag} className="dr-chip">
+          <span key={tag} className="st-chip">
             {tag}
           </span>
         ))}
       </div>
     </div>
   )
+}
+
+/** Rough reading time from the words in the body blocks. */
+function readingTime(article: Article): string {
+  const words = article.body.reduce((total, block) => {
+    if (typeof block === 'string') return total + block.split(/\s+/).length
+    if (block.type === 'heading') return total + block.text.split(/\s+/).length
+    if (block.type === 'list')
+      return total + block.items.join(' ').split(/\s+/).length
+    return total
+  }, article.summary.split(/\s+/).length)
+  return `${Math.max(1, Math.round(words / 220))} min read`
 }
 
 export default function ArticlePage({ params }: ArticlePageProps) {
@@ -125,23 +168,18 @@ export default function ArticlePage({ params }: ArticlePageProps) {
   return (
     <div className="min-h-screen">
       <Header />
-      <Breadcrumb trail={[{ href: '/hot', label: 'Hot' }]} current={article?.category ?? 'Article'} />
+      <Breadcrumb
+        trail={[{ href: '/hot', label: 'Hot' }]}
+        current={article?.category ?? 'Article'}
+      />
 
-      <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-6">
-        <div className="flex gap-8">
-          <main className="flex-1 min-w-0">
-            <article>
+      <div className="mx-auto max-w-broadsheet px-4 py-8 md:px-6">
+        <div className="flex gap-9">
+          <main className="min-w-0 flex-1">
+            <article className="mx-auto max-w-[700px]">
               {isFeaturedArticle ? (
                 <>
-                  <div className="mb-2.5 flex items-center gap-1.5 flex-wrap">
-                    <span className="dr-chip dr-chip-active">Crypto</span>
-                    <span className="dr-chip">AI Agent</span>
-                    <span className="dr-chip">Gemini</span>
-                    <span className="inline-flex items-center gap-1.5 px-2 py-1 dr-live-pill bg-[color:var(--text-primary)] text-white text-[10px] font-sans font-bold uppercase tracking-[0.08em]">
-                      <span className="w-1.5 h-1.5 bg-white live-dot" />
-                      Live · Apr 27, 2026
-                    </span>
-                  </div>
+                  <Kicker>Crypto</Kicker>
 
                   <Headline>
                     Gemini Rolls Out &ldquo;Agentic Trading&rdquo;: Let ChatGPT, Claude — and
@@ -149,15 +187,16 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                   </Headline>
 
                   <Byline
-                    author="Wafer News Crypto Desk"
+                    author={`${SITE_NAME} Crypto Desk`}
                     facts={['Apr 27, 2026 · 16:05', '1,284 reads', '92 comments']}
+                    shareTitle="Gemini Rolls Out Agentic Trading"
                   />
 
-                  <figure className="mb-5">
+                  <figure className="mb-7">
                     <img
                       src={articleImageSrc ?? FALLBACK_HERO_IMAGE}
                       alt="AI agent connected to a live crypto trading dashboard"
-                      className="w-full h-auto dr-media object-cover"
+                      className="st-media h-auto w-full object-cover"
                     />
                     <Caption>
                       Illustrative: Gemini&apos;s new &ldquo;Agentic Trading&rdquo; panel lets a
@@ -167,7 +206,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                   </figure>
 
                   <div className="article-content">
-                    <p className="text-[18px] font-bold text-[color:var(--text-primary)]">
+                    <p className="text-[20px] font-semibold text-[color:var(--text-primary)]">
                       Gemini today rolled out &ldquo;Agentic Trading,&rdquo; a new product that
                       wires AI models like ChatGPT and Claude directly into your crypto account.
                       Going live on April 27, 2026, the feature uses Anthropic&apos;s open Model
@@ -293,7 +332,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
                     <SourceLine>
                       <strong className="text-[color:var(--text-primary)]">Reporter:</strong>{' '}
-                      Wafer News Crypto Desk |{' '}
+                      {SITE_NAME} Crypto Desk |{' '}
                       <strong className="text-[color:var(--text-primary)]">Editor:</strong> Marcus
                       Chen |{' '}
                       <strong className="text-[color:var(--text-primary)]">Source:</strong>{' '}
@@ -317,21 +356,21 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                 </>
               ) : isBoomerArticle ? (
                 <>
-                  <div className="mb-2.5 flex items-center gap-1.5 flex-wrap">
-                    <span className="dr-chip dr-chip-active">ETF Concept</span>
-                    <span className="dr-chip">50+ Thesis</span>
-                    <span className="dr-chip">BOOMER</span>
-                  </div>
+                  <Kicker>ETF Concept</Kicker>
 
                   <Headline>
                     Meet BOOMER: A VanEck &ldquo;Old People ETF&rdquo; Concept Built for Investors
                     50+
                   </Headline>
 
-                  <Byline author="Wafer News Finance Desk" facts={['Apr 16, 2026 · 09:45']} />
+                  <Byline
+                    author={`${SITE_NAME} Finance Desk`}
+                    facts={['Apr 16, 2026 · 09:45']}
+                    shareTitle="Meet BOOMER: A VanEck Old People ETF Concept"
+                  />
 
                   <div className="article-content">
-                    <p className="text-[18px] font-bold text-[color:var(--text-primary)]">
+                    <p className="text-[20px] font-semibold text-[color:var(--text-primary)]">
                       GENZ asks a sharp question: if digital natives are reshaping spending and
                       risk habits, why not build an ETF around them? The GENZ idea targets Gen Z
                       and younger millennials who live their financial lives online, across
@@ -401,7 +440,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
                     <SourceLine>
                       <strong className="text-[color:var(--text-primary)]">Reporter:</strong>{' '}
-                      Wafer News Finance Desk |{' '}
+                      {SITE_NAME} Finance Desk |{' '}
                       <strong className="text-[color:var(--text-primary)]">Source:</strong> GENZ
                       theme inspiration (fictional BOOMER rewrite)
                     </SourceLine>
@@ -411,39 +450,36 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                 </>
               ) : article ? (
                 <>
-                  <div className="mb-2.5 flex items-center gap-1.5 flex-wrap">
-                    <span className="dr-chip dr-chip-active">{article.category}</span>
-                    {article.section.toLowerCase() !== article.category.toLowerCase() && (
-                      <span className="dr-chip capitalize">{article.section}</span>
-                    )}
-                  </div>
+                  <Kicker>{article.category}</Kicker>
 
                   <Headline>{article.title}</Headline>
 
+                  <Deck>{article.summary}</Deck>
+
                   <Byline
-                    author={article.byline ?? 'Wafer News Staff'}
+                    author={article.byline ?? `${SITE_NAME} Staff`}
                     facts={[
-                      `${article.date ?? '2026-04-29'} · ${article.time}`,
-                      `${((parseInt(article.id.slice(-4), 10) * 7) % 3500) + 320} reads`,
-                    ]}
+                      articleDateline(article.date),
+                      article.time,
+                      readingTime(article),
+                    ].filter(Boolean)}
+                    shareTitle={article.title}
                   />
 
                   {articleImageSrc ? (
-                    <figure className="mb-5">
+                    <figure className="mb-7">
                       <img
                         src={articleImageSrc}
                         alt={article.title}
-                        className="mx-auto h-auto w-auto max-w-full max-h-[440px] dr-media object-contain"
+                        className="st-media mx-auto h-auto max-h-[520px] w-full object-cover"
                       />
-                      <Caption>{article.title} — Wafer News file image.</Caption>
+                      <Caption>
+                        {article.title} — {SITE_NAME} file image.
+                      </Caption>
                     </figure>
                   ) : null}
 
                   <div className="article-content">
-                    <p className="text-[18px] font-bold text-[color:var(--text-primary)]">
-                      {article.summary}
-                    </p>
-
                     {article.body.length > 0 ? (
                       article.body.map((block, idx) => {
                         if (typeof block === 'string') {
@@ -454,7 +490,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                         }
                         if (block.type === 'list') {
                           return (
-                            <ul key={idx} className="list-disc pl-5 mb-5 space-y-1.5">
+                            <ul key={idx} className="mb-6 list-disc space-y-1.5 pl-5">
                               {block.items.map((item) => (
                                 <li key={item}>{item}</li>
                               ))}
@@ -463,23 +499,24 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                         }
                         if (block.type === 'image') {
                           return (
-                            <figure key={idx} className="my-6">
+                            <figure key={idx} className="my-8">
                               <img
                                 src={getArticleImageSrc(block.src) ?? ''}
                                 alt={block.alt ?? block.caption ?? ''}
-                                className="w-full h-auto dr-media object-cover"
+                                loading="lazy"
+                                className="st-media h-auto w-full object-cover"
                               />
                               {block.caption ? <Caption>{block.caption}</Caption> : null}
                             </figure>
                           )
                         }
                         return (
-                          <figure key={idx} className="my-6">
-                            <div className="relative w-full aspect-video bg-black dr-media overflow-hidden">
+                          <figure key={idx} className="my-8">
+                            <div className="st-media relative aspect-video w-full overflow-hidden bg-black">
                               <iframe
                                 src={`https://www.youtube.com/embed/${block.videoId}`}
                                 title={block.title ?? block.caption ?? 'Embedded video'}
-                                className="absolute inset-0 w-full h-full"
+                                className="absolute inset-0 h-full w-full"
                                 loading="lazy"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
@@ -498,7 +535,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
                     <SourceLine>
                       <strong className="text-[color:var(--text-primary)]">Reporter:</strong>{' '}
-                      {article.byline ?? 'Wafer News Staff'} |{' '}
+                      {article.byline ?? `${SITE_NAME} Staff`} |{' '}
                       <strong className="text-[color:var(--text-primary)]">Section:</strong>{' '}
                       {article.section.toUpperCase()} |{' '}
                       <strong className="text-[color:var(--text-primary)]">Source:</strong>{' '}
@@ -510,14 +547,14 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                     tags={[
                       `#${article.category.replace(/\s+/g, '')}`,
                       `#${article.section}`,
-                      '#WaferNews',
+                      '#SareeTimes',
                     ]}
                   />
                 </>
               ) : (
                 <>
                   <Headline>Article not found</Headline>
-                  <p className="font-serif text-[15px] text-[color:var(--text-secondary)] leading-[1.6]">
+                  <p className="st-deck text-[17px]">
                     Sorry, the story you&apos;re looking for has either been moved or never
                     existed. Head back to the{' '}
                     <Link href="/" className="text-[color:var(--accent)] underline">
@@ -528,42 +565,62 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                 </>
               )}
 
-              <div className="mt-6 pt-3 border-t border-[color:var(--border-soft)] text-[11px] font-sans text-[color:var(--text-muted)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <div className="mt-7 flex flex-col gap-1 border-t border-[color:var(--border-soft)] pt-3 font-sans text-[11px] text-[color:var(--text-muted)] sm:flex-row sm:items-center sm:justify-between">
                 <span>Article ID: {article?.id ?? params.slug}</span>
-                <span>&copy; {new Date().getFullYear()} {SITE_NAME}.</span>
+                <span>
+                  &copy; {new Date().getFullYear()} {SITE_NAME}.
+                </span>
               </div>
+
+              {/* Inline newsletter offer at the end of the story */}
+              <section className="st-panel mt-8 p-5 sm:p-6">
+                <span className="st-eyebrow">Free newsletter</span>
+                <h2 className="headline mb-2 mt-1.5 text-[22px]">
+                  Get the Morning Briefing
+                </h2>
+                <p className="st-deck mb-4 max-w-md text-[15px]">
+                  Five sharp headlines in your inbox every weekday morning. No filler, no
+                  noise.
+                </p>
+                <div className="max-w-md">
+                  <NewsletterForm
+                    variant="inline"
+                    buttonLabel="Subscribe"
+                    placeholder="Your email address"
+                  />
+                </div>
+              </section>
             </article>
 
-            <div className="mt-6">
-              <SectionHeading title="Share This Article" />
-              <ShareBar title={article?.title ?? SITE_NAME} />
-            </div>
-
             {moreFromSection.length > 0 && (
-              <section className="mt-7">
-                <SectionHeading title={`More In ${article?.section ?? ''}`} />
-                <ul className="grid grid-cols-1 md:grid-cols-2 md:gap-x-7">
+              <section className="mx-auto mt-10 max-w-[700px]">
+                <SectionHeading
+                  title={`More in ${article?.section ?? ''}`}
+                  href={article ? `/${article.section}` : undefined}
+                />
+                <ul className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-7">
                   {moreFromSection.map((a, idx) => (
                     <li key={a.id}>
                       <Link
                         href={`/article/${getArticleSlug(a)}`}
-                        className={`flex gap-3 py-3 group border-t border-[color:var(--border-soft)] ${
+                        className={`group flex gap-3 border-t border-[color:var(--border-subtle)] py-3.5 ${
                           idx === 0 ? 'border-t-0' : ''
-                        } ${idx === 1 ? 'md:border-t-0' : ''}`}
+                        } ${idx === 1 ? 'sm:border-t-0' : ''}`}
                       >
-                        <div className="flex-1 min-w-0">
-                          <div className="section-label mb-1">{a.category}</div>
-                          <h3 className="headline text-[14px] line-clamp-3 group-hover:underline mb-1">
+                        <div className="min-w-0 flex-1">
+                          <div className="section-label mb-1.5">{a.category}</div>
+                          <h3 className="headline mb-1.5 line-clamp-3 text-[15px] group-hover:text-[color:var(--accent)]">
                             {a.title}
                           </h3>
                           <ArticleMeta article={a} />
                         </div>
                         {getArticleImageSrc(a.image) ? (
-                          <div className="w-[86px] h-[64px] dr-thumb overflow-hidden bg-[color:var(--bg-secondary)] shrink-0">
+                          <div className="st-thumb h-[64px] w-[86px] shrink-0 overflow-hidden">
                             <img
                               src={getArticleImageSrc(a.image)!}
                               alt=""
-                              className="w-full h-full object-cover"
+                              loading="lazy"
+                              className="h-full w-full object-cover"
                             />
                           </div>
                         ) : null}
@@ -575,22 +632,23 @@ export default function ArticlePage({ params }: ArticlePageProps) {
             )}
           </main>
 
-          <aside className="hidden xl:block w-[300px] flex-shrink-0 border-l border-[color:var(--border-soft)] pl-7">
-            <div className="space-y-7">
+          <aside className="hidden w-[300px] flex-shrink-0 border-l border-[color:var(--border-soft)] pl-8 xl:block">
+            <div className="sticky top-24 space-y-8">
               <section>
                 <SectionHeading title="Trending Now" />
-                <ol className="divide-y divide-[color:var(--border-soft)]">
+                <ol>
                   {relatedArticles.map((a, index) => (
-                    <li key={a.id}>
+                    <li
+                      key={a.id}
+                      className={index > 0 ? 'border-t border-[color:var(--border-subtle)]' : ''}
+                    >
                       <Link
                         href={`/article/${getArticleSlug(a)}`}
-                        className="flex gap-3 py-2.5 first:pt-0 group"
+                        className="group flex gap-3 py-3 first:pt-0"
                       >
-                        <span className="font-display font-bold text-[20px] tabular-nums leading-none w-6 shrink-0 text-[color:var(--text-primary)]">
-                          {index + 1}
-                        </span>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="headline text-[13px] leading-snug group-hover:underline line-clamp-3 mb-1">
+                        <span className="st-rank w-6 shrink-0 text-[24px]">{index + 1}</span>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="headline mb-1 line-clamp-3 text-[13.5px] leading-snug group-hover:text-[color:var(--accent)]">
                             {a.title}
                           </h3>
                           <ArticleMeta article={a} />
@@ -603,9 +661,9 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
               <section>
                 <SectionHeading title="Browse Sections" />
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {BROWSE_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="dr-chip">
+                    <Link key={link.href} href={link.href} className="st-chip">
                       {link.label}
                     </Link>
                   ))}
