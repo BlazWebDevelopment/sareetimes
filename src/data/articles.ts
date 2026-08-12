@@ -33,6 +33,7 @@ import memeAnalyzer1Image from '@/context/MemeAnalyzer1.png'
 import cucumberOnAStickHeaderImage from '@/context/y2MhmrumGf.png'
 import cucumberOnAStickAuctionImage from '@/context/r0MptWi20z.png'
 import glumpHeaderImage from '@/context/5JBdxm3FGl.png'
+import normiesInvestingHeaderImage from '@/context/WrXSQns5AY.png'
 
 
 const hero1Image =
@@ -96,6 +97,37 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+
+  {
+    id: '98437348',
+    title: 'The Normies of Investing Are Passengers',
+    summary:
+      'In today\'s markets, the average retail investor is no longer just an observer. They are a passenger — watching the road, reacting to every turn, and rarely in control of the journey.',
+    body: [
+      'A passenger doesn\'t control where the vehicle is going. They sit inside, watch the road, and react to every turn. When things are moving smoothly, they enjoy the ride. When the vehicle suddenly swerves, they panic and wonder what is happening.',
+      'That is increasingly how the average investor behaves.',
+      'When markets go up, the passenger becomes optimistic. When prices start falling, the passenger becomes nervous. When a stock suddenly becomes popular online, the passenger wants in. When the narrative changes, they want out.',
+      'Their decisions are often driven less by conviction and more by momentum.',
+      'The modern investing environment makes this even stronger. Investors are surrounded by financial content 24/7. Social media tells them what is trending. Influencers tell them what to buy. Headlines tell them what to fear. Algorithms constantly put the newest opportunity in front of them.',
+      'The passenger doesn\'t necessarily understand the entire journey.',
+      'They simply know that everyone else seems to be going somewhere.',
+      'And that is what separates the passenger from the people who actually understand the market. The passenger reacts to the destination that everyone is talking about. The more experienced investor thinks about the road itself: valuation, risk, fundamentals, liquidity, incentives and time horizon.',
+      'Passengers tend to arrive late.',
+      'They notice the excitement after it has already become obvious. They become interested after prices have already moved. They become fearful after the decline is already underway.',
+      'This doesn\'t mean the average investor is unintelligent. Quite the opposite. The modern retail investor has access to more information than ever before.',
+      'The problem is that information isn\'t the same as understanding.',
+      'A passenger can know every headline and still have no idea where the vehicle is going.',
+      'And perhaps that is the defining characteristic of the modern investing normie: they are always moving, always watching, always reacting—but rarely in control of the journey.',
+      'In the market, being a passenger is easy.',
+      'The difficult part is learning how to become the driver.',
+    ],
+    category: 'Opinion',
+    time: '16:30',
+    section: 'opinion',
+    image: normiesInvestingHeaderImage,
+    byline: 'Saree Times Opinion Desk',
+    date: '2026-08-12',
+  },
 
   {
     id: '98437339',
