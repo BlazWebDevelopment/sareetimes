@@ -1,0 +1,6 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Wafer News">
+  <rect width="32" height="32" fill="#111111"/>
+  <rect x="1" y="1" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="0.75"/>
+  <path d="M5 9.5 L8 22.5 L11 15.5 L14 22.5 L17 9.5" stroke="#ffffff" stroke-width="2.9" stroke-linecap="butt" stroke-linejoin="round" fill="none"/>
+  <path d="M19.4 22.5 L19.4 9.5 L27 22.5 L27 9.5" stroke="#ffffff" stroke-width="2.9" stroke-linecap="butt" stroke-linejoin="round" fill="none"/>
+</svg>

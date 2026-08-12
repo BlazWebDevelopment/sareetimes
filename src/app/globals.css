@@ -1,0 +1,483 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  --foreground-rgb: 17, 17, 17;
+
+  /* Wafer News — plain white newsprint palette */
+  --bg-base: #ffffff;
+  --bg-primary: #ffffff;
+  --bg-secondary: #eeeeee;
+  --bg-surface: #f6f6f6;
+  --bg-surface-2: #ededed;
+  --bg-elevated: #f4f4f4;
+
+  --border-subtle: #e6e6e6;
+  --border-soft: #dddddd;
+  --border-strong: #bbbbbb;
+  --border-glow: #767676;
+
+  /* Square corners everywhere. */
+  --r-ticket-a: 0;
+  --r-ticket-b: 0;
+  --r-card-a: 0;
+  --r-card-b: 0;
+
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #767676;
+
+  /* Single restrained ink-navy accent, used for links and rules. */
+  --accent: #14396b;
+  --accent-hover: #0d2a52;
+  --accent-subtle: #eef1f6;
+  --accent-border: #c3ccda;
+  --accent-glow: transparent;
+
+  --brand-blue: var(--accent);
+  --brand-blue-dark: #0d2a52;
+  --brand-blue-soft: var(--accent-subtle);
+
+  --brand-red: #14396b;
+  --brand-green: #1f7a3d;
+
+  --rule: #111111;
+  --ink: #111111;
+
+  /* Plain system stacks — Arial for furniture, Georgia for anything editorial. */
+  --font-sans: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  --font-display: Georgia, 'Times New Roman', Times, serif;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+  background: var(--bg-base);
+}
+
+body {
+  background-color: var(--bg-base);
+  color: rgb(var(--foreground-rgb));
+  font-family: var(--font-sans);
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--text-primary);
+  line-height: 1.24;
+}
+
+.headline-lg {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.14;
+}
+
+.headline a:hover,
+a:hover .headline {
+  text-decoration: underline;
+}
+
+/* ---------- page chrome ---------- */
+
+.dr-header-slab {
+  background: var(--bg-base);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.dr-nav-rail {
+  border-top: 3px solid var(--rule);
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-base);
+}
+
+.dr-ticker-rail {
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-surface);
+}
+
+.dr-hero-shell {
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-surface);
+}
+
+.dr-footer-slab {
+  border-top: 3px solid var(--rule);
+  background: var(--bg-surface);
+}
+
+.dr-kicker-mark {
+  width: 1.0625rem;
+  height: 1.0625rem;
+  flex-shrink: 0;
+  border-radius: 0;
+  background: var(--text-primary);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.dr-avatar-cut {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  border-radius: 0;
+}
+
+.dr-brand-mark {
+  border-radius: 0;
+}
+
+.dr-hit {
+  border-radius: 0;
+}
+
+/* ---------- form controls ---------- */
+
+.dr-search {
+  border-radius: 0;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-base);
+}
+
+.dr-search:focus-within {
+  border-color: var(--text-muted);
+}
+
+.dr-icon-btn {
+  border-radius: 0;
+}
+
+.dr-field {
+  border-radius: 0;
+}
+
+.dr-btn-cta {
+  border-radius: 0;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px solid var(--accent);
+}
+
+.dr-btn-cta:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.dr-notice-ok {
+  border-radius: 0;
+}
+
+/* ---------- media ---------- */
+
+.dr-thumb {
+  border-radius: 0;
+  border: 1px solid var(--border-soft);
+}
+
+.dr-media {
+  border-radius: 0;
+  border: 1px solid var(--border-soft);
+}
+
+.dr-inset-panel {
+  border-radius: 0;
+  border: 1px solid var(--border-strong);
+}
+
+.dr-live-pill {
+  border-radius: 0;
+}
+
+.dr-pull-end {
+  border-radius: 0;
+}
+
+.dr-disclaimer {
+  border-radius: 0;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-surface);
+}
+
+/* ---------- cards / lists ---------- */
+
+.dr-card {
+  background: var(--bg-base);
+  border: 1px solid var(--border-soft);
+  border-radius: 0;
+}
+
+.dr-card:hover {
+  border-color: var(--border-strong);
+}
+
+.dr-card-featured {
+  position: relative;
+}
+
+.dr-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-base);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.dr-chip:hover {
+  background: var(--bg-surface-2);
+  color: var(--text-primary);
+  border-color: var(--text-muted);
+}
+
+.dr-chip-active {
+  background: var(--text-primary);
+  color: #ffffff;
+  border-color: var(--text-primary);
+}
+
+.dr-divider {
+  height: 1px;
+  background: var(--border-soft);
+}
+
+/* ---------- typography helpers ---------- */
+
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.meta-line {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.article-content {
+  max-width: 40em;
+  font-family: var(--font-serif);
+}
+
+.article-content p {
+  margin-bottom: 1.15rem;
+  line-height: 1.62;
+  color: #222222;
+  font-size: 1.0625rem;
+}
+
+.article-content h2 {
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.375rem;
+  letter-spacing: 0;
+  margin-top: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--border-strong);
+  padding: 0.25rem 0 0.25rem 1.125rem;
+  margin: 1.5rem 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+/* ---------- static info pages ---------- */
+
+.info-content h2 {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.info-content h2:first-child {
+  margin-top: 0;
+}
+
+.info-content h3 {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.info-content p {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  margin-bottom: 0.9rem;
+}
+
+.info-content ul,
+.info-content ol {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  margin: 0.5rem 0 1.15rem 1.35rem;
+}
+
+.info-content ul { list-style: disc; }
+.info-content ol { list-style: decimal; }
+
+.info-content li {
+  margin-bottom: 0.35rem;
+}
+
+.info-content a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.info-content a:hover {
+  color: var(--accent-hover);
+}
+
+.info-content strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.info-callout {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-left: 4px solid var(--text-primary);
+  border-radius: 0;
+  padding: 0.875rem 1.125rem;
+  margin: 1.25rem 0;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.info-faq summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.info-faq summary::-webkit-details-marker { display: none; }
+
+.info-faq summary:hover {
+  background: var(--bg-surface);
+}
+
+.info-faq summary::after {
+  content: '+';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.info-faq[open] summary::after {
+  content: '\2212';
+}
+
+.info-faq > div {
+  padding: 0 1rem 1rem 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.info-faq + .info-faq {
+  border-top: 1px solid var(--border-soft);
+}
+
+/* ---------- misc ---------- */
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { scrollbar-width: none; }
+
+::selection {
+  background: #b8d4f5;
+  color: #111111;
+}
+
+/* The track holds the headline list twice, so -50% is one seamless loop. */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  animation: ticker 70s linear infinite;
+}
+
+@keyframes live-blink {
+  0%, 60%   { opacity: 1; }
+  61%, 100% { opacity: 0.25; }
+}
+.live-dot {
+  animation: live-blink 1.4s steps(1, end) infinite;
+}
+
+.dr-masthead-rule {
+  height: 3px;
+  width: 2.5rem;
+  background: var(--rule);
+  border-radius: 0;
+}
+
+/* Uppercase section heading with a full rule underneath, print style. */
+.dr-section-accent {
+  position: relative;
+  padding-bottom: 0.375rem;
+  border-bottom: 2px solid var(--rule);
+}
+
+.dr-newsletter-glow {
+  background: var(--bg-surface);
+  border-color: var(--border-strong) !important;
+}
