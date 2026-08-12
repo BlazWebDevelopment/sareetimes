@@ -34,6 +34,7 @@ import cucumberOnAStickHeaderImage from '@/context/y2MhmrumGf.png'
 import cucumberOnAStickAuctionImage from '@/context/r0MptWi20z.png'
 import glumpHeaderImage from '@/context/5JBdxm3FGl.png'
 import normiesInvestingHeaderImage from '@/context/WrXSQns5AY.png'
+import trumpMimiCoinHeaderImage from '@/context/ws0ifyURge.png'
 
 
 const hero1Image =
@@ -97,6 +98,45 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+
+  {
+    id: '98437349',
+    title:
+      'Trump Leaves Courtroom Stunned After Calling Meme Coins “Mimi Coins” During Heated Crypto Questioning',
+    summary:
+      'Donald Trump unexpectedly became the center of a viral crypto moment after repeatedly referring to “meme coins” as “mimi coins” during fictional courtroom questioning surrounding controversy over his cryptocurrency ventures.',
+    body: [
+      'WASHINGTON — Donald Trump unexpectedly became the center of a viral crypto moment after repeatedly referring to “meme coins” as “mimi coins” during fictional courtroom questioning surrounding controversy over his cryptocurrency ventures.',
+      'What was supposed to be a serious discussion about cryptocurrency quickly turned into an internet spectacle after Trump appeared to struggle with the term “meme coin.”',
+      'According to this satirical scenario, Trump initially referred to the tokens as “mimi coins” while answering a question about speculative cryptocurrencies.',
+      'When the term came up again, he reportedly repeated the pronunciation.',
+      '“These mimi coins, a lot of people are talking about them,” the fictional Trump quote reads. “Very successful coins. People like them.”',
+      'The imaginary exchange immediately sent social media into overdrive, with crypto traders joking that “mimi coin” could become the next major meme-token trend.',
+      { type: 'heading', text: 'From Meme Coin to “Mimi Coin”' },
+      'Trump\'s relationship with cryptocurrency has attracted enormous attention since the launch of the Official Trump token, commonly known as TRUMP.',
+      'The token became one of the most talked-about political meme coins in the world, while Trump\'s broader connections to cryptocurrency projects have also generated scrutiny and controversy.',
+      'That made the fictional pronunciation mistake particularly amusing to crypto communities: the man whose name became attached to one of the world\'s most recognizable political meme coins supposedly couldn\'t pronounce the category correctly.',
+      'Within minutes, jokes began circulating:',
+      {
+        type: 'list',
+        items: [
+          '“Forget meme coins. We trade mimi coins now.”',
+          '“The mimi coin supercycle has officially begun.”',
+          '“Meme coins are dead. Welcome to mimi season.”',
+        ],
+      },
+      { type: 'heading', text: 'A Viral Moment Waiting to Happen' },
+      'The story also resembles a real anecdote involving Trump-linked crypto figures. Fortune reported in July 2026 that Steve Witkoff had once pronounced “meme coins” as “me-me coins” while discussing how Trump became interested in cryptocurrency through his son Barron.',
+      'But there is currently no verified evidence that Trump himself made the “mimi coin” remark in court.',
+      'For now, the courtroom version remains satire — although in the unpredictable world of crypto, “mimi coin” might be exactly the kind of phrase traders turn into a token overnight.',
+    ],
+    category: 'Politics',
+    time: '18:45',
+    section: 'hot',
+    image: trumpMimiCoinHeaderImage,
+    byline: 'Saree Times Politics Desk',
+    date: '2026-08-12',
+  },
 
   {
     id: '98437348',
