@@ -136,7 +136,7 @@ export default function Header() {
           <div className="hidden items-center gap-3 md:flex">
             <BrandMark size={42} />
             <span className="st-eyebrow leading-[1.5]">
-              Est. 2026
+              Est. 2008
               <br />
               The Daily Record
             </span>
