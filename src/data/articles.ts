@@ -35,6 +35,7 @@ import cucumberOnAStickAuctionImage from '@/context/r0MptWi20z.png'
 import glumpHeaderImage from '@/context/5JBdxm3FGl.png'
 import normiesInvestingHeaderImage from '@/context/WrXSQns5AY.png'
 import trumpMimiCoinHeaderImage from '@/context/ws0ifyURge.png'
+import kairoLoneWolfHeaderImage from '@/context/kYdeLd458u.png'
 
 
 const hero1Image =
@@ -98,6 +99,33 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {
+    id: '98437350',
+    title: 'Kairo: The Lone Wolf — The Wolf Who Walks Alone',
+    summary:
+      'BBC announces a new wildlife documentary following the extraordinary journey of Kairo, a lone wolf who has chosen a life beyond the pack.',
+    body: [
+      'BBC announces a new wildlife documentary following the extraordinary journey of Kairo, a lone wolf who has chosen a life beyond the pack.',
+      'Official details and release updates for the forthcoming film are at https://bbc-movie.com/.',
+      'Deep in the remote wilderness, a remarkable wolf has captured the attention of wildlife filmmakers. His name is Kairo — and unlike most wolves, he travels alone.',
+      'Kairo has no pack beside him. No leader to follow. No territory guaranteed to him. Every day, he must find his own food, avoid danger and survive the harsh landscape entirely on his own.',
+      'Now, BBC filmmakers are preparing a new documentary that will follow Kairo\'s journey from his own perspective. Using specially designed cameras and tracking technology, the production will capture the world as Kairo experiences it — his long journeys, his hunts, his encounters with other animals and the moments when he disappears into the wilderness.',
+      'The documentary, titled Kairo: The Lone Wolf, aims to give viewers an unprecedented look at the life of a wolf that refuses to follow the traditional path.',
+      'But Kairo\'s story may become more than just a wildlife documentary.',
+      'As cameras follow his every step, the solitary wolf could become an unexpected movie star — a wild animal whose independence, intelligence and determination capture the imagination of audiences around the world.',
+      'He doesn\'t follow the pack. He follows his own path.',
+      'For Kairo, there is no script, no actor and no second take.',
+      'There is only the wilderness — and one lone wolf walking through it.',
+      'The BBC documentary is expected to bring viewers closer than ever to Kairo\'s extraordinary life and the mysterious world he calls home.',
+    ],
+    category: 'Culture',
+    time: '14:10',
+    section: 'culture',
+    image: kairoLoneWolfHeaderImage,
+    byline: 'Saree Times Culture Desk',
+    date: '2026-08-13',
+  },
+
   {
     id: '98437339',
     title: 'Holiday-hating Francesca Hong loses to David Crowley in Wisconsin Democratic gubernatorial primary',

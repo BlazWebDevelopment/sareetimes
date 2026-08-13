@@ -38,6 +38,20 @@ interface ArticlePageProps {
   }
 }
 
+/** Turn bare http(s) URLs in copy into clickable links. */
+function linkify(text: string): React.ReactNode {
+  const parts = text.split(/(https?:\/\/[^\s]+)/g)
+  return parts.map((part, i) =>
+    /^https?:\/\//.test(part) ? (
+      <a key={i} href={part} target="_blank" rel="noopener noreferrer">
+        {part}
+      </a>
+    ) : (
+      part
+    )
+  )
+}
+
 function Kicker({ children }: { children: React.ReactNode }) {
   return <div className="section-label mb-3">{children}</div>
 }
@@ -483,7 +497,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                     {article.body.length > 0 ? (
                       article.body.map((block, idx) => {
                         if (typeof block === 'string') {
-                          return <p key={idx}>{block}</p>
+                          return <p key={idx}>{linkify(block)}</p>
                         }
                         if (block.type === 'heading') {
                           return <h2 key={idx}>{block.text}</h2>
@@ -492,7 +506,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
                           return (
                             <ul key={idx} className="mb-6 list-disc space-y-1.5 pl-5">
                               {block.items.map((item) => (
-                                <li key={item}>{item}</li>
+                                <li key={item}>{linkify(item)}</li>
                               ))}
                             </ul>
                           )
