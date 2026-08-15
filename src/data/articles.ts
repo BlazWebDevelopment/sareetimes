@@ -36,6 +36,7 @@ import glumpHeaderImage from '@/context/5JBdxm3FGl.png'
 import normiesInvestingHeaderImage from '@/context/WrXSQns5AY.png'
 import trumpMimiCoinHeaderImage from '@/context/ws0ifyURge.png'
 import kairoLoneWolfHeaderImage from '@/context/kYdeLd458u.png'
+import ascendingCircleHeaderImage from '@/context/xjDvomtTES.jpg'
 
 
 const hero1Image =
@@ -100,30 +101,60 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    id: '98437350',
-    title: 'Kairo: The Lone Wolf — The Wolf Who Walks Alone',
+    id: '98437351',
+    title:
+      '“The Ascending Circle” Sells for $78 Million, Turning a Simple Black Circle Into the Art World’s Latest Sensation',
     summary:
-      'BBC announces a new wildlife documentary following the extraordinary journey of Kairo, a lone wolf who has chosen a life beyond the pack.',
+      'A strikingly simple painting titled The Ascending Circle has sold for an astonishing $78 million at auction, immediately becoming one of the most talked-about works of contemporary minimalist art.',
     body: [
-      'BBC announces a new wildlife documentary following the extraordinary journey of Kairo, a lone wolf who has chosen a life beyond the pack.',
-      'Official details and release updates for the forthcoming film are at https://bbc-movie.com/.',
-      'Deep in the remote wilderness, a remarkable wolf has captured the attention of wildlife filmmakers. His name is Kairo — and unlike most wolves, he travels alone.',
-      'Kairo has no pack beside him. No leader to follow. No territory guaranteed to him. Every day, he must find his own food, avoid danger and survive the harsh landscape entirely on his own.',
-      'Now, BBC filmmakers are preparing a new documentary that will follow Kairo\'s journey from his own perspective. Using specially designed cameras and tracking technology, the production will capture the world as Kairo experiences it — his long journeys, his hunts, his encounters with other animals and the moments when he disappears into the wilderness.',
-      'The documentary, titled Kairo: The Lone Wolf, aims to give viewers an unprecedented look at the life of a wolf that refuses to follow the traditional path.',
-      'But Kairo\'s story may become more than just a wildlife documentary.',
-      'As cameras follow his every step, the solitary wolf could become an unexpected movie star — a wild animal whose independence, intelligence and determination capture the imagination of audiences around the world.',
-      'He doesn\'t follow the pack. He follows his own path.',
-      'For Kairo, there is no script, no actor and no second take.',
-      'There is only the wilderness — and one lone wolf walking through it.',
-      'The BBC documentary is expected to bring viewers closer than ever to Kairo\'s extraordinary life and the mysterious world he calls home.',
+      'August 15, 2026 — A strikingly simple painting titled The Ascending Circle has sold for an astonishing $78 million at auction, immediately becoming one of the most talked-about works of contemporary minimalist art.',
+      'At first glance, there is almost nothing to explain.',
+      'The large white canvas contains a single black circle, drawn by hand with an intentionally imperfect outline. There are no elaborate figures, landscapes, colors or hidden details—just one uneven line completing an almost perfect circle.',
+      'Yet when the hammer came down, the final price stood at $78 million.',
+      'The fictional sale has ignited exactly the kind of debate that often follows extraordinarily expensive minimalist works: Can something so simple really be worth that much?',
+      { type: 'heading', text: 'The Meaning Behind The Ascending Circle' },
+      'The work is titled The Ascending Circle, a name intended to give the otherwise extremely minimal composition a much larger meaning.',
+      'The circle represents repetition, progress and the human tendency to continually return to where we started—only with a different understanding than before.',
+      'Its imperfect shape is crucial to the concept.',
+      'Rather than using a compass or digital tool to produce a mathematically perfect circle, the line appears unmistakably human. Small variations in thickness and curvature remain visible.',
+      'According to the concept behind the piece, perfection was never the objective.',
+      'Ascending does not mean becoming perfect. It means continuing.',
+      'The circle eventually reaches the place where it began, but the journey required to complete it transforms that starting point into an ending.',
+      { type: 'heading', text: 'From a Black Line to $78 Million' },
+      'The simplicity of the painting made the bidding particularly remarkable.',
+      'What appears to require only black paint and a blank canvas ultimately became a $78 million artwork.',
+      'The enormous valuation places The Ascending Circle in territory normally occupied by internationally recognized masterpieces and historically important works.',
+      'During the imagined auction, bidding quickly moved beyond early expectations as collectors competed for the piece, eventually leaving only a small number of determined bidders.',
+      'The winning bidder is described as a private collector who chose to remain anonymous.',
+      'When the final bid was accepted at $78 million, the room erupted in applause.',
+      { type: 'heading', text: '“Anyone Could Draw That”' },
+      'Almost immediately, images of The Ascending Circle began generating debate online.',
+      'Some viewers praised its extreme simplicity, while others responded with perhaps the most famous criticism of minimalist art:',
+      '“I could have drawn that.”',
+      'That reaction, however, is part of what makes the work interesting.',
+      'Technically, almost anyone could draw a black circle.',
+      'But supporters of conceptual and minimalist art argue that the physical difficulty of producing an artwork isn\'t necessarily what determines its cultural or financial value.',
+      'Instead, value can emerge from the idea, the artist, the historical context, scarcity, provenance and—perhaps most importantly—the willingness of collectors to compete for ownership.',
+      { type: 'heading', text: 'A Circle Worth $78 Million' },
+      'The extraordinary fictional sale also raises a larger question about the modern art market.',
+      'At what point does an object stop being valuable because of what it physically contains and become valuable because of what people believe it represents?',
+      'The Ascending Circle pushes that question almost as far as possible.',
+      'There is no spectacular technique to hide behind.',
+      'No explosion of color.',
+      'No immediately recognizable portrait.',
+      'No complicated composition.',
+      'Just a black circle on white canvas.',
+      'And a $78 million price tag.',
+      'Whether viewers see it as profound minimalism or an absurd example of the contemporary art market may ultimately be beside the point.',
+      'People are talking about it.',
+      'And perhaps that was always part of The Ascending Circle.',
     ],
     category: 'Culture',
-    time: '14:10',
+    time: '15:45',
     section: 'culture',
-    image: kairoLoneWolfHeaderImage,
+    image: ascendingCircleHeaderImage,
     byline: 'Saree Times Culture Desk',
-    date: '2026-08-13',
+    date: '2026-08-15',
   },
 
   {
