@@ -151,11 +151,11 @@ export const articles: Article[] = [
       'And perhaps that was always part of The Ascending Circle.',
     ],
     category: 'Culture',
-    time: '11:20',
+    time: '10:20',
     section: 'culture',
     image: ascendingCircleHeaderImage,
     byline: 'Saree Times Culture Desk',
-    date: '2026-08-15',
+    date: '2026-08-17',
   },
 
   {
