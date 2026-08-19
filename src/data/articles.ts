@@ -37,6 +37,8 @@ import normiesInvestingHeaderImage from '@/context/WrXSQns5AY.png'
 import trumpMimiCoinHeaderImage from '@/context/ws0ifyURge.png'
 import kairoLoneWolfHeaderImage from '@/context/kYdeLd458u.png'
 import ascendingCircleHeaderImage from '@/context/xjDvomtTES.jpg'
+import janeKennedyMrnaVaccineHeaderImage from '@/context/w8pE2f6xEW.png'
+import janeKennedyPatientImage from '@/context/484074327_1045246380963804_1788522156620182880_n.png'
 
 
 const hero1Image =
@@ -100,6 +102,40 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+
+  {
+    id: '98437348',
+    title:
+      'Jane Kennedy Named First Patient for New Personalized mRNA Cancer Vaccine Following Landmark Phase 3 Results',
+    summary:
+      'Jane Kennedy is set to become the first patient in a new individualized mRNA cancer vaccine program following landmark Phase 3 results from Moderna and Merck involving intismeran autogene in combination with KEYTRUDA.',
+    body: [
+      'AUGUST 19, 2026 — A new chapter in personalized cancer treatment is set to begin next week, with Jane Kennedy named as the first patient in a new testing program involving an individualized mRNA cancer vaccine following landmark Phase 3 results announced by Moderna and Merck.',
+      {
+        type: 'image',
+        src: janeKennedyPatientImage,
+        caption: 'Jane Kennedy is scheduled to begin testing on August 24, 2026, ahead of treatment with a personalized mRNA cancer vaccine.',
+        alt: 'Jane Kennedy seated in a medical treatment chair ahead of scheduled testing for a personalized mRNA cancer vaccine',
+      },
+      'Kennedy is scheduled to undergo testing on August 24, 2026, ahead of treatment with a personalized therapy designed around the unique genetic characteristics of an individual patient\'s tumor.',
+      'The development comes as Moderna and Merck announced positive results from their Phase 3 INTerpath-001 trial involving intismeran autogene, also known as V940 or mRNA-4157, in combination with Merck\'s immunotherapy KEYTRUDA.',
+      'Unlike conventional vaccines manufactured identically for millions of people, intismeran is individually designed. Scientists analyze mutations found within a patient\'s tumor and use that information to produce an mRNA therapy encoding selected cancer-specific neoantigens. The goal is to train the patient\'s immune system to recognize and attack cells carrying those mutations.',
+      'The Phase 3 study involved patients with completely resected Stage IIB through Stage IV melanoma. According to Moderna and Merck, the combination achieved statistically significant and clinically meaningful improvements in both recurrence-free survival and distant metastasis-free survival compared with KEYTRUDA alone.',
+      'The companies described the findings as the first positive Phase 3 readout for an individualized neoantigen therapy and an mRNA-based cancer therapy.',
+      'For Kennedy, the August 24 testing process would represent the crucial first step. Doctors would need to examine tumor material and genetic information before an individualized treatment could be designed specifically around her cancer.',
+      'The concept represents a fundamentally different approach to cancer medicine: rather than giving every patient exactly the same treatment, researchers hope to manufacture therapies tailored to the molecular fingerprint of each person\'s tumor.',
+      'Intismeran remains investigational and has not yet been established as an approved cancer vaccine. Moderna and Merck have said they plan to present detailed Phase 3 findings at an upcoming international medical meeting and discuss potential regulatory submissions with health authorities.',
+      'If those regulatory efforts succeed, personalized mRNA cancer therapies could move significantly closer to becoming part of routine cancer treatment.',
+      'For Kennedy, however, attention will first turn to August 24, 2026, when her testing is scheduled to begin.',
+      'Editor\'s note: Jane Kennedy and the August 24 testing event in this article are fictional/unverified details supplied for this story. The Moderna–Merck Phase 3 results and information about intismeran autogene are based on the companies\' August 19, 2026 announcement.',
+    ],
+    category: 'Health',
+    time: '14:00',
+    section: 'hot',
+    image: janeKennedyMrnaVaccineHeaderImage,
+    byline: 'Saree Times Health Desk',
+    date: '2026-08-19',
+  },
 
   {
     id: '98437339',
