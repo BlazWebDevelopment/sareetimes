@@ -111,6 +111,7 @@ export const articles: Article[] = [
     summary:
       'Nova, an upcoming AI-powered dog reportedly being developed with Cursor, is expected to debut in October 2026 — taking artificial intelligence beyond screens and into the physical world as an intelligent companion.',
     body: [
+      'Official details about Nova are at https://www.cursor.dog/.',
       'A new type of artificial intelligence companion could be arriving later this year.',
       'Nova, an upcoming AI-powered dog reportedly being developed with Cursor, is expected to debut in October 2026. The project aims to take AI beyond computers and smartphones by giving it a physical form that can interact with people and the world around it.',
       'Rather than being another chatbot or digital assistant, Nova is envisioned as an intelligent companion capable of learning, adapting, and potentially developing its own unique behaviors over time.',
