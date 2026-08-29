@@ -40,6 +40,13 @@ import ascendingCircleHeaderImage from '@/context/xjDvomtTES.jpg'
 import janeKennedyMrnaVaccineHeaderImage from '@/context/w8pE2f6xEW.png'
 import janeKennedyPatientImage from '@/context/484074327_1045246380963804_1788522156620182880_n.png'
 import novaHeaderImage from '@/context/N0x4IGXMNV.png'
+import cairSchoolGuideHeaderImage from '@/context/skcNx7WHgi.png'
+import trumpVenezuelaOilHeaderImage from '@/context/h9d1ili2Me.png'
+import cadeKlubnikJetsHeaderImage from '@/context/hehSz7hZQM.png'
+import flemingVerdictHeaderImage from '@/context/KmPsS3KUye.png'
+import royceWhiteWigHeaderImage from '@/context/keuTh0ZW8w.png'
+import timMcgrawFallHeaderImage from '@/context/g2Ri9bLtlM.png'
+import lakeAmericaHochulHeaderImage from '@/context/aeG3vRYUn1.png'
 
 
 const hero1Image =
@@ -104,39 +111,271 @@ export interface Article {
 
 export const articles: Article[] = [
 
-
   {
     id: '98437348',
-    title:
-      'Jane Kennedy Named First Patient for New Personalized mRNA Cancer Vaccine Following Landmark Phase 3 Results',
+    title: 'Royce White turns up courtside in a blonde wig as WNBA stunt campaign rolls into Indianapolis',
     summary:
-      'Jane Kennedy is set to become the first patient in a new individualized mRNA cancer vaccine program following landmark Phase 3 results from Moderna and Merck involving intismeran autogene in combination with KEYTRUDA.',
+      'The former Iowa State standout and 2012 lottery pick sat courtside at Gainbridge Fieldhouse on Friday wearing a long blonde wig, the latest escalation of a publicity campaign he and Enes Kanter Freedom have aimed at the WNBA over transgender eligibility.',
     body: [
-      'AUGUST 19, 2026 — A new chapter in personalized cancer treatment is set to begin next week, with Jane Kennedy named as the first patient in a new testing program involving an individualized mRNA cancer vaccine following landmark Phase 3 results announced by Moderna and Merck.',
+      'INDIANAPOLIS — Royce White spent Friday night courtside at Gainbridge Fieldhouse in a long blonde wig, watching the Indiana Fever run past the Connecticut Sun 111-91 and drawing most of the attention that was not directed at the floor.',
+      'White, 35, posted a photo of himself in the wig to Instagram, writing that "The Kweeeen has arrived!" and adding a line demanding that others "bow for a beautiful Black Trans Lesbian." Over the course of the evening he referred to himself as "Queen Roysha."',
+      'The appearance is part of a months-long campaign that White and former NBA center Enes Kanter Freedom have run against the WNBA over the question of transgender participation in women\'s sports. Both men have said they intend to enter the 2027 WNBA Draft, asserting that they identify as women.',
+      'The league has already closed that door. In a statement, the WNBA said the two are not eligible for the 2027 draft. Front Office Sports has reported that people inside the league regard the effort as nothing more than a publicity stunt.',
+      'Earlier in August, the WNBA addressed the broader controversy without naming either man, saying "there are no immediate eligibility matters affecting the WNBA" and that it "strongly denounce[s] the bad-faith efforts to use these topics to demean or marginalize others."',
       {
-        type: 'image',
-        src: janeKennedyPatientImage,
-        caption: 'Jane Kennedy is scheduled to begin testing on August 24, 2026, ahead of treatment with a personalized mRNA cancer vaccine.',
-        alt: 'Jane Kennedy seated in a medical treatment chair ahead of scheduled testing for a personalized mRNA cancer vaccine',
+        type: 'heading',
+        text: 'An escalating pattern',
       },
-      'Kennedy is scheduled to undergo testing on August 24, 2026, ahead of treatment with a personalized therapy designed around the unique genetic characteristics of an individual patient\'s tumor.',
-      'The development comes as Moderna and Merck announced positive results from their Phase 3 INTerpath-001 trial involving intismeran autogene, also known as V940 or mRNA-4157, in combination with Merck\'s immunotherapy KEYTRUDA.',
-      'Unlike conventional vaccines manufactured identically for millions of people, intismeran is individually designed. Scientists analyze mutations found within a patient\'s tumor and use that information to produce an mRNA therapy encoding selected cancer-specific neoantigens. The goal is to train the patient\'s immune system to recognize and attack cells carrying those mutations.',
-      'The Phase 3 study involved patients with completely resected Stage IIB through Stage IV melanoma. According to Moderna and Merck, the combination achieved statistically significant and clinically meaningful improvements in both recurrence-free survival and distant metastasis-free survival compared with KEYTRUDA alone.',
-      'The companies described the findings as the first positive Phase 3 readout for an individualized neoantigen therapy and an mRNA-based cancer therapy.',
-      'For Kennedy, the August 24 testing process would represent the crucial first step. Doctors would need to examine tumor material and genetic information before an individualized treatment could be designed specifically around her cancer.',
-      'The concept represents a fundamentally different approach to cancer medicine: rather than giving every patient exactly the same treatment, researchers hope to manufacture therapies tailored to the molecular fingerprint of each person\'s tumor.',
-      'Intismeran remains investigational and has not yet been established as an approved cancer vaccine. Moderna and Merck have said they plan to present detailed Phase 3 findings at an upcoming international medical meeting and discuss potential regulatory submissions with health authorities.',
-      'If those regulatory efforts succeed, personalized mRNA cancer therapies could move significantly closer to becoming part of routine cancer treatment.',
-      'For Kennedy, however, attention will first turn to August 24, 2026, when her testing is scheduled to begin.',
-      'Editor\'s note: Jane Kennedy and the August 24 testing event in this article are fictional/unverified details supplied for this story. The Moderna–Merck Phase 3 results and information about intismeran autogene are based on the companies\' August 19, 2026 announcement.',
+      'White\'s Indianapolis appearance follows a considerably more volatile night for Kanter Freedom. The 34-year-old was courtside in Chicago on Aug. 23 for the Sky\'s game against the Fever when he got into a shouting confrontation with Sky guard Natasha Cloud in the third quarter. He was ejected from the arena and subsequently barred from attending Sky games.',
+      'Players around the league have pushed back forcefully. Cloud, Los Angeles Sparks forward Cameron Brink and Fever guard Sophie Cunningham have all weighed in, and the dispute has spilled outside the arenas themselves, with competing groups of demonstrators turning up at WNBA venues in recent weeks.',
+      {
+        type: 'heading',
+        text: 'A brief professional career',
+      },
+      'White arrived in professional basketball with genuine pedigree. The Houston Rockets selected him 16th overall in the 2012 NBA Draft out of Iowa State, where he had been one of the more distinctive talents in college basketball.',
+      'The NBA career that followed was almost nonexistent. White appeared in three games, all with the Sacramento Kings in 2014, logging nine total minutes. He finished with two personal fouls and no points.',
+      'He has since moved into conservative politics in Minnesota, including a run for the U.S. Senate.',
+      'This story was first reported by the New York Post. Read the original account here: https://nypost.com/2026/08/29/sports/royce-white-wears-blonde-wig-at-fever-sun-game/',
     ],
-    category: 'Health',
-    time: '14:00',
+    category: 'Sports',
+    time: '11:20',
+    section: 'sports',
+    image: royceWhiteWigHeaderImage,
+    byline: 'Saree Times Sports Desk',
+    date: '2026-08-29',
+  },
+
+  {
+    id: '98437349',
+    title: 'Tim McGraw hits the deck in Cincinnati after keeping the crowd waiting 40 minutes',
+    summary:
+      'The country star took a backward tumble mid-song at Riverbend Music Center when his boot snagged on the stage, then got straight back up and finished the number. He had walked on some 40 minutes behind schedule, blaming travel and weather.',
+    body: [
+      'CINCINNATI — Tim McGraw\'s Thursday night at Riverbend Music Center did not go entirely to plan. First he was late. Then he went down.',
+      'The 59-year-old was midway through his set, performing "I Like It, I Love It," when a cowboy boot caught on the stage flooring and sent him toppling backward. Video circulating on TikTok shows him flailing for balance before landing on his backside, then bouncing straight back to his feet, grinning, microphone still in hand. He kept singing.',
+      'McGraw got ahead of the clips himself the following day, posting concert photos to Instagram and saving the fall for the final slide, set to a voiceover about how exactly he ended up in this situation.',
+      '"Cincinnati, you started our weekend off on the right foot even if I couldn\'t stay on mine," he wrote, thanking the crowd for singing along before turning his attention to the next stop: "Detroit, you\'re up!"',
+      {
+        type: 'heading',
+        text: 'A late start',
+      },
+      'The stumble capped a show that had already gotten off on the wrong foot. According to the Cincinnati Enquirer, McGraw did not appear until roughly 9:40 p.m., some 40 minutes after the advertised start time.',
+      '"I made it!" he told the audience on walking out. He apologized for the delay and attributed it to a combination of travel and weather problems.',
+      'It is not the first time McGraw has ended up on the floor in front of a paying audience. In March 2018 he collapsed from dehydration during a performance at the Country to Country festival in Dublin. He handled that one with a joke too, posting a photo of himself in scuba gear on the ocean floor captioned "Hydrating."',
+      {
+        type: 'heading',
+        text: 'No Dolly tribute onstage',
+      },
+      'McGraw did not mark the death of Dolly Parton during the Cincinnati show, though he had paid tribute to her on social media earlier in the week.',
+      'Calling Parton an icon who "showed us all what was possible," McGraw wrote that she was "the blueprint, head and shoulders above anyone that came before her and all those of us that have come after," and said it had been hard to get through the day without tears.',
+      'This story was first reported by Page Six. Read the original account here: https://pagesix.com/2026/08/29/entertainment/tim-mcgraw-takes-hard-fall-onstage-at-cincinnati-concert-after-arriving-40-minutes-late/',
+    ],
+    category: 'Entertainment',
+    time: '10:40',
+    section: 'culture',
+    image: timMcgrawFallHeaderImage,
+    byline: 'Saree Times Culture Desk',
+    date: '2026-08-29',
+  },
+
+  {
+    id: '98437350',
+    title: 'Cade Klubnik\'s audition falls flat, leaving the Jets without an answer at backup QB',
+    summary:
+      'The rookie went 6-for-13 for 59 yards and threw an interception in Friday\'s 23-6 preseason loss to the Giants, and head coach Aaron Glenn declined afterward to name him the No. 2 behind Geno Smith.',
+    body: [
+      'EAST RUTHERFORD, N.J. — Cade Klubnik had one more night to make the case, and he did not make it.',
+      'The Jets rookie went 6-for-13 for 59 yards in Friday\'s preseason finale against the Giants, threw an interception to linebacker Zaire Barnes — himself a former Jets draft pick — and looked unsettled against a defense that pulled most of its starters after the opening series. New York lost 23-6.',
+      '"Overall, not my best ball," Klubnik said afterward, though he pointed to stretches where the offense found a groove. "At times that our offense was really rolling and then at times we just weren\'t getting into a rhythm and that starts with me and getting the guys going."',
+      'Across the full preseason, Klubnik finished 21-for-34 for 190 yards with no touchdowns, the one interception, and four sacks taken.',
+      'Head coach Aaron Glenn was measured. "I thought Cade was up and down," he said. "He made some plays. Obviously the drive was a really good drive for him. There are some little bitty things that we\'ve got to fix."',
+      {
+        type: 'heading',
+        text: 'The job is still open',
+      },
+      'The scoreboard was beside the point Friday. With roster cuts due, the game was about sorting the depth chart — and the backup quarterback slot has been the franchise\'s most stubborn open question of the summer.',
+      'Geno Smith\'s hold on the starting job has been unchallenged since the Jets acquired him from the Raiders in March. Behind him, Klubnik has outperformed both Bailey Zappe and Brady Cook. The question facing general manager Darren Mougey is whether that is good enough, or whether he should look for a veteran via trade or from the pool of players who become available when teams trim to 53 on Sunday evening.',
+      'Glenn would not commit either way.',
+      '"Me and [Mougey] are going to sit back and evaluate that," he said. "It\'s not fair to myself. It\'s not fair to him. It\'s not fair to us as a team to sit there and make those statements right now. We\'ll take a look at that and we\'ll evaluate it and then we\'ll make the right decision going forward."',
+      'The Jets took Klubnik in the fourth round in April, after a disappointing final season at Clemson knocked down his draft stock. The team has been impressed by his poise and his decision-making in the meeting room. His inexperience, though, keeps surfacing — and the honest question is whether the coaching staff would trust him against the Lions or the Bears if Smith went down.',
+      {
+        type: 'heading',
+        text: 'Where it went wrong',
+      },
+      'Klubnik\'s worst moment came early in the second quarter, when he forced a throw toward tight end Jelani Woods and Barnes was waiting for it. He called it a poor decision and a poor throw afterward, and said he should have checked the ball down to his running back instead.',
+      'The Jets did score on their opening possession, but Klubnik never threw on the 10-play drive; on the one called pass he ended up scrambling. He got another opening just before the break, taking over at his own 34 with 1:57 left, and a pass interference flag on the Giants pushed the ball out to midfield. It went nowhere — two completions were erased by penalties and a third-down sack took the team out of field goal range.',
+      'Running back Chip Trayanum punched in a 1-yard touchdown on that first series for a 6-0 lead, though kicker Jason Sanders missed the extra point. Trayanum\'s night ended badly: on the final play of the half he was hit, immobilized on the field and taken to a local hospital. The Jets said he was alert and able to move his extremities.',
+      'The defense had a better evening, forcing two turnovers. Linebacker Marcelino McCrary-Ball intercepted a Jameis Winston pass that cornerback Qwan\'tez Stiggers had deflected — the second straight week the Jets have come up with a pick after going all of last season without one. McCrary-Ball also knocked the ball loose from Braxton Berrios, and Stiggers recovered it in the end zone.',
+      'With nearly all of the starters rested Friday, attention now turns to Sunday\'s 6 p.m. deadline to reach 53 players, and then to the Sept. 13 opener against the Titans.',
+      'This story was first reported by the New York Post. Read the original account here: https://nypost.com/2026/08/28/sports/cade-klubnik-flops-in-preseason-finale-as-jets-backup-qb-remains-a-question/',
+    ],
+    category: 'Sports',
+    time: '23:10',
+    section: 'sports',
+    image: cadeKlubnikJetsHeaderImage,
+    byline: 'Saree Times Sports Desk',
+    date: '2026-08-28',
+  },
+
+  {
+    id: '98437351',
+    title: 'Trump touts Venezuela oil agreement as \u2018biggest deal in world history,\u2019 says US reserves will more than double',
+    summary:
+      'The president announced Friday that the US has secured majority control of more than 65 billion barrels of proven Venezuelan reserves through a private-sector partnership, a deal Secretary of State Marco Rubio said would bring nearly $100 billion in investment to the country.',
+    body: [
+      'WASHINGTON — President Trump announced Friday that the United States has taken majority control of more than 65 billion barrels of proven oil reserves in Venezuela, an arrangement he described in characteristically expansive terms as "THE BIGGEST OIL DEAL IN WORLD HISTORY!"',
+      'Writing on Truth Social, Trump credited Secretary of State Marco Rubio and Secretary of War Pete Hegseth with negotiating the agreement alongside Venezuelan interim president Delcy Rodriguez, and said it had been structured through a partnership with private business "at no cost to the American Taxpayer."',
+      'The president framed the transaction as a consumer story as much as a geopolitical one, saying it "MORE THAN DOUBLES American Oil Reserves" and would "substantially lower Gas Prices for all Americans, long into the future," while setting Venezuela on a path toward what he called tremendous success and great prosperity.',
+      {
+        type: 'heading',
+        text: 'A reserve base left to decay',
+      },
+      'Venezuela sits on roughly 303 billion barrels of crude — about 17% of the world\'s proven supply, the largest of any country. Converting that into actual production has been the problem.',
+      'Output collapsed under socialist rule. ExxonMobil and ConocoPhillips exited the market, and the extraction infrastructure the state inherited was allowed to deteriorate badly. Rebuilding it, not finding the oil, is the central challenge of any US involvement.',
+      'Trump has signaled his interest in reviving the Venezuelan oil sector since January, when former dictator Nicolas Maduro was ousted and arrested, and has been explicit that he wants American companies drilling in the country\'s fields.',
+      {
+        type: 'heading',
+        text: 'Tight supply at home',
+      },
+      'The timing is not incidental. Six months of war between the US and Iran have squeezed global supply, and the cushion the US would normally lean on has thinned considerably. Earlier this month the Strategic Petroleum Reserve, the emergency stockpile managed by the Department of Energy, dropped below 300 million barrels — its lowest level in four decades.',
+      'Rubio called the agreement "a huge win for both the American and Venezuelan people" in a post on X, arguing it demonstrated "how President Trump\'s bold foreign policy is driving America First wins: securing stable reserves and low-cost oil in our Hemisphere and lowering gas prices here at home."',
+      'On the Venezuelan side of the ledger, Rubio said the deal would draw close to $100 billion in private investment, support thousands of high-paying jobs and drive the reconstruction of the country\'s economy.',
+      'Trump added that the arrangement would "greatly strengthen the already growing relationship between Venezuela and the United States."',
+      'According to Axios, the fields in which the US is taking a stake were previously held by former Venezuelan insiders — including some under indictment by the Justice Department — as well as by Chinese interests.',
+      'This story was first reported by the New York Post. Read the original account here: https://nypost.com/2026/08/28/us-news/trump-announces-biggest-oil-deal-in-world-history-with-venezuela/',
+    ],
+    category: 'US News',
+    time: '19:30',
     section: 'hot',
-    image: janeKennedyMrnaVaccineHeaderImage,
-    byline: 'Saree Times Health Desk',
-    date: '2026-08-19',
+    image: trumpVenezuelaOilHeaderImage,
+    byline: 'Saree Times Politics Desk',
+    date: '2026-08-28',
+  },
+
+  {
+    id: '98437352',
+    title: 'Trump says Hochul \u2018doesn\u2019t care about New York\u2019 after she refuses to use the name \u2018Lake America\u2019',
+    summary:
+      'The president accused the governor of siding with Canada after she said New York would not recognize his renaming of Lake Ontario, a move he ordered Thursday amid an escalating trade fight with Ottawa.',
+    body: [
+      'WASHINGTON — A dispute over what to call a body of water turned into a full political brawl on Friday, with President Trump accusing Gov. Kathy Hochul of taking Canada\'s side against her own country.',
+      '"Governor Kathy Hochul is for Canada," Trump wrote on Truth Social, describing it as "a Country that has been ripping off New York State for years, especially under her Administration, instead of the good \u2018ol USA."',
+      'He went on: "Can you imagine her saying that she won\'t respect or acknowledge LAKE AMERICA. That\'s why the Dumocrats are so bad for our Country."',
+      {
+        type: 'heading',
+        text: 'The renaming',
+      },
+      'On Thursday, Trump signed documents ordering that Lake Ontario be renamed "Lake America," effective immediately — a gesture aimed squarely at Ottawa in the middle of a trade war. The lake runs along roughly 250 miles of New York\'s northern shoreline.',
+      'Hochul\'s response came within hours, and it was short. Posting on X, she said flatly that "New York won\'t be calling it that."',
+      'In a second Truth Social post, Trump called the governor "stupid" and argued that Canadian tariffs are aimed specifically at her state because Ottawa views her as "Weak and Ineffective — Not nice!"',
+      '"She doesn\'t want us to use the name, \u2018Lake America,\u2019 she\'d rather have Canada get a win," he added, saying Canada treats New York like "garbage."',
+      {
+        type: 'heading',
+        text: 'A November pitch',
+      },
+      'Both posts ended the same way: with an endorsement. Trump urged New Yorkers to back Republican gubernatorial candidate Bruce Blakeman in the November election.',
+      '"He\'s an \u2018animal,\u2019 he fights like hell, he doesn\'t let anyone else win," Trump wrote of the Nassau County executive. "He\'s for the people. He\'s smart and cunning, and will Lower your Taxes, and Stop Crime."',
+      'The governor\'s office did not immediately comment.',
+      'This story was first reported by the New York Post. Read the original account here: https://nypost.com/2026/08/28/us-news/trump-says-kathy-hochul-doesnt-care-about-new-york-after-governor-refuses-to-recognize-lake-america/',
+    ],
+    category: 'Metro',
+    time: '18:45',
+    section: 'hot',
+    image: lakeAmericaHochulHeaderImage,
+    byline: 'Saree Times Politics Desk',
+    date: '2026-08-28',
+  },
+
+  {
+    id: '98437353',
+    title: 'CAIR pulls back-to-school guide that tied 9/11 to US support for Israel and assigned bin Laden\u2019s manifesto',
+    summary:
+      'The Council on American-Islamic Relations released its annual K-12 resource guide on Monday, then removed a linked curriculum page a day later. Screenshots show the material framed the Sept. 11 attacks as a response to American foreign policy and listed Osama bin Laden\u2019s "Letter to America" among student readings.',
+    body: [
+      'WASHINGTON — The Council on American-Islamic Relations published its annual back-to-school resource guide for K-12 students on Monday. By Tuesday, a curriculum page linked from within it had been quietly taken down.',
+      'Screenshots of the 16-page guide obtained by the New York Post show that it pointed readers to a document titled "Muslim Studies Curriculum," which characterized the Sept. 11, 2001, attacks as a consequence of American foreign policy rather than as an act of Islamist terrorism.',
+      'The material attributed the attacks, which killed nearly 3,000 people, to a "group self-identifying as Al Quaeda hailing from the mountains of Afghanistan," and pointed to U.S. "support of Israel," American involvement in the Persian Gulf War and the "vast presence" of the U.S. military across the Middle East.',
+      'It also argued that Washington\'s response produced an "aggressive shift in US domestic and foreign policy," the War on Terror, and an "erosion of civil liberties of many Americans."',
+      'On the domestic aftermath, the document said that while "Islamophobia and anti-Muslim racism existed long before the 9/11 attacks," the period marked a turn toward "state sponsored Islamophobia in the US and abroad," with immediate backlash against anyone perceived to be Muslim. It drew a contrast between media treatment of Muslims and of "white supremacists" or "extreme animal rights activists" who it said escaped comparable scrutiny when using violence for political ends.',
+      {
+        type: 'heading',
+        text: 'The reading list',
+      },
+      'Among the recommended student resources was Osama bin Laden\'s "Letter to America," the al Qaeda leader\'s antisemitic manifesto, which asserts that American law serves the rich and that "behind them stand the Jews, who control your policies, media and economy."',
+      'The guide also described bin Laden\'s origins in notably softened terms, presenting him as a onetime American ally among the "rebels" who fought the Soviet invasion of Afghanistan in the 1980s and who "later formed the Taliban."',
+      'The film "V for Vendetta" — summarized as the story of a young woman in a dystopian society who meets a shadowy freedom fighter plotting to overthrow a tyrannical government — was included among background materials.',
+      'A separate section addressed how to discuss "genocide" and Gaza with children. It did not mention Hamas or the Oct. 7, 2023, attacks that killed roughly 1,200 people in Israel.',
+      'The guide additionally defended the practice of raising foreign policy issues in classrooms as a way to "promote understanding."',
+      {
+        type: 'heading',
+        text: 'Reaction',
+      },
+      'Nicholas Haros Jr., whose mother Frances was killed on 9/11, said he was disgusted but not surprised. "Israel had nothing to do with 9/11," he said, warning that "the further we get from 9/11, this new generation of kids will learn to blame our country."',
+      'Moshe Spern, president of United Jewish Teachers, was blunter still: "CAIR just nationalized a curriculum that refuses to call the 9/11 hijackers terrorists, assigns Osama bin Laden\'s \u2018Letter to America\u2019 as high-school reading, and coaches five-year-olds on Gaza without ever naming Hamas or October 7. That is not inclusion — it\'s dangerous propaganda."',
+      'In its own press release, CAIR argued that classroom lessons about 9/11 can be "a particularly dangerous time for Muslim students," who it said "often experience a surge in bullying" during such lessons.',
+      'Asked whether it stood by the document, the organization did not deny removing the hyperlink and pointed to an attached note describing changes to an earlier version.',
+      {
+        type: 'heading',
+        text: 'Background',
+      },
+      'Founded in 1993, CAIR is the largest Muslim civil rights organization in the United States. It has been designated a foreign terrorist organization by both Texas and Florida.',
+      'The group was named as an unindicted co-conspirator in the 2008 federal prosecution of five leaders of the Holy Land Foundation for Relief and Development, a now-defunct Texas nonprofit convicted of channeling more than $12 million from the U.S. to Hamas.',
+      'This story was first reported by the New York Post. Read the original account here: https://nypost.com/2026/08/28/us-news/cair-blamed-9-11-on-us-support-for-israel-recommended-bin-ladens-writings-in-back-to-school-guide/',
+    ],
+    category: 'US News',
+    time: '17:15',
+    section: 'newspaper',
+    image: cairSchoolGuideHeaderImage,
+    byline: 'Saree Times US Desk',
+    date: '2026-08-28',
+  },
+
+  {
+    id: '98437354',
+    title: 'Bronx judge clears mother with postpartum psychosis in killings of her two young sons',
+    summary:
+      'Dimone Fleming, 26, was found not responsible by reason of mental disease or defect in the 2022 stabbing deaths of her 3-year-old and 11-month-old sons. Prosecutors and defense lawyers agreed she was psychotic at the time; she remains in custody pending a Sept. 18 hearing.',
+    body: [
+      'A Bronx judge has found Dimone Fleming not criminally responsible for the deaths of her two young sons, concluding that the 26-year-old was in the grip of postpartum psychosis when she killed them at a family shelter in 2022.',
+      'The ruling, delivered Monday and reported by the New York Times, applies the standard of not responsible by reason of mental disease or defect. Fleming had been charged with first-degree murder in the stabbing deaths of 3-year-old Daishawn Fleming and 11-month-old Octavius Canada.',
+      'Unusually, there was no real dispute between the two sides about her mental state. Examinations ordered by both the prosecution and the defense reached the same conclusion.',
+      'Dr. Eric Goldsmith, the psychiatrist who evaluated Fleming at the prosecution\'s request, described her on the night of the killings as "grossly psychotic and out of touch with reality." He said she was hallucinating, convinced the world was ending, and believed a spirit had taken over her body.',
+      'A forensic psychiatric report prepared by doctors retained by the defense reached a parallel finding: that "Ms. Fleming believed her actions were necessary to protect or \u2018cleanse\u2019 her children."',
+      {
+        type: 'heading',
+        text: 'A treatment history that broke down',
+      },
+      'Court records cited by the Times show Fleming had spent two months as a patient at a Queens hospital before the killings, where she was diagnosed with major depressive disorder and prescribed psychotropic medication.',
+      'She did not take that medication as directed. She was instead using marijuana daily, which reportedly worsened her symptoms.',
+      {
+        type: 'heading',
+        text: 'The night of Nov. 26, 2022',
+      },
+      'The sequence of events that evening was chaotic. A shelter employee called 911 after water and smoke were seen coming from Fleming\'s apartment. Officers arrived to find her behaving irrationally and took her to a hospital for evaluation.',
+      'The children were not found in that first search. The boys\' bodies were in the bathtub, under a pile of clothing, and a neighbor had told police the children were with their father. It was Columbus Canada — Fleming\'s then-boyfriend and Octavius\'s father — who discovered them unresponsive shortly afterward and called police.',
+      'Police sources told reporters at the time that Fleming had confessed to detectives and made statements about the "devil." She was 22 when she was charged.',
+      {
+        type: 'heading',
+        text: '\u2018Prosecuting mothers does not prevent these crimes\u2019',
+      },
+      'In court this week, prosecutors told the judge that taking Fleming to trial for double murder would not serve the interests of justice.',
+      '"Prosecuting mothers does not and cannot prevent these crimes from happening, but public discourse might," Bronx assistant district attorney Tiffany Wichman said. "People talking about it is important, and I hope people continue talking about it."',
+      'Canada, now 35, attended Monday\'s proceeding and said he had forgiven her. "She\'s a good person," he said. "She was a loving person. She loved kids."',
+      'Fleming is not being released. She will be re-evaluated by court-appointed psychiatrists and is due back in court on Sept. 18, when the judge is expected to rule on whether she still poses a danger to others and what happens next. She avoids prison, but is likely to remain hospitalized for months or years.',
+      {
+        type: 'heading',
+        text: 'A parallel case in Massachusetts',
+      },
+      'The ruling landed while jurors in Plymouth Superior Court were still deliberating in the trial of Lindsay Clancy, a former labor and delivery nurse who strangled her three children in 2023 and then attempted to take her own life.',
+      'Clancy is asking the jury to find her not guilty by reason of insanity, arguing that she was suffering severe postpartum psychosis that was made worse by a combination of powerful psychiatric medications she had been prescribed.',
+      'This story was first reported by the New York Post. Read the original account here: https://nypost.com/2026/08/28/us-news/judge-finds-nyc-mom-with-postpartum-psychosis-not-guilty-of-killing-her-2-young-kids/',
+    ],
+    category: 'Metro',
+    time: '16:30',
+    section: 'newspaper',
+    image: flemingVerdictHeaderImage,
+    byline: 'Saree Times Crime Desk',
+    date: '2026-08-28',
   },
 
   {
