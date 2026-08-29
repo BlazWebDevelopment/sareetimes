@@ -114,6 +114,59 @@ export interface Article {
 export const articles: Article[] = [
 
   {
+    id: '98437355',
+    title: 'Elon Musk Threatens Lawsuit Over Viral "The Glump" Artwork Appearing Across Los Angeles',
+    summary:
+      'Posters depicting a shirtless Elon Musk riding an oversized capybara have turned up on walls, utility poles and buildings across Los Angeles. The anonymous creator calls the piece "The Glump," and Musk\'s legal team is reportedly weighing action over the unauthorized use of his likeness.',
+    body: [
+      'LOS ANGELES — A bizarre piece of street art depicting Elon Musk shirtless and riding an enormous capybara has begun appearing on walls, utility poles and buildings across Los Angeles. The mysterious creator has reportedly named the artwork "The Glump."',
+      'The unusual image shows Musk with an exaggerated physique, sitting barefoot on an oversized capybara while holding makeshift reins. Designed to resemble an aged, hand-painted illustration, copies of the artwork have appeared weathered, folded and pinned across several locations in the city.',
+      {
+        type: 'image',
+        src: theGlumpArtworkImage,
+        caption: 'Copies of "The Glump" have appeared weathered and pinned across multiple Los Angeles neighborhoods.',
+        alt: 'Street art poster depicting Elon Musk riding a capybara, titled The Glump',
+      },
+      'Images of The Glump began spreading online after pedestrians photographed posters in multiple Los Angeles neighborhoods. What initially appeared to be a single piece of strange street art quickly developed into a much larger mystery as additional copies were spotted across the city.',
+      'Musk\'s representatives are portrayed as attempting to determine who created and distributed the posters, but the person responsible has not been identified.',
+      {
+        type: 'heading',
+        text: 'A clue in the metadata',
+      },
+      'One of the most significant clues reportedly came from the digital image itself.',
+      'Metadata associated with copies of The Glump allegedly contained information suggesting that an AI image-generation system developed by OpenAI had been used during the creation of the original artwork.',
+      'That discovery reportedly prompted questions about how the image was produced and whether information associated with its generation could eventually help identify its creator.',
+      'The use of an AI-generation service, however, would not mean that the company operating the service was responsible for printing or distributing the posters. The person using the technology would still have made the decision to create the image and place physical copies around Los Angeles.',
+      {
+        type: 'image',
+        src: glumpHeaderImage,
+        caption: 'Additional sightings of The Glump have continued to surface as the mystery draws wider attention online.',
+        alt: 'The Glump street art poster spotted in Los Angeles',
+      },
+      {
+        type: 'heading',
+        text: 'An online phenomenon',
+      },
+      'Meanwhile, the unusual name "The Glump" has helped turn the artwork into an online phenomenon.',
+      'Social-media users have started referring to individual sightings as "Glumps," while photographs of newly discovered posters have circulated across social platforms. Some users have treated the image as absurdist street art, while others have attempted to identify the anonymous artist behind it.',
+      {
+        type: 'heading',
+        text: 'Musk weighs legal action',
+      },
+      'Musk is depicted as being considerably less amused by the situation.',
+      'His legal representatives are described as considering potential action over the unauthorized use of his likeness and the widespread distribution of deliberately unflattering imagery. Efforts are also reportedly underway to determine who printed and installed the posters.',
+      'For now, however, the identity of the person behind The Glump remains unknown.',
+      'The growing attention surrounding the investigation may ultimately be helping the artwork spread even further.',
+    ],
+    category: 'Culture',
+    time: '18:10',
+    section: 'culture',
+    image: theGlumpLaHeaderImage,
+    byline: 'Saree Times Culture Desk',
+    date: '2026-08-29',
+  },
+
+  {
     id: '98437348',
     title: 'Royce White turns up courtside in a blonde wig as WNBA stunt campaign rolls into Indianapolis',
     summary:
