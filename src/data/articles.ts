@@ -49,6 +49,8 @@ import timMcgrawFallHeaderImage from '@/context/g2Ri9bLtlM.png'
 import lakeAmericaHochulHeaderImage from '@/context/aeG3vRYUn1.png'
 import theGlumpLaHeaderImage from '@/context/IFKwQizqmk.png'
 import theGlumpArtworkImage from '@/context/SVLqqAuyq5.png'
+import albinoCapybaraHeaderImage from '@/context/SOjBMYcKoN.jpg'
+import albinoCapybaraInlineImage from '@/context/Hw2AIQf02g.jpg'
 
 
 const hero1Image =
@@ -112,6 +114,40 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+
+  {
+    id: '98437355',
+    title: 'Rare Albino Capybara Finally Named Albert After a Month of Searching for the Perfect Name',
+    summary:
+      'After nearly a month of thinking, discussing and searching for the perfect name, the rare albino capybara that recently captured attention online has officially been named Albert.',
+    body: [
+      'After nearly a month of thinking, discussing and searching for the perfect name, the rare albino capybara that recently captured attention online has officially been named Albert.',
+      'The unusually white capybara first gained attention after appearing among a group of normally colored capybaras, immediately standing out because of its bright white fur and pale pink features.',
+      'Since then, one question has remained unanswered: what should the rare little capybara be called?',
+      'For weeks, different names were considered, but no decision was made. Those caring for the capybara wanted a name that felt simple, memorable and fitting for such an unusual animal.',
+      'Now, after around a month of consideration, the decision has finally been made.',
+      'His name is Albert.',
+      'Albert is believed to have albinism, a rare genetic condition that causes the body to produce very little or no melanin. This can result in white or extremely pale fur, skin and other features.',
+      'Despite his extraordinary appearance, Albert behaves just like the other capybaras around him. He spends his time relaxing, exploring and staying close to the rest of the group.',
+      'His white coat makes him almost impossible to miss when standing beside the brown-furred capybaras, but within the group, Albert appears completely at home.',
+      'The decision to name him Albert now gives the rare capybara an identity of his own after weeks of growing attention.',
+      'What began as curiosity about an unusually colored capybara has now turned into a story followed by animal lovers who have watched the little white capybara become increasingly recognizable.',
+      {
+        type: 'image',
+        src: albinoCapybaraInlineImage,
+        caption: 'Albert, the rare albino capybara, with the rest of his group.',
+        alt: 'Rare albino capybara named Albert standing among normally colored capybaras',
+      },
+      'And after a month without a name, the wait is finally over.',
+      'Meet Albert — the rare albino capybara.',
+    ],
+    category: 'Culture',
+    time: '14:30',
+    section: 'culture',
+    image: albinoCapybaraHeaderImage,
+    byline: 'Saree Times Culture Desk',
+    date: '2026-08-30',
+  },
 
   {
     id: '98437348',
