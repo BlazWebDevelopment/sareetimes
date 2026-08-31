@@ -116,49 +116,6 @@ export interface Article {
 
 export const articles: Article[] = [
 
-  {
-    id: '98437356',
-    title: 'Nova: Cursor\u2019s Upcoming AI Dog Could Redefine the Future of AI Companions',
-    summary:
-      'Nova, an AI-powered robotic dog reportedly being developed with Cursor, is expected to debut in October 2026 — bringing intelligent companionship off the screen and into the physical world.',
-    body: [
-      'A new type of artificial intelligence companion could be arriving later this year.',
-      'Nova, an upcoming AI-powered dog reportedly being developed with Cursor, is expected to debut in October 2026. The project aims to take AI beyond computers and smartphones by giving it a physical form that can interact with people and the world around it.',
-      'Rather than being another chatbot or digital assistant, Nova is envisioned as an intelligent companion capable of learning, adapting, and potentially developing its own unique behaviors over time.',
-      {
-        type: 'image',
-        src: novaInlineImage,
-        caption: 'Nova, Cursor\u2019s upcoming AI-powered companion dog.',
-        alt: 'Nova, an AI-powered robotic dog developed with Cursor',
-      },
-      'Learn more about the project at https://www.cursor.dog/',
-      { type: 'heading', text: 'Meet Nova' },
-      'At first glance, Nova may look like a futuristic robotic dog, but the concept behind the project goes much further.',
-      'AI is expected to serve as the core of Nova\u2019s personality and behavior. The goal is for him to understand situations, react to people, learn from previous interactions, and become more personalized the longer he spends with his owner.',
-      'Instead of users constantly giving commands, Nova could eventually learn routines and recognize patterns on his own.',
-      'The idea is simple: an AI that doesn\u2019t just live on your screen\u2014it lives alongside you.',
-      { type: 'heading', text: 'Expected to Arrive in October 2026' },
-      'Nova is currently expected to make his first appearance in October 2026, potentially introducing an entirely new way for consumers to experience artificial intelligence.',
-      'AI assistants have rapidly evolved in recent years, but most remain confined to phones, computers, and other screens. Nova represents a different direction: bringing intelligent systems into the physical world as companions people can directly interact with.',
-      'If successful, the concept could open the door to a new generation of AI-powered pets and personal robots.',
-      { type: 'heading', text: 'Bringing AI Into the Real World' },
-      'The bigger vision behind Nova is about making artificial intelligence feel more natural, personal, and interactive.',
-      'Imagine an AI companion that recognizes you, remembers previous interactions, learns your habits, reacts to its surroundings, and gradually changes the way it behaves.',
-      'That could make Nova more than simply a robot with AI software. He could become an early example of how physical AI companions may eventually become part of everyday life.',
-      { type: 'heading', text: 'The Beginning of a New AI Era?' },
-      'Nova could represent an important experiment in what happens when advanced AI moves beyond the screen.',
-      'Whether AI dogs eventually become household companions remains to be seen, but the idea highlights how quickly the relationship between robotics and artificial intelligence is evolving.',
-      'For now, one date stands out:',
-      'October 2026.',
-      'That could be when the world gets its first real look at Nova\u2014and potentially a very different future for AI companions.',
-    ],
-    category: 'Tech',
-    time: '14:26',
-    section: 'tech',
-    image: novaHeaderImage,
-    byline: 'Saree Times Tech Desk',
-    date: '2026-08-31',
-  },
 
   {
     id: '98437355',
