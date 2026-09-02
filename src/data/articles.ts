@@ -52,6 +52,7 @@ import theGlumpLaHeaderImage from '@/context/IFKwQizqmk.png'
 import theGlumpArtworkImage from '@/context/SVLqqAuyq5.png'
 import albinoCapybaraHeaderImage from '@/context/SOjBMYcKoN.jpg'
 import albinoCapybaraInlineImage from '@/context/Hw2AIQf02g.jpg'
+import vladTenevRobinhoodChainHeaderImage from '@/context/Y3X0v7p66L.png'
 
 
 const hero1Image =
@@ -116,6 +117,55 @@ export interface Article {
 
 export const articles: Article[] = [
 
+  {
+    id: '98437356',
+    title: 'Vlad Tenev Talks Robinhood Chain and a New Era for the “Robins”',
+    summary:
+      'Robinhood CEO Vlad Tenev is pushing the company beyond its roots as a retail trading app, with Robinhood Chain becoming one of the biggest pieces of its expanding vision for onchain finance.',
+    body: [
+      'Robinhood CEO Vlad Tenev is continuing to push the company beyond its roots as a retail trading app, with Robinhood Chain becoming one of the biggest pieces of its expanding vision for onchain finance.',
+      'Robinhood Chain officially entered its public mainnet phase in July 2026 after previously launching as a testnet earlier in the year. The network is an Ethereum-compatible Layer 2 built using Arbitrum technology and is designed to bring traditional financial assets, crypto and tokenized real-world assets onto the same blockchain infrastructure.',
+      'For Tenev, the project represents something much larger than simply launching another blockchain.',
+      'Robinhood has increasingly positioned itself as a global financial platform, and Tenev has said that products including Robinhood Chain are ultimately focused on expanding financial ownership. In the company’s latest quarterly results, he said Robinhood\'s product development remained centered around one goal: “making everyone an owner.”',
+      'That vision could eventually give Robinhood users access to financial markets in ways that previously required several different platforms.',
+      'Robinhood Chain is designed to support tokenized stocks and other real-world assets alongside decentralized applications for trading, lending, borrowing and yield. The network is permissionless, meaning developers can also build applications directly on top of it.',
+      {
+        type: 'heading',
+        text: 'From Robinhood Traders to the “Robins”',
+      },
+      'As Robinhood develops its own blockchain ecosystem, the company\'s massive community of retail traders could become an important part of its growth.',
+      'And there may be a fitting nickname for them: the Robins.',
+      'The term plays naturally off the Robinhood name and describes the generation of traders who grew up buying stocks, options and crypto directly from their phones.',
+      'For years, Robinhood users primarily interacted with markets through the company’s traditional app. Robinhood Chain opens the possibility of those same “Robins” eventually moving between traditional investing and decentralized finance without seeing the two as completely separate worlds.',
+      'Instead of simply buying an asset, users could potentially hold tokenized assets onchain, transfer them to their own wallets, use them as collateral or interact with applications built by third-party developers.',
+      'Robinhood says its Stock Tokens can already interact with the broader DeFi ecosystem, including potential uses in lending pools and as trading collateral.',
+      {
+        type: 'heading',
+        text: 'Robinhood Chain Is Already Taking an Unexpected Direction',
+      },
+      'Interestingly, Robinhood Chain has also attracted a community that may not have been the network\'s original focus: memecoin traders.',
+      'Tenev acknowledged the trend himself in July, writing that although Robinhood was building its chain to be strong infrastructure for real-world assets, it “works great for memes too.”',
+      'That activity demonstrated something important about permissionless blockchains.',
+      'Once a network is open, its users ultimately have significant influence over what happens on it.',
+      'Robinhood may have built the infrastructure primarily around tokenized finance, but traders can also create markets, experiment with new assets and build applications that Robinhood itself never planned.',
+      'For the Robins, that could make Robinhood Chain feel less like another feature inside a brokerage and more like an entirely new financial ecosystem.',
+      {
+        type: 'heading',
+        text: 'Robinhood Wants to Bring TradFi and DeFi Together',
+      },
+      'Robinhood\'s larger bet appears to be that the distinction between traditional finance and crypto will gradually disappear.',
+      'Stocks, ETFs, crypto assets and tokenized real-world assets could eventually exist within interconnected financial infrastructure rather than being separated across brokerage accounts, crypto exchanges and blockchain wallets.',
+      'Robinhood Chain is one of the clearest signs yet that Tenev wants Robinhood to participate directly in building that infrastructure.',
+      'The company that became famous for making stock trading accessible from a smartphone is now trying to build the rails on which the next generation of financial products could operate.',
+      'And if that vision succeeds, the millions of retail traders who helped build Robinhood may eventually have another name inside that ecosystem: the Robins.',
+    ],
+    category: 'Finance',
+    time: '13:15',
+    section: 'finance',
+    image: vladTenevRobinhoodChainHeaderImage,
+    byline: 'Saree Times Markets Desk',
+    date: '2026-09-02',
+  },
 
   {
     id: '98437355',
