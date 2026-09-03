@@ -120,65 +120,6 @@ export const articles: Article[] = [
 
 
   {
-    id: '98437356',
-    title: '"The Great Start – Robinhood" Documentary Coming to BBC Movies',
-    summary:
-      'A new documentary exploring the rise of Robinhood, the expansion of its crypto business, and the company\'s growing ambitions in blockchain is coming to BBC Movies.',
-    body: [
-      'A new documentary exploring the rise of Robinhood, the expansion of its crypto business, and the company\'s growing ambitions in blockchain is coming to BBC Movies.',
-      'Titled "The Great Start – Robinhood," the upcoming film will focus on Robinhood CEO and co-founder Vlad Tenev and the company\'s evolution from a commission-free stock-trading platform into a broader financial technology business with an increasing focus on cryptocurrency and blockchain infrastructure.',
-      'The documentary is expected to place particular attention on Robinhood Chain, exploring the ideas behind the project and what a dedicated blockchain ecosystem could mean for the company\'s future.',
-      {
-        type: 'heading',
-        text: 'From Trading App to Crypto Ecosystem',
-      },
-      'Robinhood became known for making stock and cryptocurrency trading accessible through a simple mobile interface. Over time, however, its ambitions have expanded far beyond traditional trading.',
-      '"The Great Start – Robinhood" will follow that transformation, looking at the decisions, technology and people behind Robinhood\'s push deeper into digital assets.',
-      'Rather than focusing only on cryptocurrency prices, the film is expected to examine the infrastructure being built around crypto — including tokenized assets, blockchain technology and the possibility of financial products operating directly on-chain.',
-      'At the center of the story is Vlad Tenev.',
-      'The documentary will explore his journey from co-founding Robinhood to leading one of the most recognizable financial technology companies in the United States, while also examining his vision for what the next generation of financial markets could look like.',
-      {
-        type: 'heading',
-        text: 'The Beginning of Robinhood Chain',
-      },
-      'One of the film\'s central themes will be the creation and development of Robinhood Chain.',
-      'The documentary presents the blockchain project as a potential new chapter for Robinhood, with the company looking beyond simply allowing customers to buy and sell crypto and toward building infrastructure that could support a wider financial ecosystem.',
-      'The title, "The Great Start," reflects that idea.',
-      'Rather than presenting Robinhood\'s story as finished, the documentary focuses on the possibility that its move toward blockchain could represent the beginning of an entirely new phase for the company.',
-      'Viewers can expect discussions around decentralization, tokenization, financial accessibility and how blockchain technology could eventually change the way stocks, cryptocurrencies and other assets are traded.',
-      {
-        type: 'heading',
-        text: 'Vlad Tenev at the Center of the Story',
-      },
-      'Tenev will serve as the central figure throughout the documentary, with the film following both Robinhood\'s history and its future ambitions through his perspective.',
-      {
-        type: 'image',
-        src: robinhoodDocumentaryPosterImage,
-        caption: 'Official poster for "The Great Start – Robinhood," coming soon to BBC Movies.',
-        alt: 'Documentary poster for The Great Start – Robinhood featuring Vlad Tenev',
-      },
-      'Official release updates and promotional material for the film are available at https://bbc-movie.com/.',
-      'The documentary is expected to combine interviews, company footage, technology demonstrations and cinematic sequences showing the evolution of Robinhood from its early days into its current crypto-focused expansion.',
-      'It will also examine the challenges that come with attempting to connect traditional finance with blockchain technology — two industries that have historically operated very differently.',
-      'The central question behind the film is simple:',
-      'What happens when one of the world\'s best-known retail trading platforms decides it wants to help build the financial infrastructure of the future?',
-      {
-        type: 'heading',
-        text: 'Coming to BBC Movies',
-      },
-      '"The Great Start – Robinhood" is set to be presented as a major technology and finance documentary for BBC Movies, bringing the story of Robinhood\'s crypto expansion to a wider audience.',
-      'An official release date has not yet been revealed.',
-      'For now, the first promotional material carries a simple message: Building access. Empowering people. Rewriting finance.',
-    ],
-    category: 'Finance',
-    time: '16:30',
-    section: 'finance',
-    image: robinhoodDocumentaryHeaderImage,
-    byline: 'Saree Times Finance Desk',
-    date: '2026-09-03',
-  },
-
-  {
     id: '98437355',
     title: 'Rare Albino Capybara Finally Named Albert After a Month of Searching for the Perfect Name',
     summary:
