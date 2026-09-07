@@ -54,6 +54,11 @@ import albinoCapybaraHeaderImage from '@/context/SOjBMYcKoN.jpg'
 import albinoCapybaraInlineImage from '@/context/Hw2AIQf02g.jpg'
 import robinhoodDocumentaryHeaderImage from '@/context/Y3X0v7p66L.png'
 import robinhoodDocumentaryPosterImage from '@/context/3J7pMugXB4.png'
+import upsUltraProfitSeasonHeaderImage from '@/context/IGrbCEXyWd.png'
+import ductTapedPassengerHeaderImage from '@/context/T7gRrCz1ay.png'
+import michelsenUsOpenHeaderImage from '@/context/3jSOKJCGih.png'
+import blueWaveMidtermsHeaderImage from '@/context/Hpvf1VRydA.png'
+import michiganEndingHeaderImage from '@/context/SiSggcITR1.jpg'
 
 
 const hero1Image =
@@ -117,6 +122,147 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {
+    id: '98437356',
+    title: 'UPS Unveils Temporary “Ultra Profit Season” Branding as Markets Rally',
+    summary:
+      'UPS is temporarily adding the phrase “Ultra Profit Season” beneath its iconic shield, giving the shipping giant’s three-letter name a fictional Wall Street-inspired second meaning as markets surge.',
+    body: [
+      'UPS is putting a playful new spin on its famous three-letter name, temporarily introducing the phrase “Ultra Profit Season” beneath its iconic logo as part of a fictional campaign celebrating strong market momentum.',
+      'The concept takes the instantly recognizable UPS initials and gives them a Wall Street-inspired meaning: Ultra Profit Season.',
+      'Under the temporary branding, the classic UPS shield remains largely unchanged, while the words “Ultra Profit Season” appear directly underneath — turning one of the world’s most recognizable corporate abbreviations into a celebration of bullish markets and investor optimism.',
+      'The campaign comes during what the concept describes as an unusually strong period for the stock market, with traders increasingly talking about momentum, new highs and renewed appetite for risk.',
+      'Rather than introducing an entirely new logo, UPS keeps its familiar identity at the center of the campaign. The only major addition is the new phrase underneath:',
+      'UPS — Ultra Profit Season',
+      'The limited-time slogan is designed to capture the mood surrounding financial markets while giving the traditional UPS name an unexpected second meaning.',
+      { type: 'heading', text: 'When Wall Street Meets UPS' },
+      'The phrase has also begun attracting attention from online trading and crypto communities.',
+      '“Ultra Profit Season” fits naturally into the vocabulary of traders who use phrases such as “bull season,” “altcoin season” and “meme season” to describe periods when markets are moving aggressively higher.',
+      'That has given the fictional campaign an additional life within memecoin culture, where three-letter tickers and simple slogans can quickly become recognizable narratives.',
+      'For traders, UPS suddenly means more than shipping.',
+      'It means:',
+      { type: 'list', items: ['Ultra.', 'Profit.', 'Season.'] },
+      'The temporary branding is expected to remain tied to the campaign for a limited period before the traditional UPS presentation returns.',
+      'Until then, the message behind the redesign is simple:',
+      'Markets are up. Profits are up. It’s Ultra Profit Season.',
+    ],
+    category: 'Finance',
+    time: '12:45',
+    section: 'finance',
+    image: upsUltraProfitSeasonHeaderImage,
+    byline: 'Saree Times Finance Desk',
+    date: '2026-09-07',
+  },
+  {
+    id: '98437357',
+    title:
+      'Unruly Airline Passenger Who Had to Be Duct-Taped to Seat After N-Word Meltdown Fired From Arizona Realty Company',
+    summary:
+      'Arthur Layne Lundeen, 67, was cut loose by Tucson-based Long Realty after he was identified as the American Airlines passenger restrained with duct tape and zip ties during a mid-air tirade that forced the flight to divert to Baltimore.',
+    body: [
+      'A 67-year-old Arizona real-estate agent has lost his job after being identified as the American Airlines passenger who was duct-taped and zip-tied to his seat during a mid-air tirade filled with racist and homophobic slurs.',
+      'Arthur Layne Lundeen was removed from his position at Tucson-based Long Realty following the incident aboard Flight 618 on Thursday night, which forced the Dallas-to-Newark service to divert to Baltimore.',
+      'In a statement posted to Facebook on Sunday, the brokerage said it had learned of criminal charges filed against a former affiliated agent stemming from an incident on a commercial flight, and that it "promptly ended its affiliation with the individual." The firm added that he is no longer associated with or authorized to represent Long Realty in any capacity.',
+      'The company described the conduct laid out in reports of the incident as inconsistent with the professionalism, integrity and respect it expects from people affiliated with the business, saying it has "no tolerance" for behavior that falls so far short of those standards. Its statement closed with a note of sympathy for the passengers and crew caught up in the episode.',
+      'Lundeen\'s LinkedIn profile listed him as a vice president at the Tucson brokerage. His page had already been removed from the company\'s own website by the time the statement went out.',
+      { type: 'heading', text: 'Passengers Stepped In Mid-Flight' },
+      'Juan Mejia, a former law enforcement officer seated two rows ahead of Lundeen, told ABC News that the passenger became belligerent near the end of the flight, directing slurs and vulgar language at flight attendants and at women seated nearby.',
+      'Mejia and fellow traveler Richard Olenick moved to contain the situation themselves. Olenick said Mejia got up immediately, took the seat next to the passenger and began working to restrain him before the outburst escalated further.',
+      'Photographs taken on board show the result: duct tape wound across the man\'s head, hands and torso, fastening him to the seat, with his wrists bound together.',
+      { type: 'heading', text: 'Arrested on Landing' },
+      'American Airlines confirmed the flight was diverted to Baltimore because of a disruptive customer, and said the passenger was taken off the plane and arrested before the remaining travelers could continue on to Newark.',
+      'The FBI confirmed that Lundeen was arrested by Maryland Transportation Police. Court records show he faces state charges of second-degree assault and disorderly conduct.',
+      'The bureau said it is conducting interviews to establish the facts of the case and will consult with the U.S. Attorney\'s Office for the District of Maryland on whether federal charges will follow.',
+    ],
+    category: 'US News',
+    time: '10:20',
+    section: 'hot',
+    image: ductTapedPassengerHeaderImage,
+    byline: 'Saree Times News Desk',
+    date: '2026-09-07',
+  },
+
+  {
+    id: '98437358',
+    title: 'Alex Michelsen the Second American Into US Open Quarterfinals',
+    summary:
+      'The California native reached his first Grand Slam quarterfinal without dropping a set all tournament, beating Argentina\'s Tomas Martin Etcheverry 7-6, 6-4, 6-4 — and says he is perfectly happy flying under the radar.',
+    body: [
+      'Alex Michelsen has reached the first Grand Slam quarterfinal of his career, beating Argentina\'s Tomas Martin Etcheverry 7-6, 6-4, 6-4 on Sunday to become the second American man through to the last eight at this year\'s US Open.',
+      'The run has been remarkably clean. The California native has yet to drop a set in Flushing Meadows, winning every match in straight sets, and he was the first American to punch his ticket to the quarterfinals on Sunday.',
+      'Asked whether the results had caught him off guard, Michelsen gave a split answer. "Yes and no," he said, explaining that his form heading into the tournament had not been especially sharp — but that he has been "working my ass off" at the sport for years.',
+      { type: 'heading', text: 'Happy Under the Radar' },
+      'Much of the attention this fortnight has gone to the broader question of whether an American man can finally end the country\'s Grand Slam drought, and Michelsen\'s march has drawn noticeably less notice than the runs of some of his compatriots.',
+      'He says that suits him fine. "It\'s not hurtful at all. I love being under the radar. It\'s great," he said, adding that several younger players have been performing at a very high level and that he is comfortable with the coverage landing where it has. "You get what you earn."',
+      'Sunday\'s win sets up a quarterfinal against fellow American Frances Tiafoe.',
+      { type: 'heading', text: 'Wimbledon Won\'t Follow the Influencer Experiment' },
+      'Away from the court, multiple reports indicate Wimbledon has no intention of copying the US Open\'s decision to credential influencers next year, with the All England Club prepared to confiscate ring lights and similar equipment that could disrupt play.',
+      'The reports follow a week of debate in Queens over influencer conduct at the tournament, which came to a head when a chair umpire had to quiet a group making noise from a suite, alongside other clips that raised questions about behavior in the stands.',
+      { type: 'heading', text: 'Sinner Turns Up at Monza' },
+      'Last year\'s US Open runner-up, Jannik Sinner, is missing the tournament with a lingering knee injury that also kept him out of the Cincinnati Open — but the world No. 1 has not been sitting still.',
+      'On the second Sunday of the Open, Sinner surfaced at the Formula 1 Italian Grand Prix near Monza, where he told Italian outlet la Repubblica that the knee was "fine."',
+    ],
+    category: 'Tennis',
+    time: '21:15',
+    section: 'sports',
+    image: michelsenUsOpenHeaderImage,
+    byline: 'Saree Times Sports Desk',
+    date: '2026-09-06',
+  },
+
+  {
+    id: '98437359',
+    title:
+      'Democrats Hoping to Appear Normal as They Roll Out Their Blue Wave of Weirdos Ahead of Critical Midterms',
+    summary:
+      'With two months until November, the choice on offer is sharpening: an administration betting on a growth record it has struggled to sell, against an opposition whose loudest voices keep undercutting its own "return to normalcy" pitch.',
+    body: [
+      'With Labor Day behind us, the midterm campaign is finally about to command some attention. Two months out, the shape of the fight is becoming clear — and so is the gap between how each party wants to be seen and how it is actually coming across.',
+      'The conventional forecast still points to a blue wave. History favors the party out of power in a midterm, and the president\'s approval numbers are poor enough to make the pundit class confident. Republicans are betting that a well-funded operation and a record they have struggled to sell can close that gap.',
+      { type: 'heading', text: 'The Case Republicans Want to Make' },
+      'The GOP\'s first midterm convention in Dallas this week is designed to put the second term\'s economic record front and center — a story the party believes has been drowned out by media skepticism, uneven messaging and a president distracted by foreign conflict.',
+      'Treasury Secretary Scott Bessent previewed the pitch at the G20 last week, citing wage growth of 4.7% for the bottom quarter of earners and crediting regulatory, tax and energy policy for the shift. He also described an escalating economic squeeze on Iran, telling Fox Business that a US blockade has left the regime with limited buyers for its crude and predicting that the Strait of Hormuz will lose its leverage as oil moves overland.',
+      'Whether that message survives contact with the campaign depends largely on whether Trump stays on it. His two bookend speeches in Dallas will answer that question quickly.',
+      { type: 'heading', text: 'The Democrats\' Normalcy Problem' },
+      'Democrats are attempting a rebrand as the party of normalcy heading into November. The difficulty is that their most visible figures keep complicating the pitch.',
+      'House Democrats voted last week against a resolution condemning socialism — a vote Republicans immediately seized on, and one that fits neatly into Newt Gingrich\'s preferred framing of the election as a choice between big-government socialism and a growth agenda.',
+      'The party is also contending with the profile of candidates like Zohran Mamdani and Michigan Senate nominee Abdul El-Sayed, whose past comments about September 11 have resurfaced ahead of the attack\'s 25th anniversary this week. Mamdani intends to attend the Ground Zero commemorations despite objections from 9/11 families and retired Port Authority officers. Sen. John Kennedy has taken to describing that wing of the party as the "Lulu Lenins," a label that has traveled well beyond Louisiana.',
+      'On voter ID, policing, prisons and women\'s sports, Democrats have repeatedly landed opposite majority opinion. That is a hard place from which to run as the reassuring option — and it is the contrast Republicans intend to spend the next two months drawing.',
+      'This piece summarizes and responds to arguments laid out in a New York Post opinion column published September 6, 2026.',
+    ],
+    category: 'Opinion',
+    time: '18:30',
+    section: 'opinion',
+    image: blueWaveMidtermsHeaderImage,
+    byline: 'Saree Times Opinion Desk',
+    date: '2026-09-06',
+  },
+
+  {
+    id: '98437360',
+    title: 'Group of Refs, Officials Question Controversial Michigan Ending: Josh Pate',
+    summary:
+      'The single second restored to the clock in Ann Arbor gave Michigan a second Hail Mary and a 13-12 win over Western Michigan. Josh Pate says the officials who have called him since are not buying the Big Ten\'s explanation.',
+    body: [
+      'Josh Pate has unloaded on the Big Ten over the decision that handed Michigan a second chance at a Hail Mary — and a 13-12 escape against Western Michigan that the Wolverines had no business getting.',
+      'With the fourth quarter expiring, officials put one second back on the clock. Michigan used it to throw again, and JJ Buchanan hauled in the winning touchdown as time ran out at Michigan Stadium, denying the Mid-American Conference visitors an upset they had all but secured.',
+      'On "Josh Pate\'s College Football Show," the host said he had spent Sunday morning fielding calls from people inside the officiating world who wanted their view on the record.',
+      'Pate said he had been on the phone with "several officials and several referees" who were emphatic about how badly the sequence was handled, describing the conference office\'s explanation in unprintable terms and calling the process behind the ruling egregious.',
+      'He also posed a hypothetical that has been circulating all weekend: "I would love for someone in the league office to look me in the eye and tell me if Western Michigan was at midfield heaving a prayer up and that exact same set of circumstances were to have played out, that this is the way it would have gone down."',
+      { type: 'heading', text: 'Where Did the Second Come From?' },
+      'That stray second has become the dominant story in college football. NBC, which carried the broadcast, had its own rules analyst questioning the ruling live on air.',
+      'Western Michigan and the MAC have accepted the outcome after the Big Ten issued a statement and released raw video showing how its replay review reached the decision.',
+      'NBC returned to the subject Sunday night at halftime of the Apple Cup between Washington and Washington State, where John Fanta reminded viewers that the official game clock is the Big Ten\'s responsibility, not the network\'s. "Our cameras are not the official arbiter of timekeeping within the game," he said, noting the conference had published both a statement and its internal replay footage.',
+      'Everyone with a formal stake in the result appears ready to move on. The rest of college football clearly is not.',
+    ],
+    category: 'College Football',
+    time: '16:05',
+    section: 'sports',
+    image: michiganEndingHeaderImage,
+    byline: 'Saree Times Sports Desk',
+    date: '2026-09-06',
+  },
+
 
 
   {
