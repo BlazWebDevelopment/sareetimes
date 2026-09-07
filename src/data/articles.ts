@@ -123,71 +123,7 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-  {
-    id: '98437361',
-    title:
-      'Tesla Tests "Dog Mode V2" With Expanded Pet Care Information in New Software Concept',
-    summary:
-      'Tesla is reportedly experimenting with a major expansion of its popular Dog Mode feature, turning the vehicle\'s center screen into a more complete information hub for pets left temporarily inside the car.',
-    body: [
-      'Tesla is reportedly experimenting with a major expansion of its popular Dog Mode feature, with an upgraded version informally being described as "Dog Mode V2." The new software concept would move beyond simply keeping the cabin at a safe temperature and displaying a message for passersby, turning the vehicle\'s center screen into a more complete information hub for pets left temporarily inside the car.',
-      'Dog Mode has long been one of Tesla\'s most recognizable convenience features. When activated, the system keeps climate control running while the vehicle is parked and displays a large message on the touchscreen explaining that the pet is safe and that the owner will return shortly. The display also shows the current cabin temperature, helping reassure anyone who sees an animal alone in the vehicle.',
-      'Dog Mode V2 would build significantly on that idea.',
-      'Under the proposed interface, owners could create a basic pet profile that appears while Dog Mode is active. Instead of showing only temperature information, the screen could display additional details such as what food the animal eats, whether drinking water is available in the vehicle, and whether the pet requires medication.',
-      'The redesigned screen would retain Tesla\'s familiar minimalist appearance, using large text and simple icons that can be quickly understood from outside the vehicle.',
-      { type: 'heading', text: 'A More Informative Dog Mode' },
-      'The biggest change would be the amount of information Tesla allows owners to display.',
-      'A Dog Mode V2 screen could potentially include a pet profile containing fields such as:',
-      {
-        type: 'list',
-        items: [
-          'Pet name',
-          'Food or dietary information',
-          'Water availability',
-          'Medication information',
-          'Cabin temperature',
-          'Owner-return message',
-        ],
-      },
-      'The goal would not necessarily be to transform Tesla vehicles into full pet-monitoring systems. Instead, the additional information could provide useful context if someone approaches the vehicle while the owner is away.',
-      'For example, a person looking through the window could immediately see that the climate system is running, water is available and the pet is being cared for. In unusual circumstances where emergency assistance is required, basic information about medication or diet could also be visible.',
-      'Tesla could potentially allow owners to decide exactly which information appears publicly on the screen.',
-      { type: 'heading', text: 'Designed Around Tesla\'s Existing Pet Features' },
-      'The concept would still rely heavily on the functionality already available through Tesla vehicles.',
-      'Dog Mode uses the car\'s climate control system to maintain a comfortable cabin temperature while the vehicle remains parked. The touchscreen stays active and communicates that the climate system is intentionally running.',
-      'Tesla owners can also monitor their vehicles remotely through the Tesla mobile app, including checking cabin conditions.',
-      'An expanded version could theoretically connect the pet information stored inside the vehicle with the Tesla app. Owners could create or edit their pet profile from their phone before activating Dog Mode.',
-      'A future interface could present a dedicated "Pet Profile" section where drivers enter information once and then reuse it each time Dog Mode is enabled.',
-      { type: 'heading', text: 'Pet Profiles Could Become Part of the Tesla App' },
-      'One of the most natural extensions for Dog Mode V2 would be deeper integration with Tesla\'s smartphone application.',
-      'Instead of entering information from the vehicle every time, owners could create a profile directly from their phone. When Dog Mode is activated, the selected profile could automatically appear on the center display.',
-      'Owners might eventually be able to store multiple profiles as well.',
-      'A household with two dogs, for example, could select which animals are currently traveling in the vehicle. Each pet could theoretically have separate dietary requirements, medication notes or other relevant information.',
-      'Tesla could also keep the process extremely simple. Rather than requiring detailed medical information, the software could simply provide optional fields with quick status indicators such as:',
-      {
-        type: 'list',
-        items: [
-          '"Water available: Yes"',
-          '"Medication required: Yes"',
-          '"Special diet: Yes"',
-        ],
-      },
-      'That approach would maintain Tesla\'s relatively minimal user interface while still making the feature more informative.',
-      { type: 'heading', text: 'Temperature Would Remain the Most Important Information' },
-      'Despite the additional features, cabin temperature would almost certainly remain at the center of Dog Mode.',
-      'The original system was primarily created to communicate that a parked Tesla containing a pet is intentionally maintaining its climate.',
-      'A redesigned interface would therefore likely continue displaying the cabin temperature prominently while placing pet details underneath it.',
-      'Tesla could also add visual indicators showing that the climate system is actively operating.',
-      'For people walking past the vehicle, that information is particularly important because seeing a dog alone inside a parked car can immediately raise concerns about overheating.',
-      'The existing Dog Mode screen already addresses that problem with a simple message. Dog Mode V2 would essentially provide an expanded version of the same reassurance.',
-    ],
-    category: 'Tech',
-    time: '18:35',
-    section: 'tech',
-    image: dogModeV2HeaderImage,
-    byline: 'Saree Times Tech Desk',
-    date: '2026-09-07',
-  },
+
 
   {
     id: '98437357',
