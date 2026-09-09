@@ -126,36 +126,6 @@ export interface Article {
 export const articles: Article[] = [
 
 
-  {
-    id: '98437361',
-    title: 'U.S. Bank Tests Its Own Stablecoin USBDC in Cross-Border Payment',
-    summary:
-      'U.S. Bank completed a live cross-border payment using its proprietary dollar-backed stablecoin USBDC on the Stellar blockchain, testing whether tokenized dollars can integrate with existing compliance and institutional payment infrastructure.',
-    body: [
-      'U.S. Bank has taken another major step into blockchain-based finance after successfully testing its own proprietary dollar-backed stablecoin, USBDC, in a live cross-border payment between its North American and European operations.',
-      'The transaction was completed using the Stellar blockchain, demonstrating how blockchain infrastructure could potentially be integrated into the payment systems of a large traditional financial institution without abandoning existing compliance, risk management, and regulatory controls.',
-      'Unlike many public stablecoins that are primarily used across crypto exchanges and decentralized finance platforms, USBDC is being explored as part of U.S. Bank\'s broader institutional payments infrastructure. The bank is examining whether stablecoin technology can improve the way money moves between different regions, business units, and financial counterparties.',
-      'One of the biggest potential advantages is 24/7 settlement. Traditional international banking systems often depend on banking hours, correspondent banks, clearing networks, and settlement windows. Blockchain-based payments could allow certain transactions to settle significantly faster and operate outside traditional banking schedules.',
-      'U.S. Bank is reportedly exploring several possible applications for USBDC, including cross-border treasury operations, liquidity management, faster settlement, and round-the-clock payments.',
-      'For large companies operating internationally, faster movement of funds could also improve how treasury departments manage cash. Instead of keeping excess liquidity distributed across multiple accounts and jurisdictions, blockchain-based settlement infrastructure could potentially allow capital to be transferred between operations more efficiently.',
-      'The test is particularly notable because the transaction remained connected to U.S. Bank\'s existing compliance and risk systems. For regulated financial institutions, blockchain adoption is not simply about transaction speed. Banks must continue meeting requirements surrounding customer verification, transaction monitoring, sanctions screening, anti-money-laundering controls, and broader financial risk management.',
-      'Integrating those systems directly with blockchain transactions could become an important part of how major banks approach stablecoins.',
-      'The use of Stellar is also significant. The blockchain has long positioned itself as infrastructure designed for payments, asset issuance, and cross-border financial transfers, making it a natural candidate for institutional stablecoin experiments.',
-      'USBDC does not necessarily mean that U.S. Bank plans to immediately launch a consumer-facing cryptocurrency. Instead, the project appears focused on investigating how tokenized dollars could operate within the bank\'s existing financial infrastructure.',
-      'Stablecoins have increasingly attracted attention from banks because they combine characteristics of traditional money with blockchain settlement. A dollar-backed token can represent funds digitally while still allowing transactions to move across blockchain networks almost instantly.',
-      'If institutional adoption continues, stablecoins could eventually become part of the infrastructure connecting traditional banks, corporations, payment providers, and blockchain networks.',
-      'For U.S. Bank, the successful USBDC transaction provides an early demonstration of what that infrastructure could look like.',
-      'Rather than replacing traditional banking systems entirely, USBDC could become another settlement layer operating alongside them—allowing the bank to move dollar-denominated value faster while maintaining the compliance standards expected from a regulated financial institution.',
-      'The experiment also reflects a wider shift across global finance. Blockchain technology, once associated primarily with cryptocurrencies and speculative trading, is increasingly being tested for payments, tokenized assets, treasury management, and institutional settlement.',
-      'With USBDC now successfully used in a live cross-border transaction, U.S. Bank has shown that stablecoin technology could potentially move beyond experimentation and become part of the financial infrastructure used by major banks.',
-    ],
-    category: 'Finance',
-    time: '13:24',
-    section: 'finance',
-    image: usBankUsbdcHeaderImage,
-    byline: 'Saree Times Markets Desk',
-    date: '2026-09-09',
-  },
 
   {
     id: '98437357',
