@@ -63,6 +63,7 @@ import dogModeV2HeaderImage from '@/context/CYAuZF8Jm4.jpg'
 import usBankUsbdcHeaderImage from '@/context/K3lp5dZ4AD.png'
 import wutcatHeaderImage from '@/context/lCaXWoHUkw.png'
 import wutcatInvestigationImage from '@/context/FvXp1SQOz5.png'
+import tomatoOnAStickRecordHeaderImage from '@/context/w7OTCgvdUz.png'
 
 
 const hero1Image =
@@ -126,6 +127,158 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+
+  {
+    id: '98437365',
+    title:
+      "'Tomato on a Stick' Sells for Record $9.3 Million, Becoming the World's Most Expensive Vegetable Artwork",
+    summary:
+      'A minimalist installation — one tomato on a wooden stick in a glass case — drew a twelve-minute bidding war and a fictional record price, as collectors and critics argued over value, satire and conceptual art.',
+    body: [
+      'September 24, 2026 — In an extraordinary moment for the contemporary art world, the conceptual artwork "Tomato on a Stick" stunned collectors this morning after selling for $9.3 million during a highly anticipated auction, setting a fictional record as the most expensive vegetable-themed artwork ever sold.',
+      'The minimalist installation — consisting of a single fresh tomato delicately mounted on a wooden stick inside a museum-style glass display — sparked an intense bidding war that lasted nearly twelve minutes. What began with an opening bid of $500,000 quickly escalated as collectors from around the world competed over the unconventional piece.',
+      'When the auctioneer\'s hammer finally fell at $9.3 million, the room erupted in applause.',
+      'The sale marks a fictional milestone in contemporary conceptual art, surpassing all previously imagined vegetable-based artworks and cementing "Tomato on a Stick" as the world\'s highest-selling vegetable artwork.',
+      { type: 'heading', text: 'Social Media and the Hype Cycle' },
+      'According to the fictional auction house, interest in the installation had grown dramatically over the past several weeks after photographs of the piece spread across social media, where millions debated whether the work represented profound artistic commentary or the ultimate example of conceptual minimalism.',
+      'Supporters described the installation as a meditation on value, perception, and the relationship between everyday objects and cultural significance.',
+      '"The beauty of Tomato on a Stick is that it forces viewers to question what gives an object meaning," one fictional art critic said after the sale. "It\'s absurd, simple, humorous — and impossible to ignore."',
+      { type: 'heading', text: 'Skeptics and Collectors' },
+      'Not everyone agreed.',
+      'Outside the auction venue, spectators joked that they could recreate the piece for less than two dollars. Others argued that the artwork perfectly captured the modern art market, where narrative, symbolism, and cultural conversation can become as valuable as craftsmanship itself.',
+      'Despite the debate, collectors remained undeterred.',
+      'The anonymous buyer, whose identity has not been disclosed in this fictional story, reportedly described the purchase as "an investment in one of the defining conceptual artworks of this generation."',
+      'Art market observers in this fictional scenario believe the record-breaking sale could encourage greater interest in experimental installations and everyday-object sculptures, potentially inspiring museums and private collectors to expand their focus beyond traditional painting and sculpture.',
+      'Whether viewed as satire, genius, or both, "Tomato on a Stick" has now secured its place in this fictional story as the most valuable vegetable artwork ever sold, with its $9.3 million price becoming one of the most talked-about moments in the contemporary art world.',
+    ],
+    category: 'Culture',
+    time: '09:45',
+    section: 'culture',
+    image: tomatoOnAStickRecordHeaderImage,
+    byline: 'Saree Times Culture Desk',
+    date: '2026-09-24',
+  },
+
+  {
+    id: '98437361',
+    title: 'Trump Rolls Out the Red Carpet for Xi Jinping at the White House Ahead of Talks and a Glittering State Dinner',
+    summary:
+      'The Chinese leader\'s first state visit to Washington since 2015 opened with a formal South Lawn welcome, a day after Trump personally met him on the tarmac — while Beijing arrived with a list of topics it wants kept off the table.',
+    body: [
+      'President Trump formally welcomed Chinese President Xi Jinping to the White House on Thursday morning, opening a day of diplomacy that includes a bilateral meeting and an evening state dinner. It is Xi\'s first state visit to the United States since 2015.',
+      'Xi and his wife, Peng Liyuan, pulled up shortly after 10 a.m. local time for a ceremonial greeting that was set to include a 21-gun salute and a large military flyover.',
+      'It was the second red-carpet reception for the couple in less than a day. On Wednesday evening, Trump and first lady Melania Trump went out to the tarmac at Joint Base Andrews in Maryland to meet them in person — an honor that, by most accounts, no president has extended to a visiting leader other than a pope since 1962.',
+      { type: 'heading', text: 'Beijing Sets Its Terms' },
+      'The warm optics mask a tense agenda. Beijing has reportedly drawn "red lines" around four subjects it wants Trump to steer clear of during the talks, and at least one Republican senator with a foreign-policy focus has publicly criticized the scale of the welcome being staged for the leader of a communist rival.',
+      'Protesters also gathered in the capital ahead of the meeting.',
+      { type: 'heading', text: 'Scuffle Over Camera Spots' },
+      'Minutes before Xi\'s motorcade arrived, members of the Chinese press delegation got into a dispute with White House staff over camera positions on the South Drive, refusing to give up the spots they had claimed. The Secret Service was drawn into the standoff. Beijing\'s traveling press corps has developed a reputation for jostling aggressively for position during previous visits.',
+      { type: 'heading', text: 'On the Menu Tonight' },
+      'The first lady\'s office released the state dinner menu, describing it as American ingredients with a subtle Chinese accent. The evening opens with a toast of Schramsberg sparkling wine — the same California label poured when President Nixon and Premier Zhou Enlai raised glasses in Beijing in 1972.',
+      'Guests will start with a yellow squash velouté and wild mushroom fricassée, followed by sesame-crusted sea bass with baby bok choy and roasted eggplant. Dessert is a vanilla crémeux with a sour cherry center on walnut frangipane, served alongside ice cream made with honey from the White House hives.',
+      'Melania Trump told "Fox & Friends" on Wednesday that she had been involved in every detail of the planning.',
+      'Seats at the dinner have been among the most sought-after in Washington. The guest list includes OpenAI CEO Sam Altman and Nvidia chief Jensen Huang, along with other tech executives and hedge fund managers.',
+      'This report draws on live coverage of the visit by the New York Post. Photo: 2017 file image of Xi Jinping, Peng Liyuan and the Trumps at Mar-a-Lago (Official White House Photo, public domain).',
+    ],
+    category: 'World',
+    time: '16:22',
+    section: 'hot',
+    image: '/images/st-xi-trump-state-visit.jpg',
+    byline: 'Saree Times World Desk',
+    date: '2026-09-24',
+  },
+
+  {
+    id: '98437362',
+    title: 'Medal of Honor Recipients Split Over Trump\'s Next Army Secretary as Race Turns Into Pentagon "Knife Fight"',
+    summary:
+      'Three decorated veterans are backing Army comptroller Marc Andersen and two are backing Pentagon spokesman Sean Parnell, as the contest to replace Dan Driscoll exposes deep divisions inside the Department of War.',
+    body: [
+      'Several of America\'s most decorated living veterans are publicly weighing in on who President Trump should choose as his next Army secretary — an unusual intervention in a contest that one administration official described as "a knife fight."',
+      'Five of the country\'s 65 living Medal of Honor recipients shared their views with the New York Post. Three are backing Marc Andersen, the Army\'s comptroller and assistant secretary for financial management. Two are backing Sean Parnell, the Pentagon\'s chief spokesman.',
+      'The vacancy opened when Dan Driscoll resigned on Sept. 2 after months of friction with Secretary of War Pete Hegseth, who had already removed Army chief of staff Gen. Randy George and other senior generals. Driscoll is a close friend and law school classmate of Vice President JD Vance. Hegseth reportedly told Trump last week that he favors either Parnell or Dane Hughes, the department\'s top legislative affairs official.',
+      { type: 'heading', text: 'The Case for Andersen' },
+      'Andersen, a former venture capital and consulting executive with deep ties to veterans\' charities, has overseen the Army\'s roughly $200 billion budget since last October, with an emphasis on modernization programs. He is widely seen as the long shot — which is precisely why some recipients chose to speak up.',
+      'Britt Slabinski, who received the medal from Trump in 2018 for leading a rescue mission in Afghanistan and now heads the Congressional Medal of Honor Society, urged the president not to take "the easy button pick." He described Andersen as unpretentious and as someone who finishes what he starts, arguing that too many appointees treat these posts as caretaker jobs.',
+      'Leroy Petry, who lost his hand throwing a live grenade away from fellow soldiers in Afghanistan, said Andersen is already excelling in his current role and understands the strain Army life places on families. "The troops love him, and he loves the troops," Petry said.',
+      'Retired Navy SEAL Master Chief Edward Byers, honored for a 2012 nighttime hostage rescue in Afghanistan, also endorsed Andersen, saying soldiers "deserve strong, steady leadership" from someone who listens to those on the ground.',
+      { type: 'heading', text: 'The Parnell Camp' },
+      'Not every veteran approached on Andersen\'s behalf agreed. Earl Plumlee, who was referred to the Post as an Andersen supporter, said he actually prefers Parnell, pointing to his experience working with industry. Plumlee argued that the defining competition of this era is in artificial intelligence and data centers, and that the Army Corps of Engineers will be central to getting power to those systems.',
+      'Plumlee called Andersen a solid second choice and said the feud between Driscoll and Hegseth had been a painful waste of talent.',
+      'Dakota Meyer, honored for rescuing wounded Afghan troops and recovering fallen Americans under fire, said he has known Parnell for more than a decade and fully endorses him, calling him a combat leader who now also understands how decisions get made at the top of the Pentagon.',
+      'Parnell has also won public support from Republican Sens. Dave McCormick of Pennsylvania and Tim Sheehy of Montana.',
+      { type: 'heading', text: 'Obstacles on Both Sides' },
+      'Parnell\'s path is complicated by abuse allegations made by his ex-wife. Sen. Kevin Cramer of North Dakota said that part of his record is "a bridge too far" for most senators. Republicans hold a 53-47 Senate majority, and confirmation requires only a simple majority. Parnell has also had a strained relationship with Ricky Buria, Hegseth\'s influential chief of staff.',
+      'Andersen faces his own detractors inside the administration. One official said he is viewed internally as a Driscoll loyalist, mocked a social media post in which he called himself the "Colonoscopy King" while promoting preventive screenings, and alleged unspecified ties to Trump critics including former Reps. Adam Kinzinger and Barbara Comstock. That official dismissed him as a "non-factor."',
+      'A White House official said Trump will announce his nominee "at a time and place of his choosing."',
+      'Based on reporting by the New York Post. Photo: Aerial view of the Pentagon, May 2023 (U.S. Department of Defense, public domain).',
+    ],
+    category: 'US News',
+    time: '13:13',
+    section: 'newspaper',
+    image: '/images/st-army-secretary-pentagon.jpg',
+    byline: 'Saree Times Politics Desk',
+    date: '2026-09-24',
+  },
+
+  {
+    id: '98437363',
+    title: 'CNN, MS NOW and Politico Reporters Turned Away at White House Gates Hours After Judge Orders Access Restored',
+    summary:
+      'A Trump-appointed federal judge found the president\'s ban on the three outlets was likely unconstitutional and ordered their press passes returned — but correspondents were still stopped at a Secret Service checkpoint Thursday morning.',
+    body: [
+      'Reporters from CNN, MS NOW and Politico were refused entry to the White House grounds on Thursday morning, just hours after a federal judge in Washington ruled that President Trump\'s ban on the three news organizations was likely unconstitutional.',
+      'U.S. District Judge Tim Kelly, a Trump appointee, issued an eight-page order directing officials to immediately return the hard passes confiscated from the outlets\' journalists on Saturday. The order bars enforcement of the ban for 14 days.',
+      'Despite that, CNN correspondent Betsy Klein, MS NOW reporter Laura Barrón-López and a Politico journalist were turned back at a Secret Service checkpoint. At least one producer each from CNN and MS NOW was allowed through.',
+      { type: 'heading', text: 'National Security Claim Rejected' },
+      'The White House had defended the ban, announced by Trump on Sept. 18, on national security grounds. Kelly found no factual basis in the record for that argument, noting that the president himself had attributed the move to what he called the outlets\' negativity and lack of truthfulness.',
+      'The judge also concluded the outlets were likely to win on due process grounds. The government did not dispute that the reporters received no notice or chance to respond before their credentials were pulled, and Kelly found no clearly stated standards had existed beforehand. He described a letter the White House sent the outlets on Tuesday outlining its complaints as "so vague it hardly does the trick."',
+      { type: 'heading', text: 'Reaction' },
+      'Theodore Boutrous Jr., the lawyer representing the three outlets, told the Associated Press the decision was a strong vindication of press freedom, due process and the rule of law.',
+      'Daniel Burnett of the Foundation for Individual Rights and Expression said the ruling reaffirmed a principle settled for decades: a president cannot bar reporters from the White House because he dislikes their coverage.',
+      'The White House did not immediately comment.',
+      { type: 'heading', text: 'How We Got Here' },
+      'The outlets filed suit on Monday against Trump, communications director Steven Cheung, chief of staff Susie Wiles and Secret Service Director Sean Curran, arguing the ban violated the First Amendment and seeking a temporary restraining order. The Justice Department countered that White House access is a privilege the president can suspend. On Wednesday, a coalition of press freedom groups and dozens of news organizations filed a brief supporting the outlets.',
+      { type: 'heading', text: 'TV Pool Goes Dark' },
+      'In protest, the five networks that share presidential video with the rest of the press corps — CNN, NBC, ABC, CBS and Fox News — suspended the pool feed. As a result, there was no pool footage of Trump unveiling a new South Lawn helipad, his joint news conference with New York City Mayor Zohran Mamdani, his address to the U.N. General Assembly, or Xi Jinping\'s arrival at Joint Base Andrews.',
+      'It was not clear whether the feed would resume for Thursday\'s White House welcome ceremony, bilateral meeting and state dinner for the Chinese leader.',
+      'Based on reporting by the New York Post and the Associated Press. Photo: The North Portico of the White House, May 2024 (Official White House Photo, public domain).',
+    ],
+    category: 'US News',
+    time: '15:14',
+    section: 'hot',
+    image: '/images/st-white-house-press-ban.jpg',
+    byline: 'Saree Times Politics Desk',
+    date: '2026-09-24',
+  },
+
+  {
+    id: '98437364',
+    title: 'A Part of the Ovary Was Erased From Textbooks as Useless. Scientists Now Think It Matters',
+    summary:
+      'The rete ovarii was drawn in early editions of Gray\'s Anatomy, then quietly dropped. New research in mice suggests the overlooked structure may help regulate ovarian health and fertility.',
+    body: [
+      'For more than a century, a small structure attached to the ovary was treated as an anatomical leftover with no real job. New research suggests that verdict may have been badly wrong.',
+      'The rete ovarii was first described in 1870 and appeared in illustrations in early editions of Gray\'s Anatomy, the landmark reference first published in London in 1858. Over time it vanished from medical textbooks and came to be regarded as a functionless remnant in the adult ovary.',
+      'That changed when a research team released a paper titled "Rediscovering the rete ovarii, a secreting auxiliary structure to the ovary," later published in the journal eLife, which examined how the structure develops and what it does in mice.',
+      { type: 'heading', text: 'What Researchers Found' },
+      'The rete ovarii is a horseshoe-shaped band of tissue at the base of the ovary. The team identified three distinct regions — the intraovarian rete, the extraovarian rete and the connecting rete — that persist from birth into adulthood.',
+      'When researchers injected fluid into the extraovarian portion, it traveled toward the ovary, hinting that the structure may feed into ovarian function. Its cells sit close to the blood vessels supplying the ovary, receive direct nerve connections and neighbor macrophages, the immune cells that help defend tissue.',
+      'The cells also carry receptors for estrogen and progesterone. Some of the proteins the structure releases are linked to egg maturation and to maintaining ovarian follicles, and that activity rose along with estrogen levels — suggesting the rete ovarii responds to the hormonal shifts of the reproductive cycle.',
+      'Co-author Dilara Anbarci, a developmental biologist at the University of Michigan, told Science News that the findings could shed light on fertility and ovarian health. "There\'s still so much we can\'t even begin to comprehend about female anatomy," she said.',
+      'The authors note that scientists have studied the structure on and off since it was first described but never reached agreement on its purpose. The new work was done in mice, and how closely the results translate to humans remains to be established.',
+      { type: 'heading', text: 'A Viral Moment' },
+      'The rediscovery has taken off on social media, where many women have pointed to it as an example of a historically male-dominated medical establishment overlooking female biology.',
+      'Comedian Michelle Wolf called the news "infuriating" in a TikTok that has drawn more than 130,000 likes, noting that the rete testis — generally considered the male counterpart — never left the textbooks, even though the study\'s authors describe the ovarian version as the more complex of the two. She closed by welcoming the rete ovarii back.',
+      'Based on reporting by the New York Post. Illustration: Uterus, ovary and uterine tube from Gray\'s Anatomy, 1918 edition (Henry Vandyke Carter, public domain).',
+    ],
+    category: 'Health',
+    time: '15:28',
+    section: 'culture',
+    image: '/images/st-rete-ovarii-grays.png',
+    byline: 'Saree Times Health Desk',
+    date: '2026-09-24',
+  },
 
 
 
