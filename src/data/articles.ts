@@ -129,6 +129,38 @@ export interface Article {
 export const articles: Article[] = [
 
   {
+    id: '98437365',
+    title:
+      '\'Tomato on a Stick\' Sells for Record $9.3 Million, Becoming the World\'s Most Expensive Vegetable Artwork',
+    summary:
+      'A minimalist installation — one fresh tomato on a wooden stick inside a glass case — sold after a twelve-minute bidding war, setting a fictional record as the highest-priced vegetable-themed artwork ever auctioned.',
+    body: [
+      'September 24, 2026 — In an extraordinary moment for the contemporary art world, the conceptual artwork "Tomato on a Stick" stunned collectors this morning after selling for $9.3 million during a highly anticipated auction, setting a fictional record as the most expensive vegetable-themed artwork ever sold.',
+      'The minimalist installation — consisting of a single fresh tomato delicately mounted on a wooden stick inside a museum-style glass display — sparked an intense bidding war that lasted nearly twelve minutes. What began with an opening bid of $500,000 quickly escalated as collectors from around the world competed over the unconventional piece.',
+      'When the auctioneer\'s hammer finally fell at $9.3 million, the room erupted in applause.',
+      'The sale marks a fictional milestone in contemporary conceptual art, surpassing all previously imagined vegetable-based artworks and cementing "Tomato on a Stick" as the world\'s highest-selling vegetable artwork.',
+      { type: 'heading', text: 'From Social Media to the Block' },
+      'According to the fictional auction house, interest in the installation had grown dramatically over the past several weeks after photographs of the piece spread across social media, where millions debated whether the work represented profound artistic commentary or the ultimate example of conceptual minimalism.',
+      'Supporters described the installation as a meditation on value, perception, and the relationship between everyday objects and cultural significance.',
+      '"The beauty of Tomato on a Stick is that it forces viewers to question what gives an object meaning," one fictional art critic said after the sale. "It\'s absurd, simple, humorous — and impossible to ignore."',
+      { type: 'heading', text: 'Skeptics Outside the Room' },
+      'Not everyone agreed.',
+      'Outside the auction venue, spectators joked that they could recreate the piece for less than two dollars. Others argued that the artwork perfectly captured the modern art market, where narrative, symbolism, and cultural conversation can become as valuable as craftsmanship itself.',
+      'Despite the debate, collectors remained undeterred.',
+      { type: 'heading', text: 'Anonymous Buyer, Open Questions' },
+      'The anonymous buyer, whose identity has not been disclosed in this fictional story, reportedly described the purchase as "an investment in one of the defining conceptual artworks of this generation."',
+      'Art market observers in this fictional scenario believe the record-breaking sale could encourage greater interest in experimental installations and everyday-object sculptures, potentially inspiring museums and private collectors to expand their focus beyond traditional painting and sculpture.',
+      'Whether viewed as satire, genius, or both, "Tomato on a Stick" has now secured its place in this fictional story as the most valuable vegetable artwork ever sold, with its $9.3 million price becoming one of the most talked-about moments in the contemporary art world.',
+    ],
+    category: 'Culture',
+    time: '11:45',
+    section: 'hot',
+    image: tomatoOnAStickRecordHeaderImage,
+    byline: 'Saree Times Culture Desk',
+    date: '2026-09-24',
+  },
+
+  {
     id: '98437361',
     title: 'Trump Rolls Out the Red Carpet for Xi Jinping at the White House Ahead of Talks and a Glittering State Dinner',
     summary:
