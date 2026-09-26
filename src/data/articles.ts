@@ -135,7 +135,7 @@ export const articles: Article[] = [
     summary:
       'A single tomato on a wooden stick, displayed under glass, drew a twelve-minute bidding war and a fictional auction record — leaving the room applauding and the art world arguing over whether the sale was genius, satire, or both.',
     body: [
-      'September 24, 2026 — In an extraordinary moment for the contemporary art world, the conceptual artwork "Tomato on a Stick" stunned collectors this morning after selling for $9.3 million during a highly anticipated auction, setting a fictional record as the most expensive vegetable-themed artwork ever sold.',
+      'September 26, 2026 — In an extraordinary moment for the contemporary art world, the conceptual artwork "Tomato on a Stick" stunned collectors this morning after selling for $9.3 million during a highly anticipated auction, setting a fictional record as the most expensive vegetable-themed artwork ever sold.',
       'The minimalist installation — consisting of a single fresh tomato delicately mounted on a wooden stick inside a museum-style glass display — sparked an intense bidding war that lasted nearly twelve minutes. What began with an opening bid of $500,000 quickly escalated as collectors from around the world competed over the unconventional piece.',
       'When the auctioneer\'s hammer finally fell at $9.3 million, the room erupted in applause.',
       'The sale marks a fictional milestone in contemporary conceptual art, surpassing all previously imagined vegetable-based artworks and cementing "Tomato on a Stick" as the world\'s highest-selling vegetable artwork.',
