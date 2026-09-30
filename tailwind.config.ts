@@ -10,14 +10,14 @@ const config: Config = {
     extend: {
       colors: {
         saree: {
-          ink: '#17150f',
-          rule: '#17150f',
-          teal: '#0e5b61',
-          'teal-dark': '#093f44',
+          ink: '#121722',
+          rule: '#121722',
+          cobalt: '#1c4e8a',
+          'cobalt-dark': '#133865',
           crimson: '#a4192c',
           paper: '#ffffff',
-          cream: '#faf8f3',
-          hairline: '#ddd5c6',
+          mist: '#f5f7fa',
+          hairline: '#d2d8e1',
         },
       },
       fontFamily: {

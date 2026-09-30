@@ -3,7 +3,7 @@ import { SITE_NAME } from '@/lib/brand'
 /**
  * The square monogram tile. Deliberately rebuilt in CSS rather than loaded as
  * an image so it matches `public/logo.svg` exactly while costing no request —
- * both are a Playfair Display bold "S" in cream on the house teal.
+ * both are a Playfair Display bold "S" in mist on the house cobalt.
  */
 export function BrandMark({
   size = 40,
@@ -20,7 +20,7 @@ export function BrandMark({
         width: size,
         height: size,
         fontSize: size * 0.66,
-        boxShadow: `inset 0 0 0 ${Math.max(1, Math.round(size * 0.028))}px rgba(250, 248, 243, 0.85)`,
+        boxShadow: `inset 0 0 0 ${Math.max(1, Math.round(size * 0.028))}px rgba(245, 247, 250, 0.85)`,
       }}
     >
       <span style={{ transform: `translateY(${size * 0.03}px)` }}>S</span>

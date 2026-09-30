@@ -5,25 +5,25 @@
 :root {
   color-scheme: light;
 
-  --foreground-rgb: 23, 21, 15;
+  --foreground-rgb: 18, 23, 34;
 
   /* ============================================================
-     Saree Times — warm broadsheet palette.
-     Ink on cream paper, one deep-teal house accent, crimson kept
-     in reserve for live and breaking furniture only.
+     Saree Times — cool broadsheet palette.
+     Ink on blue-grey paper, one deep-cobalt house accent, crimson
+     kept in reserve for live and breaking furniture only.
      ============================================================ */
 
   --bg-base: #ffffff;
   --bg-primary: #ffffff;
-  --bg-secondary: #ebe6dc;
-  --bg-surface: #faf8f3;
-  --bg-surface-2: #f2ede3;
-  --bg-elevated: #fdfcf9;
+  --bg-secondary: #e5e9f0;
+  --bg-surface: #f5f7fa;
+  --bg-surface-2: #edf0f5;
+  --bg-elevated: #fbfcfd;
 
-  --border-subtle: #ece7dc;
-  --border-soft: #ddd5c6;
-  --border-strong: #c2b9a7;
-  --border-glow: #8a8271;
+  --border-subtle: #e3e7ee;
+  --border-soft: #d2d8e1;
+  --border-strong: #b1bac8;
+  --border-glow: #7b8596;
 
   /* Print furniture is square; nothing in this design is rounded. */
   --r-ticket-a: 0;
@@ -31,14 +31,14 @@
   --r-card-a: 0;
   --r-card-b: 0;
 
-  --text-primary: #17150f;
-  --text-secondary: #4b463c;
-  --text-muted: #7b7466;
+  --text-primary: #121722;
+  --text-secondary: #434a57;
+  --text-muted: #6d7584;
 
-  --accent: #0e5b61;
-  --accent-hover: #093f44;
-  --accent-subtle: #e9f2f2;
-  --accent-border: #b4ced0;
+  --accent: #1c4e8a;
+  --accent-hover: #133865;
+  --accent-subtle: #ebf1f9;
+  --accent-border: #b8cae3;
   --accent-glow: transparent;
 
   --brand-blue: var(--accent);
@@ -49,8 +49,8 @@
   --brand-green: #1f6b45;
   --live: #a4192c;
 
-  --rule: #17150f;
-  --ink: #17150f;
+  --rule: #121722;
+  --ink: #121722;
 
   /* Font stacks are wired to next/font variables set on <html>. */
   --font-sans: var(--font-ui), 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -419,7 +419,7 @@ a:hover .headline {
 .article-content p {
   margin-bottom: 1.35rem;
   line-height: 1.68;
-  color: #23211b;
+  color: #1f2430;
   font-size: 1.1875rem;
   letter-spacing: -0.003em;
 }
@@ -462,7 +462,7 @@ a:hover .headline {
   margin: 0 0 1.35rem 1.4rem;
   font-size: 1.1875rem;
   line-height: 1.68;
-  color: #23211b;
+  color: #1f2430;
 }
 
 .article-content ul { list-style: disc; }
@@ -611,8 +611,8 @@ a:hover .headline {
 .scrollbar-hide { scrollbar-width: none; }
 
 ::selection {
-  background: #cfe6e6;
-  color: #17150f;
+  background: #d3e1f3;
+  color: #121722;
 }
 
 a:focus-visible,

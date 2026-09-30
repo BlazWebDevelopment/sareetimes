@@ -26,12 +26,12 @@ const FONT_URL =
   'https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@4.5.11/files/playfair-display-latin-700-normal.woff'
 const FONT_CACHE = resolve(cacheDir, 'playfair-display-700.woff')
 
-const INK = '#17150f'
-const TEAL = '#0e5b61'
-const CREAM = '#faf8f3'
+const INK = '#121722'
+const COBALT = '#1c4e8a'
+const MIST = '#f5f7fa'
 const PAPER = '#ffffff'
-const HAIRLINE = '#ddd5c6'
-const MUTED = '#7b7466'
+const HAIRLINE = '#d2d8e1'
+const MUTED = '#6d7584'
 
 function download(url) {
   return new Promise((res, rej) => {
@@ -120,7 +120,7 @@ function glyphPath(font, text, { height, width, cx, cy, letterSpacing = 0 }) {
 const font = await loadFont()
 
 /* ------------------------------------------------------------------
-   1. Monogram tiles — a didone "S" on the house teal.
+   1. Monogram tiles — a didone "S" on the house cobalt.
    The large tile carries a keyline; the small one drops it so the
    16px favicon stays crisp.
    ------------------------------------------------------------------ */
@@ -134,14 +134,14 @@ function monogramSvg({ size, keyline }) {
   const inset = size * 0.055
   const stroke = size * 0.016
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="Saree Times">
-  <rect width="${size}" height="${size}" fill="${TEAL}"/>
+  <rect width="${size}" height="${size}" fill="${COBALT}"/>
 ${
   keyline
     ? `  <rect x="${inset}" y="${inset}" width="${size - inset * 2}" height="${
         size - inset * 2
-      }" fill="none" stroke="${CREAM}" stroke-width="${stroke}" opacity="0.9"/>\n`
+      }" fill="none" stroke="${MIST}" stroke-width="${stroke}" opacity="0.9"/>\n`
     : ''
-}  <path d="${glyph.d}" fill="${CREAM}"/>
+}  <path d="${glyph.d}" fill="${MIST}"/>
 </svg>
 `
 }
@@ -183,7 +183,7 @@ await writeFile(resolve(publicDir, 'favicon.ico'), ico)
 console.log(`Wrote public/favicon.ico (${ico.length} bytes) sizes: ${icoSizes.join(', ')}`)
 
 /* ------------------------------------------------------------------
-   3. Social card — the masthead set on cream paper between rules.
+   3. Social card — the masthead set on mist-grey paper between rules.
    ------------------------------------------------------------------ */
 
 const OG_W = 1200
@@ -197,14 +197,14 @@ const wordmark = glyphPath(font, 'Saree Times', {
 })
 
 const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${OG_W}" height="${OG_H}" viewBox="0 0 ${OG_W} ${OG_H}">
-  <rect width="${OG_W}" height="${OG_H}" fill="${CREAM}"/>
-  <rect x="0" y="0" width="${OG_W}" height="14" fill="${TEAL}"/>
+  <rect width="${OG_W}" height="${OG_H}" fill="${MIST}"/>
+  <rect x="0" y="0" width="${OG_W}" height="14" fill="${COBALT}"/>
   <rect x="90" y="150" width="${OG_W - 180}" height="1" fill="${HAIRLINE}"/>
   <text x="${OG_W / 2}" y="128" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="7" fill="${MUTED}" text-anchor="middle">EST. 2026 &#183; THE DAILY RECORD</text>
   <path d="${wordmark.d}" fill="${INK}"/>
   <rect x="90" y="404" width="${OG_W - 180}" height="2" fill="${INK}"/>
   <text x="${OG_W / 2}" y="462" font-family="Georgia, serif" font-size="30" fill="${INK}" text-anchor="middle">Reported with care &#183; Written to last</text>
-  <text x="${OG_W / 2}" y="536" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4" fill="${TEAL}" text-anchor="middle">POLITICS &#183; BUSINESS &#183; TECHNOLOGY &#183; SPORT &#183; CULTURE</text>
+  <text x="${OG_W / 2}" y="536" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4" fill="${COBALT}" text-anchor="middle">POLITICS &#183; BUSINESS &#183; TECHNOLOGY &#183; SPORT &#183; CULTURE</text>
   <rect x="0" y="${OG_H - 14}" width="${OG_W}" height="14" fill="${INK}"/>
 </svg>
 `
@@ -250,7 +250,7 @@ await writeFile(
       start_url: '/',
       display: 'standalone',
       background_color: PAPER,
-      theme_color: TEAL,
+      theme_color: COBALT,
       icons: [
         { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
         { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
