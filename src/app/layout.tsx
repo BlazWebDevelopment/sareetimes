@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
-import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/brand'
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/brand'
 
 /*
  * Fonts are self-hosted variable woff2 rather than fetched from Google, so the
@@ -44,9 +44,7 @@ const ui = localFont({
   fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
-  : new URL('http://localhost:3000')
+const siteUrl = new URL(SITE_URL)
 
 const pageTitle = `${SITE_NAME} — Top stories, world, business, tech, sports & culture`
 
