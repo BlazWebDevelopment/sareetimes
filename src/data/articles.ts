@@ -132,56 +132,6 @@ export interface Article {
 
 export const articles: Article[] = [
 
-  {
-    id: '98437375',
-    title: 'North Korean Hackers Turn to Elon Musk-Themed Memecoins to Launder Binance Loot',
-    summary:
-      'Blockchain analytics firm Elliptic says the TraderTraitor group has been minting throwaway tokens, including one branded "Elon Muski," to disguise stolen crypto as ordinary trading profit after the $6.3 billion Binance hack.',
-    body: [
-      'Hackers linked to North Korea are minting their own memecoins to launder part of the crypto stolen from Binance, according to a report published Monday by blockchain analytics firm Elliptic. Some of the tokens were branded around Elon Musk.',
-      'The theft, attributed to the North Korea-associated group known as TraderTraitor, drained about $6.3 billion from the exchange late last month. The group has since moved the funds through a range of channels, and Elliptic says purpose-built memecoins are one of its newest tactics.',
-      { type: 'heading', text: 'How the Scheme Works' },
-      'The launderers start by creating a new token and pairing it with another asset, such as NEAR or a stablecoin, in a liquidity pool on a decentralized exchange. One group of wallets uses stolen funds to buy the token. A second group of wallets, also controlled by the launderers, later sells the token back into the same pool and withdraws the paired asset.',
-      'Because the pool sits between the two sides, no funds pass directly from the buying wallets to the selling wallets. On the blockchain, the sellers look like ordinary traders who made money on a token.',
-      '"The launderers\' tokens are made to be used once and thrown away," Elliptic co-founder Tom Robinson wrote in the report. "Nobody outside the laundering operation buys them, and their price is whatever the launderers choose to set."',
-      { type: 'heading', text: 'Monkeys, Ducks and Elon Musk' },
-      'The clearest case so far is on NEAR, a smart contract blockchain that promotes itself as infrastructure for AI agents. Over three days late last week, the launderers created at least six tokens there, with tickers including FUK, MEILI and SINU. Each cost about $90 to launch. Together they moved roughly 117,000 NEAR, about $430,000 at current prices.',
-      'The tokens used typical memecoin branding: a baby monkey wearing a pink bow, a duck, and a mock campaign poster showing Elon Musk under an "Elon 2028 President" banner. Robinson described the coins on X as "a disguise" meant to make stolen money look like trading profit.',
-      'One of the Musk-themed tokens was named "Elon Muski." Its artwork was a cartoon-style caricature of the Tesla and SpaceX chief executive with exaggerated, comic features and a hand-rolled cannabis cigarette between his lips. Irreverent, celebrity-parody imagery like this is common in memecoin markets, and it helps throwaway tokens blend in among the thousands of joke coins launched every week.',
-      'Elliptic also found a homemade token on Tron that was created only to launder funds within days of the theft. On Solana, the group took a different route and swapped stolen SOL into existing, thinly traded tokens instead of creating new ones.',
-      { type: 'heading', text: 'The Telltale Signs' },
-      'Elliptic listed several signs that the NEAR tokens existed only for laundering:',
-      {
-        type: 'list',
-        items: [
-          'Wallets in the laundering network made every sale of all six tokens and bought every unit of five of them. The only outside activity was a few small purchases of FUK on its first day.',
-          'Five of the six token creators were funded by a wallet that had been selling a previous token minutes before the next one launched. In effect, each token paid for the next.',
-          'Each token did at least three-quarters of its trading within a single day, and none of them has traded since Sunday.',
-        ],
-      },
-      'The amounts involved are small. The roughly $430,000 that went through the NEAR tokens is less than 0.01% of the $6.3 billion tied to the hack.',
-      'The technique is not new for North Korea. Elliptic first saw it during the laundering of the $1.4 billion Bybit hack in February 2025, when at least $24 million passed through a worthless token on Tron. Memecoins were at the height of their popularity then. President Donald Trump had launched his TRUMP token a month earlier, a moment CoinGecko co-founder Bobby Ong later said "marked the top for meme coins."',
-      'The approach has limits. "Every step of this technique is recorded publicly on the blockchain, and investigators can follow it," Elliptic said. "It does not hide the funds so much as slow down the people tracing them."',
-      { type: 'heading', text: 'Many Cheap Techniques at Once' },
-      'Memecoins are only one part of a much larger operation. "North Korea\'s launderers rarely rely on a single technique," the report says. "Instead, they layer many cheap techniques, each adding a little more delay."',
-      'According to Elliptic, the broader laundering effort has used more than 20,000 wallets across 16 blockchains and at least 36 services, including cross-chain bridges, lending vaults and the Privacy Cash privacy pool. About 7,000 ETH, worth roughly $15 million, has gone into the mixer Tornado Cash since Sunday.',
-      'THORChain, a cross-chain exchange that North Korea-linked groups have used repeatedly after major hacks, is again playing a central role. About $1.2 billion of the Bybit proceeds were traced through the protocol into bitcoin. In the Binance case, Elliptic says about 12,200 ETH ($29 million), mostly from sales of stolen SOL, had passed through THORChain into bitcoin by Wednesday evening, and much of the stolen XRP has gone the same way.',
-      'The funds appear to be ending up in bitcoin. Elliptic says about 3,000 BTC (around $225 million) converted from other stolen assets now sits in new bitcoin addresses. Around 130 BTC ($10 million) has gone through Wasabi-style CoinJoin transactions, which combine many users\' coins in one transaction to break the link between senders and recipients. Based on the Bybit case, the firm expects the remaining ETH to be swapped into bitcoin and cashed out through over-the-counter brokers over several months.',
-      { type: 'heading', text: 'Billions Frozen Before They Could Move' },
-      'A large share of the stolen funds never reached the launderers. Roughly $3 billion was frozen almost immediately by Tether, Circle and other issuers and entities. Elliptic says Tether froze the stolen USDT on Ethereum just 37 minutes after it arrived in the attacker\'s wallet. The speed of the response limited the damage, but critics said it shows how much the crypto industry still depends on the kind of centralized controls found in traditional banking.',
-      { type: 'heading', text: 'A Market Built on Hype' },
-      'Memecoins grew out of the NFT boom of 2021, giving celebrities, influencers and internet communities a way to launch tokens around a persona or a joke. Their price charts often look like pump-and-dump schemes soon after launch, and famous names are frequently used to attract buyers so early holders can sell to them.',
-      'Recent examples are easy to find. In January, former New York City Mayor Eric Adams faced pump-and-dump accusations after his NYC Token rose from about $0.12 to nearly $0.60 and then fell below its starting price in just over an hour. In December 2024, Haliey Welch, known online as the "Hawk Tuah girl," saw her HAWK token reach a $490 million market cap before it fell more than 90% within hours. In September, Hunter Biden\'s LAPTOP token briefly passed a fully diluted valuation of $100 billion before losing about 98% of that value. Analytics firm Bubblemaps found that 80% of its traders lost money.',
-      'The same features that make memecoins volatile also make them useful for laundering. They are cheap to create, anyone can trade them, and they are easy to abandon. TraderTraitor\'s use of them shows that the largest crypto theft on record is now running through the same casino-style corner of the market as celebrity joke tokens.',
-      'Based on reporting by Gizmodo (gizmodo.com) and research by Elliptic. Photo: Kim Il Sung Square in Pyongyang, North Korea (Stephen A. Rohan via Shutterstock).',
-    ],
-    category: 'Crypto',
-    time: '19:41',
-    section: 'finance',
-    image: '/images/st-kim-il-sung-square-memecoins.png',
-    byline: 'Saree Times Crypto Desk',
-    date: '2026-11-09',
-  },
 
   {
     id: '98437374',
