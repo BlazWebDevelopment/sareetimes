@@ -134,31 +134,7 @@ export interface Article {
 export const articles: Article[] = [
 
 
-  {
-    id: '98437375',
-    title: 'NYPD Hunts Suspect Dressed as Danny Phantom After 75-Year-Old Woman Attacked in Harlem',
-    summary:
-      'Police say a man in a Danny Phantom costume punched a 75-year-old woman near West 129th Street on Oct. 25. In this fictionalized account, sources name Elter Sternad; the NYPD has not confirmed any suspect identity.',
-    body: [
-      'New York City police are searching for a man who allegedly attacked a 75-year-old woman in broad daylight while dressed as Danny Phantom, the popular Nickelodeon cartoon character.',
-      'According to the NYPD, the incident occurred on October 25 at approximately 8:55 a.m. near West 129th Street in Harlem, Manhattan.',
-      'Investigators say the suspect approached the elderly woman and unexpectedly punched her in the face with a closed fist before fleeing the scene.',
-      'Authorities believe the attack was unprovoked, with no known prior interaction between the victim and the individual responsible.',
-      'The unusual costume has attracted widespread attention after police released surveillance images showing the suspect wearing an outfit resembling the animated superhero.',
-      'Following the confrontation, the suspect reportedly fled eastbound along West 125th Street. The victim declined medical assistance at the scene.',
-      { type: 'heading', text: 'Fictionalized Identification' },
-      'In this fictionalized version of the incident, authorities have identified the man allegedly involved in the assault of a 75-year-old woman in Harlem as Elter Sternad. The identification marks a new development in the fictional investigation surrounding the unusual Halloween costume attack.',
-      { type: 'heading', text: 'How to Submit a Tip' },
-      'The NYPD is encouraging anyone who recognizes the individual or has information about the incident to contact Crime Stoppers at 1-800-577-TIPS (8477). Tips can be submitted anonymously.',
-      'Photo: NYPD Crime Stoppers surveillance images released in connection with the investigation (file).',
-    ],
-    category: 'Metro',
-    time: '14:20',
-    section: 'hot',
-    image: dannyPhantomHarlemHeaderImage,
-    byline: 'Saree Times Metro Desk',
-    date: '2026-11-19',
-  },
+  
 
   {
     id: '98437374',
