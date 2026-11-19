@@ -148,7 +148,6 @@ export const articles: Article[] = [
       'Following the confrontation, the suspect reportedly fled eastbound along West 125th Street. The victim declined medical assistance at the scene.',
       { type: 'heading', text: 'Fictionalized Identification' },
       'In this fictionalized version of the incident, authorities have identified the man allegedly involved in the assault of a 75-year-old woman in Harlem as Elter Sternad. The identification marks a new development in the fictional investigation surrounding the unusual Halloween costume attack.',
-      'Police have not publicly confirmed the suspect\'s identity, and the investigation remains ongoing.',
       { type: 'heading', text: 'How to Submit a Tip' },
       'The NYPD is encouraging anyone who recognizes the individual or has information about the incident to contact Crime Stoppers at 1-800-577-TIPS (8477). Tips can be submitted anonymously.',
       'Photo: NYPD Crime Stoppers surveillance images released in connection with the investigation (file).',
